@@ -773,9 +773,12 @@ export const CarSlide = () => {
               }
             }
             .thumb-swiper .swiper-slide-thumb-active {
-              background-color: white;
+              background-color: #6c8dab;
               h3 {
-                color: #092241;
+                color: #ffffff;
+              }
+              * {
+                color: #ffffff;
               }
             }
           `}</style>
