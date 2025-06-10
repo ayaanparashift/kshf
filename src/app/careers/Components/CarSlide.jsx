@@ -763,7 +763,6 @@ export const CarSlide = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-
           <style jsx global>{`
             .main-swiper .swiper-slide {
               overflow: visible !important;
