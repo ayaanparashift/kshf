@@ -47,7 +47,7 @@ export const mapslided2 = [
     city: "Hosur, Tamil Nadu",
     tarea: "1.2 MN. SQ.FT.",
     parkLink: "/ksh-hosur-i",
-    tbuild: "04 BUILDINGS",
+    tbuild: "05 BUILDINGS",
   },
 ];
 export const mapslided3 = [
