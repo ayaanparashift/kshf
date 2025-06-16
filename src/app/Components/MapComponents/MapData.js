@@ -21,7 +21,7 @@ export const mapslided = [
     city: "Pune, Maharashtra",
     tarea: "1.2 MN. SQ. FT.",
     parkLink: "/ksh-chakan-ii",
-    tbuild: "04 BUILDINGS",
+    tbuild: "05 BUILDINGS",
   },
   {
     parkimg: "/homepage/pcard/ch1be.png",
