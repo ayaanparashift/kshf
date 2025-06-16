@@ -301,9 +301,9 @@ const CapabilitiesF = () => {
   return (
     <div className="bg-[#092241] overflow-hidden min-1920:min-h-[870px] min-1440:min-h-[780.5px] min-1920:max-h-[870px] min-1440:max-h-[780.5px]">
       <div className="bg-[#092241] min-1920:min-h-[870px] min-1440:min-h-[780.5px] min-1920:max-h-[870px] min-1440:max-h-[780.5px] h-full  overflow-hidden">
-        <div className="ml-[max(5%,calc((100vw-1250px)/2))] min-h-screen mr-[max(5%,calc((100vw-1250px)/2))] sm:mr-0 lg:gap-0 gap-[50px] flex lg:flex-row flex-col ">
+        <div className="ml-[max(5%,calc((100vw-1250px)/2))] min-h-screen mr-[max(5%,calc((100vw-1250px)/2))] sm:mr-0 lg:gap-0 gap-[50px] flex lg:flex-row flex-col md:justify-normal justify-center">
           {/* Left Container */}
-          <div className="leftCon pr-10 2xl:pr-20 w-full xl:w-1/2 py-5 flex flex-col justify-center">
+          <div className="leftCon md:pr-10 2xl:pr-20 w-full xl:w-1/2 md:py-5 flex flex-col min-h-full justify-center">
             <div className="overflow-hidden md:mr-10 mr-0">
               <LineHead
                 heading="WHAT WE DO. TO DELIVER VALUE."
@@ -410,7 +410,7 @@ const CapabilitiesF = () => {
           </div>
           {/*  */}
           {/* Right Container */}
-          <div className="rightCon min-h-full w-full min-1920:min-h-[870px] min-1440:min-h-[780.5px] min-1920:max-h-[870px] xl:w-1/2 flex flex-col overflow-hidden relative">
+          <div className="rightCon min-h-full w-full min-1920:min-h-[870px] min-1440:min-h-[780.5px] min-1920:max-h-[870px] xl:w-1/2 hidden md:flex flex-col overflow-hidden relative">
             <div className="relative flex-[0.65] h-full">
               <AnimatePresence>
                 {tabs.slice(0, activeTab + 1).map((tab, idx) => (

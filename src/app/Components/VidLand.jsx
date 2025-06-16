@@ -186,7 +186,7 @@ const fadeIn2 = {
 };
 const VidLand = () => {
   return (
-    <div className="w-screen h-[90vh] overflow-hidden relative">
+    <div className="w-screen md:h-screen h-[90vh] overflow-hidden relative">
       {/* Desktop Video */}
       <video
         className="w-screen min-h-full object-cover sm:flex hidden"
