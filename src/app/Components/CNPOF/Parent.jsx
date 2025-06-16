@@ -16,7 +16,7 @@ const Parent = ({ staticData }) => {
   }, [todos]);
 
   return (
-    <div className="bg-[url(/spotlightbg.webp)] min-1440:h-[100vh] lg:h-[115vh] h-[130vh] flex items-center justify-center bg-cover bg-no-repeat bg-center">
+    <div className="bg-[url(/spotlightbg.webp)] min-1440:h-[100vh] lg:h-[115vh] h-[120vh] flex items-center justify-center bg-cover bg-no-repeat bg-center">
       <div className="flex items-center justify-center fix12 h-fit">
         <div className="flex flex-col justify-start w-full h-full">
           <TabLineHead
@@ -34,7 +34,7 @@ const Parent = ({ staticData }) => {
                 opacity: 0,
                 transition: { duration: 0.7, ease: [0.7, 0, 0.4, 1] },
               }}
-              className="flex flex-col mt-0 lg:mt-[-35px] flex-grow md:h-fit h-[680px] md:min-h-[300px]"
+              className="flex flex-col mt-0 lg:mt-[-35px] flex-grow md:h-fit h-[600px] md:min-h-[300px]"
             >
               <Main
                 todos={todos}
