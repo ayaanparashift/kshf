@@ -251,20 +251,20 @@ const AboutCap = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className='bg-[#EEF0F3]'>
-      <div className='py-[45px] fix12 w-full'>
+    <div className="bg-[#EEF0F3]">
+      <div className="py-[45px] fix12 w-full">
         <LineHead
-          heading='KSH Group of Companies'
-          bclr='#d7d7d7'
-          bopacity='34%'
-          clr='#141414'
+          heading="KSH Group of Companies"
+          bclr="#d7d7d7"
+          bopacity="34%"
+          clr="#141414"
         />
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.8 }}
           transition={{ duration: 0.5, ease: [0.7, 0, 0.4, 1] }}
-          className='text-[#202020] mt-[-45px] flex sm:w-full items-start text-[16px] fsans-600 leading-[26px]'
+          className="text-[#202020] mt-[-45px] flex sm:w-full items-start text-[16px] fsans-600 leading-[26px]"
         >
           The KSH Group has a storied past, leading to over 450 employees today
           and a turnover exceeding INR 1,200 crore. Throughout its journey, the
@@ -275,8 +275,8 @@ const AboutCap = () => {
           logistics parks.
         </motion.p>
       </div>
-      <div className='bg-[#092241] md:h-[665px] flex items-end justify-end'>
-        <div className='border-white w-full md:mr-0 ml-[max(5%,calc((100vw-1250px)/2))] mr-[max(5%,calc((100vw-1250px)/2))] lg:pb-0 pb-[100px] lg:gap-0 gap-[50px] flex lg:flex-row flex-col overflow-hidden relative z-[1]'>
+      <div className="bg-[#092241] md:h-[665px] flex items-end justify-end">
+        <div className="border-white w-full md:mr-0 ml-[max(5%,calc((100vw-1250px)/2))] mr-[max(5%,calc((100vw-1250px)/2))] lg:pb-0 pb-[100px] lg:gap-0 gap-[50px] flex lg:flex-row flex-col overflow-hidden relative z-[1]">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -286,9 +286,9 @@ const AboutCap = () => {
               delay: 0.2,
             }}
             viewport={{ once: true, amount: 0.3 }}
-            className='leftCon flex-1 flex flex-col justify-center min-h-[665px]'
+            className="leftCon flex-1 flex flex-col justify-center min-h-[665px]"
           >
-            <div className='tabs flex flex-nowrap overflow-x-scroll overflow-y-hidden gap-4 xl-768:w-[95%] xl-1024:w-[90%] xl-1280:w-[90%] xl-1440:w-[90%]'>
+            <div className="tabs flex flex-wrap overflow-x-scroll overflow-y-hidden gap-4 xl-768:w-[95%] xl-1024:w-[90%] xl-1280:w-[90%] xl-1440:w-[90%]">
               {tabs.map((tab, index) => (
                 <button
                   key={tab.title}
@@ -301,67 +301,67 @@ const AboutCap = () => {
                 </button>
               ))}
             </div>
-            <div className='w-full md:h-[200px] h-[300px]'>
-              <AnimatePresence mode='wait'>
+            <div className="w-full md:h-[200px] h-[300px]">
+              <AnimatePresence mode="wait">
                 <motion.div
                   key={activeTab}
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   exit={{ y: -20, opacity: 0 }}
                   transition={{ duration: 0.6, ease: [0.7, 0, 0.4, 1] }}
-                  className='w-[90%] xl:w-[516px] xl-1024:w-[400px] contentArea'
+                  className="w-[90%] xl:w-[516px] xl-1024:w-[400px] contentArea"
                 >
-                  <div className='flex flex-col md:h-[100px]'>
-                    <h1 className='text-[20px] xl-1024:text-[25px] pt-7 md:pt-[57px] pb-4 text-white fpt-500'>
+                  <div className="flex flex-col md:h-[100px]">
+                    <h1 className="text-[20px] xl-1024:text-[25px] pt-7 md:pt-[57px] pb-4 text-white fpt-500">
                       {tabs[activeTab].heading}
                     </h1>
-                    <p className='tabContent text-lg text-[#C1C1C1]'>
+                    <p className="tabContent text-lg text-[#C1C1C1]">
                       {tabs[activeTab].content}
                     </p>
                   </div>
                 </motion.div>
               </AnimatePresence>
             </div>
-            <div className='flex flex-col gap-7 pt-12 xl-1024:pt-20 xl:w-[60%] xl-1280:w-[80%] xl-1024:w-[90%] xl-1440:w-[90%] md:w-[70%] w-[100%] justify-between'>
-              <div className='flex items-center gap-2'>
-                <h1 className='text-[14px] fpt-700 text-[#fff]'>
+            <div className="flex flex-col gap-7 pt-12 xl-1024:pt-20 xl:w-[60%] xl-1280:w-[80%] xl-1024:w-[90%] xl-1440:w-[90%] md:w-[70%] w-[100%] justify-between">
+              <div className="flex items-center gap-2">
+                <h1 className="text-[14px] fpt-700 text-[#fff]">
                   FIND OUT MORE :
                 </h1>
-                <span className='text-[#F7E327] text-base'>
+                <span className="text-[#F7E327] text-base">
                   <a
                     href={tabs[activeTab].links}
-                    target='_blank'
-                    rel='noopener noreferrer'
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     {tabs[activeTab].links}
                   </a>
                 </span>
               </div>
-              <div className='flex gap-3 items-center'>
+              <div className="flex gap-3 items-center">
                 <button
-                  className='rounded-full border flex items-center justify-center disabled:opacity-50'
+                  className="rounded-full border flex items-center justify-center disabled:opacity-50"
                   onClick={() => setActiveTab((prev) => Math.max(prev - 1, 0))}
                   disabled={activeTab === 0}
                 >
-                  <img className='w-10 h-10' src='/landingr.svg' alt='' />
+                  <img className="w-10 h-10" src="/landingr.svg" alt="" />
                 </button>
-                <div className='text-base text-[#6C8DAB]'>
+                <div className="text-base text-[#6C8DAB]">
                   {activeTab + 1} / {tabs.length}
                 </div>
                 <button
-                  className='rounded-full border border-[#D7D7D7] border-opacity-50 w-10 h-10 flex items-center justify-center disabled:opacity-50'
+                  className="rounded-full border border-[#D7D7D7] border-opacity-50 w-10 h-10 flex items-center justify-center disabled:opacity-50"
                   onClick={() =>
                     setActiveTab((prev) => Math.min(prev + 1, tabs.length - 1))
                   }
                   disabled={activeTab === tabs.length - 1}
                 >
-                  <img className='w-10 h-10' src='/landingl.svg' alt='' />
+                  <img className="w-10 h-10" src="/landingl.svg" alt="" />
                 </button>
               </div>
             </div>
           </motion.div>
-          <div className='rightCon relative flex-1 lg:max-w-[638px]'>
-            <div className='relative min-h-full overflow-hidden'>
+          <div className="rightCon relative flex-1 lg:max-w-[638px]">
+            <div className="relative min-h-full overflow-hidden">
               <AnimatePresence>
                 {tabs.slice(0, activeTab + 1).map((tab, idx) => (
                   <motion.div
@@ -374,19 +374,19 @@ const AboutCap = () => {
                       ease: [0.7, 0, 0.3, 1],
                       delay: 0.4,
                     }}
-                    className='absolute top-0 left-0 w-full h-full'
+                    className="absolute top-0 left-0 w-full h-full"
                     style={{ zIndex: idx }}
                   >
                     <img
                       src={tab.images.top[0]}
-                      alt=''
-                      className='w-full h-full object-cover'
+                      alt=""
+                      className="w-full h-full object-cover"
                     />
                   </motion.div>
                 ))}
               </AnimatePresence>
               <motion.div
-                className='absolute top-0 left-0 bg-[#092241] w-full h-full z-20'
+                className="absolute top-0 left-0 bg-[#092241] w-full h-full z-20"
                 initial={{ x: 0 }}
                 whileInView={{ x: "100%" }}
                 transition={{

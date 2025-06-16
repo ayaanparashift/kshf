@@ -172,7 +172,7 @@ const MapSlideMob = ({
             </div>
 
             {/* Swiper container */}
-            <div className="w-screen max-w-screen mt-[0px]">
+            <div className="sm:w-[770px] w-screen overflow-hidden max-w-screen mt-0 sm:mt-[100px] ">
               <Swiper
                 modules={[Navigation]}
                 navigation={

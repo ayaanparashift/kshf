@@ -190,10 +190,10 @@ export default function Navbar() {
       <AnimatePresence>
         {(menuOpen || isClosing) && (
           <>
-            <div className="hidden md:block">
+            <div className="hidden xl:block">
               <NavMain onClose={handleClose} />
             </div>
-            <div className="block md:hidden">
+            <div className="block xl:hidden">
               <MobNav onClose={handleClose} />
             </div>
           </>

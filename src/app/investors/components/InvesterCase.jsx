@@ -83,7 +83,7 @@ const InvesterCase = () => {
                 viewport={{ once: true, amount: 0.3 }} // Adjust amount to control trigger point
               />
             </div>
-            <div className="RightCon flex-1 lg:p-4 xl-768:mt-14">
+            <div className="RightCon max-w-1/2 flex flex-wrap wrap  xl-768:mt-14">
               <motion.h1
                 initial={{ width: 0 }}
                 whileInView={{ width: "100%" }}

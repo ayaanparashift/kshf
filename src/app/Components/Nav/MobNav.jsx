@@ -238,7 +238,7 @@ const MobNav = ({ onClose }) => {
         animate={{ x: 0 }}
         exit={{ x: "100%" }}
         transition={{ ease: EASING, duration: 1 }}
-        className="fixed inset-0 w-full sm:w-2/3 bg-white p-6 overflow-y-auto z-[1000000]"
+        className="fixed right-0 top-0 bottom-0 sm:w-1/2 w-full bg-white p-6 overflow-y-auto z-[1000000]"
       >
         {/* HEADER */}
         <div className="flex justify-end items-center gap-4 mb-6">

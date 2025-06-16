@@ -258,8 +258,8 @@ const aboutGrowthData = [
 const AboutGrowth = () => {
   return (
     <div className="Main fix12 py-16 lg:py-[100px]">
-      <div className="lg:flex items-center justify-between xl-1280:gap-[5%] xl-1024:gap-[30px]">
-        <div className="xl-1024:flex-1 xl:w-[521px] xl-1280:w-[50%] flex">
+      <div className="xl:flex items-center justify-between xl-1280:gap-[5%] xl-1024:gap-[30px]">
+        <div className="xl-1024:flex-1 xl:w-[521px] xl-1280:w-[50%] flex xl:pb-0 pb-5">
           <motion.h1
             initial={{ width: 0 }}
             whileInView={{ width: "fit-content" }}
@@ -319,7 +319,7 @@ const AboutGrowth = () => {
       </div>
 
       {/* Remaining boxes (Investor Relations, Careers @KSH) */}
-      <div className="lg:flex items-center justify-between lg:pt-[65px] pt-5 xl-1280:gap-[5%] xl-1024:gap-[30px]">
+      <div className="lg:flex items-center justify-between xl:pt-[65px] pt-5 xl-1280:gap-[5%] xl-1024:gap-[30px]">
         {aboutGrowthData.slice(1).map((item, index) => (
           <Link className="group" href={item.link} key={index}>
             <motion.div

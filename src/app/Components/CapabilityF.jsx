@@ -300,10 +300,10 @@ const CapabilitiesF = () => {
 
   return (
     <div className="bg-[#092241] overflow-hidden min-1920:min-h-[870px] min-1440:min-h-[780.5px] min-1920:max-h-[870px] min-1440:max-h-[780.5px]">
-      <div className="bg-[#092241] min-1920:min-h-[870px] min-1440:min-h-[780.5px] min-1920:max-h-[870px] min-1440:max-h-[780.5px] h-full  overflow-hidden">
+      <div className="bg-[#092241] md:py-0 py-10 min-1920:min-h-[870px] min-1440:min-h-[780.5px] min-1920:max-h-[870px] min-1440:max-h-[780.5px] h-full  overflow-hidden">
         <div className="ml-[max(5%,calc((100vw-1250px)/2))] min-h-screen mr-[max(5%,calc((100vw-1250px)/2))] sm:mr-0 lg:gap-0 gap-[50px] flex lg:flex-row flex-col md:justify-normal justify-center">
           {/* Left Container */}
-          <div className="leftCon md:pr-10 2xl:pr-20 w-full xl:w-1/2 md:py-5 flex flex-col min-h-full justify-center">
+          <div className="leftCon xl:pr-10 2xl:pr-20 w-full xl:w-1/2 md:py-5 flex flex-col min-h-full justify-center">
             <div className="overflow-hidden md:mr-10 mr-0">
               <LineHead
                 heading="WHAT WE DO. TO DELIVER VALUE."
@@ -311,7 +311,7 @@ const CapabilitiesF = () => {
                 bopacity="34%"
                 clr="text-white"
               />
-              <p className="gradinetText md:mt-[-55px] max-w-fit text-[20px] leading-[26px]">
+              <p className="gradinetText lg:mt-[-20px] xl:mt-[-55px] max-w-fit text-[20px] leading-[26px]">
                 Our capabilities cover every aspect of developing Industrial &
                 Logistics Parks
               </p>
@@ -320,14 +320,14 @@ const CapabilitiesF = () => {
             {/* Tabs */}
             <div className="mt-6 overflow-hidden mr-0 md:mr-10 max-w-[600px]">
               <div
-                className="flex flex-wrap w-full gap-2 sm:gap-5" // 👈 changed from flex-nowrap to flex-wrap
+                className="flex flex-wrap w-full gap-2 xl:gap-5" // 👈 changed from flex-nowrap to flex-wrap
                 ref={containerRef}
               >
                 {tabs.map((tab, idx) => (
                   <button
                     key={tab.title}
                     ref={(el) => (tabRefs.current[idx] = el)}
-                    className={`px-3 whitespace-nowrap h-[46px] border border-[#D7D7D7] border-opacity-35 text-white rounded-[10px] transition-all duration-300 ${
+                    className={`px-3 whitespace-nowrap h-[36px] border border-[#D7D7D7] border-opacity-35 text-white rounded-[10px] transition-all duration-300 ${
                       activeTab === idx ? "bg-[#E30613] text-black" : ""
                     }`}
                     onClick={() => {
@@ -352,12 +352,12 @@ const CapabilitiesF = () => {
                   transition={{ duration: 0.8, ease: [0.7, 0, 0.4, 1] }}
                   className="w-full contentArea overflow-hidden"
                 >
-                  <div className="flex flex-col pt-5 2xl:pt-10 gap-4 xl-768:gap-10 h-[400px] xl:h-[350px] md:mr-10 mr-0 overflow-hidden">
+                  <div className="flex flex-col pt-0 xl:pt-5 2xl:pt-10 gap-4 xl-768:gap-10 md:h-[290px] h-[400px] xl:h-[350px] md:mr-10 mr-0 overflow-hidden">
                     <h1 className="tabHeading text-2xl max-w-fit md:text-[40px] md:leading-[40px] lg:text-[30px] fpt-500 text-white font-medium border-b-[8px] border-[#F7E327]">
                       {tabs[activeTab].heading}
                     </h1>
                     <p
-                      className="tabContent fsans-400 text-[18px] gradinetText leading-[26px]"
+                      className="tabContent fsans-400 text-[16px] xl:text-[18px] gradinetText leading-[26px]"
                       dangerouslySetInnerHTML={{
                         __html: tabs[activeTab].content,
                       }}
