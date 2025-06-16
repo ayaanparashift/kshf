@@ -25,7 +25,7 @@ const LandingSwiper = () => {
   };
 
   return (
-    <div className="h-screen relative ">
+    <div className="h-auto relative ">
       <motion.div
         className="relative overflow-hidden max-w-screen"
         initial={{ maxWidth: 0 }}
