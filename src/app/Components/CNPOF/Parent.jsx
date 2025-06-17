@@ -16,9 +16,9 @@ const Parent = ({ staticData }) => {
   }, [todos]);
 
   return (
-    <div className="bg-[url(/spotlightbg.webp)] min-1440:h-[100vh] lg:h-[115vh] h-[120vh] flex items-center justify-center bg-cover bg-no-repeat bg-center">
+    <div className="bg-[url(/spotlightbg.webp)] min-1440:h-[95vh] lg:h-[105vh] h-[120vh] flex items-center justify-center bg-cover bg-no-repeat bg-center">
       <div className="flex items-center justify-center fix12 h-fit">
-        <div className="flex flex-col justify-start w-full h-full">
+        <div className="flex flex-col justify-center w-full h-full">
           <TabLineHead
             acbtn={acbtn}
             setAcBtn={setAcBtn}

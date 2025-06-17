@@ -247,7 +247,7 @@ const Card = ({ todos, activeSidebar, acbtn }) => {
     // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-    <div className="flex flex-col xl:w-[600px] xl-1280:w-[650px] w-full md:pb-[30px] h-[410px] md:h-[480px] lg:h-[550px]">
+    <div className="flex flex-col xl:w-[600px] xl-1280:w-[650px] w-full md:pb-[30px] h-[410px] md:h-[480px]">
       <div className="xl:min-w-fit lg:min-h-fit max-w-[700px]">
         <AnimatePresence mode="wait">
           <motion.div

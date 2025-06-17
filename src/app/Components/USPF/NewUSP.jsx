@@ -229,6 +229,7 @@ const Usp = () => {
               {swcontent.map((slide, index) => (
                 <SwiperSlide key={slide.icon + index}>
                   <SwiperCard
+                    cardno={index + 1}
                     content={slide.content}
                     title={slide.title}
                     icon={slide.icon}

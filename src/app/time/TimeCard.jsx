@@ -6,7 +6,7 @@ const TimeCard = ({ image, content, isAbove }) => {
   return (
     <div>
       <motion.div
-        className={`border-[2px] border-white ${
+        className={`${
           isAbove ? "topcard" : "bcard"
         } relative w-[300px] sm:block hidden h-[182px] overflow-hidden cursor-pointer`}
         initial="rest"

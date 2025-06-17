@@ -148,7 +148,7 @@ import React from "react";
 
 const MapSCMob = ({ parkimg, title, city, tarea, tbuild, parkLink }) => {
   return (
-    <div className="relative pb-0 w-[770px] overflow-hidden max-w-full md:pb-6 xl:pb-8 min-h-full h-full mx-auto bg-white">
+    <div className="relative pb-0 w-[770px] overflow-hidden max-w-[90vw] md:pb-6 xl:pb-8 min-h-full h-full mx-auto bg-white">
       <div className="flex flex-col md:flex-row items-center justify-between py-4 px-4 md:py-6 md:px-6 xl:py-8 xl:px-8 gap-4 md:gap-6 xl:gap-8 w-full bg-white">
         <div className="flex-1 md:flex-[0.5] w-full md:w-auto flex justify-center">
           <div className="relative w-[320px] h-[200px] md:w-[200px] md:h-[200px] max-w-full">

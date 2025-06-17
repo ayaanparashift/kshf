@@ -132,7 +132,8 @@ export const hotspotData = {
     {
       id: 3,
       park_no: "01",
-      park_name: "Chennai<br/>(Upcoming)",
+      park_name:
+        "Chennai<br/><span className='uptext text-red-500'>(Upcoming)</span>",
       x: "48.7%",
       y: "71%",
       scale: 2,

@@ -36,13 +36,18 @@
 "use client";
 import { motion } from "framer-motion";
 
-const SwiperCard = ({ title, icon, content, cardHeight }) => {
+const SwiperCard = ({ title, icon, content, cardHeight, cardno }) => {
   return (
     <div
       className="flex flex-wrap gap-4"
       style={{ height: cardHeight || "540px" }}
     >
       <div className="flex gap-[20px] relative group w-full min-1920:w-[350px] sm:w-[360px] flex-col bg-[#EEF0F3] justify-between p-[30px]">
+        {/* <div className="absolute left-0 top-[25px] z-[10000]">
+          <h2 className="text-[5vw] leading-[0px] fpt-700 text-[#4b4b4b80] group-hover:text-[white] transition-colors duration-500">
+            {cardno}
+          </h2>
+        </div> */}
         {/* SVG Icon */}
         <div className="flex relative z-20 justify-start items-start">
           <img

@@ -62,7 +62,7 @@ const AboutVision = () => {
               <div className="relative z-20 overflow-hidden">
                 <div className="">
                   <img
-                    className="h-[200px]"
+                    className="h-auto w-full"
                     src="./AboutPage/vision.png"
                     alt=""
                   />
@@ -99,7 +99,7 @@ const AboutVision = () => {
               <div className="relative z-20 overflow-hidden">
                 <div>
                   <img
-                    className="h-[200px]"
+                    className="h-auto w-full"
                     src="./AboutPage/mission.png"
                     alt=""
                   />

@@ -477,6 +477,7 @@ const BentoSlider = () => {
                 swiper.params.navigation.nextEl = nextRef.current;
               }}
               spaceBetween={20}
+              loop={true}
               speed={300}
               freeMode
               preventInteractionOnTransition

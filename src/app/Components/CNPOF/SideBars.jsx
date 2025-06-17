@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const SideBars = ({ todos, activeSidebar, setActiveSidebar }) => {
   return (
-    <div className="lg:w-fit flex flex-col gap-[10px] min-1366:gap-[20px] w-full sm:min-w-[305px] lg:mt-[300px]">
+    <div className="lg:w-fit flex flex-col gap-[10px] min-1366:gap-[20px] w-full sm:min-w-[305px] lg:mt-[250px]">
       {todos && todos.length > 0 ? (
         todos.map((item, index) => (
           <motion.p
