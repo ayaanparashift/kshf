@@ -165,11 +165,11 @@ const Usp = () => {
   return (
     <div className="bg-white uspcontainer w-full flex items-center justify-center flex-col overflow-hidden">
       <div className="flex flex-col max-w-[100vw] h-fit">
-        <div className="relative z-10 pt-[50px] max-w-[1250px] w-[90%] mx-auto md:pt-[92px] h-fit flex flex-col">
+        <div className="relative z-10 pt-20 max-w-[1250px] w-[90%] mx-auto xl:pt-[92px] h-fit flex flex-col">
           <LineHead heading={"Key Differentiators of KSH INFRA Parks"} />
         </div>
         <div className="flex xl:flex-row flex-col-reverse md:p-0 px-5 pt-0 max-h-fit lg:gap-0 gap-5 relative">
-          <div className="flex items-end bottom-0 xl:bottom-[30px] justify-center mt-0 xl:absolute relative xl:left-0 w-full xl:w-[700px]">
+          <div className="xl:flex hidden items-end bottom-0 xl:bottom-[30px] justify-center mt-0 xl:absolute relative xl:left-0 w-full xl:w-[700px]">
             <video
               ref={videoRef}
               src="/uspicons/USP.mp4"
@@ -178,7 +178,7 @@ const Usp = () => {
             ></video>
           </div>
 
-          <div className="xl:w-full mx-auto flex flex-col h-fit max-w-full justify-center items-start gap-[33px] lg:pb-[110px] xl:pl-[565px]">
+          <div className="xl:w-full mx-auto flex flex-col h-fit max-w-full justify-center items-start gap-[33px] pb-20 xl:pb-[110px] xl:pl-[565px]">
             {/* Text & Navigation Buttons */}
             <motion.div className="flex sm:flex-row flex-col sm:items-center items-start justify-start gap-[20px] sm:gap-[92px] w-full sm:w-[90%] sm:mx-auto xl:w-auto xl-1024:mr-[50px] xl-1280:mr-[59px] xl-1366:mr-[55px] xl-1600:mr-[171px] xl-1536:mr-[145px] xl-1440:mr-[90px] xl-1920:mr-[29%]">
               <p className="fsans-400 text-[18px] leading-[26px] text-[#6C8DAB] z-[1]">
@@ -219,7 +219,7 @@ const Usp = () => {
                 250: { slidesPerView: 1, spaceBetween: 10 }, // Changed from 0 to 1
                 400: { slidesPerView: 1.2, spaceBetween: 10 },
                 768: { slidesPerView: 2, spaceBetween: 20 },
-                769: { slidesPerView: 3, spaceBetween: 20 },
+                769: { slidesPerView: 2.3, spaceBetween: 20 },
                 1279: { slidesPerView: 2.2, spaceBetween: 20 },
                 1366: { slidesPerView: 2.5, spaceBetween: 40 },
                 1536: { slidesPerView: 2.6, spaceBetween: 20 },

@@ -2,7 +2,7 @@
 import React, { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, EffectFade } from "swiper/modules";
-import { motion } from "framer-motion"; // Import motion
+import { AnimatePresence, motion } from "framer-motion"; // Import motion
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -113,31 +113,35 @@ const WhyKsh = () => {
               ))}
             </motion.div>
             {/* Animated Content Section */}
-            <div className="w-full h-full">
-              <motion.div
-                key={activeTab} // Re-render on tab change
-                initial={{ x: 500, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                // exit={{ x: -1000, opacity: 0 }}
-                transition={{ duration: 0.6, ease: [0.7, 0, 0.4, 1] }}
-                className="md:w-[80%] xl-1024:w-[400px] contentArea"
-              >
-                {/* <div className="flex flex-col  md:h-[240px]"> */}
-                <div className="flex flex-col">
-                  <h1 className="text-3xl xl-1024:text-xl pt-[57px] xl-1024:pt-7 pb-4 text-white fpt-500">
-                    {tabs[activeTab].heading}
-                  </h1>
-                  <p className="tabContent text-lg text-[#C1C1C1]    ">
-                    {tabs[activeTab].content.split("\n").map((line, index) => (
-                      <React.Fragment key={index}>
-                        {line}
-                        <br />
-                        <br />
-                      </React.Fragment>
-                    ))}
-                  </p>
-                </div>
-              </motion.div>
+            <div className="w-full h-fit xl:h-full">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={activeTab} // Re-render on tab change
+                  initial={{ y: 10, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  exit={{ y: -10, opacity: 0 }}
+                  transition={{ duration: 0.6, ease: [0.7, 0, 0.4, 1] }}
+                  className="xl:w-[80%] w-full contentArea xl:h-auto h-[324px]"
+                >
+                  {/* <div className="flex flex-col  md:h-[240px]"> */}
+                  <div className="flex flex-col">
+                    <h1 className="text-3xl xl-1024:text-xl pt-[57px] xl-1024:pt-7 pb-4 text-white fpt-500">
+                      {tabs[activeTab].heading}
+                    </h1>
+                    <p className="tabContent text-lg text-[#C1C1C1]    ">
+                      {tabs[activeTab].content
+                        .split("\n")
+                        .map((line, index) => (
+                          <React.Fragment key={index}>
+                            {line}
+                            <br />
+                            <br />
+                          </React.Fragment>
+                        ))}
+                    </p>
+                  </div>
+                </motion.div>
+              </AnimatePresence>
             </div>
 
             {/* Navigation Buttons */}
@@ -212,7 +216,7 @@ const WhyKsh = () => {
               </Swiper>
             </div>
           </div> */}
-          <div className="rightCon flex-1 lg:max-w-[638px] min-h-full">
+          <div className="rightCon xl:block hidden flex-1 lg:max-w-[638px] min-h-full">
             {/* Top Image Swiper */}
             <div className="h-full min-h-full">
               <Swiper

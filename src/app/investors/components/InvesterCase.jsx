@@ -6,7 +6,7 @@ const InvesterCase = () => {
     <>
       <div className="bg-[#092241] py-16">
         <div className="fix12  ">
-          <div className="lg:flex justify-between items-center gap-10">
+          <div className="lg:flex justify-between items-center gap-5 xl:gap-10">
             <div className="leftCon relative overflow-hidden lg:w-[500px] h-[480px]  flex-shrink-0 flex items-center justify-center">
               <img src="/investorRel/indoSpace.png" alt="" />
               <motion.div
@@ -32,9 +32,9 @@ const InvesterCase = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
                 viewport={{ amount: 0.1, once: true }}
-                className="relative overflow-hidden pt-10 space-y-[40px]"
+                className="relative overflow-hidden pt-5 xl:pt-10 space-y-[40px]"
               >
-                <p className="text-base fsans-400 leading-[26px] text-[#eee]">
+                <p className="xl:text-base text-sm fsans-400 leading-[26px] text-[#eee]">
                   IndoSpace, a leading investor, developer, and manager of
                   Industrial & Logistics real estate in India, was founded in
                   2007. The company has a strong team of industry experts with
@@ -72,7 +72,7 @@ const InvesterCase = () => {
       {/* ---------- */}
       <div className="bg-[#EEF0F3] py-16">
         <div className="fix12  ">
-          <div className="lg:flex justify-between items-center gap-10 flex-row-reverse">
+          <div className="lg:flex justify-between items-center gap-5 xl:gap-10 flex-row-reverse">
             <div className="leftCon relative overflow-hidden lg:w-[500px] h-[480px]  flex-shrink-0 flex items-center justify-center">
               <img src="./investorRel/mapleTree.png" alt="" />
               <motion.div
@@ -129,7 +129,7 @@ const InvesterCase = () => {
       {/* ---------- */}
       <div className="bg-[#092241] py-16">
         <div className="fix12  ">
-          <div className="lg:flex justify-between items-center gap-10">
+          <div className="lg:flex justify-between items-center gap-5 xl:gap-10">
             <div className="leftCon relative overflow-hidden lg:w-[500px] h-[480px]  flex-shrink-0 flex items-center justify-center">
               <img src="/investorRel/morganStanley.png" alt="" />
               <motion.div
@@ -155,9 +155,9 @@ const InvesterCase = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
                 viewport={{ amount: 0.1, once: true }}
-                className="overflow-hidden relative pt-10 space-y-[40px]"
+                className="overflow-hidden relative pt-5 xl:pt-10 space-y-[40px]"
               >
-                <p className="text-base fsans-400 leading-[26px] text-[#eee]">
+                <p className="text-sm xl:text-base fsans-400 leading-[26px] text-[#eee]">
                   Morgan Stanley Real Estate Investing (MSREI) is the global
                   private real estate investment management arm of Morgan
                   Stanley. One of the most active property investors in the
@@ -216,9 +216,9 @@ const InvesterCase = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
                 viewport={{ amount: 0.1, once: true }}
-                className="overflow-hidden pt-10 space-y-[40px]"
+                className="overflow-hidden pt-5 xl:pt-10 space-y-[40px]"
               >
-                <p className="text-[#303030] text-base fsans-400 leading-[26px] ">
+                <p className="text-[#303030] text-sm xl:text-base fsans-400 leading-[26px] ">
                   Pacific Century Group (PCG) is a private investment group
                   based in Asia, founded in 1993. It focuses on three main
                   business sectors: Technology, Media & Telecommunications

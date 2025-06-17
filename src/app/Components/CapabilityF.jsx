@@ -320,7 +320,7 @@ const CapabilitiesF = () => {
             {/* Tabs */}
             <div className="mt-6 overflow-hidden mr-0 md:mr-10 max-w-[600px]">
               <div
-                className="flex flex-wrap w-full gap-2 xl:gap-5" // 👈 changed from flex-nowrap to flex-wrap
+                className="flex flex-wrap w-full gap-2" // 👈 changed from flex-nowrap to flex-wrap
                 ref={containerRef}
               >
                 {tabs.map((tab, idx) => (

@@ -101,7 +101,7 @@ const SustainEnviroment = () => {
         </div>
 
         <div className="flex xl:flex-row flex-col-reverse md:p-0 px-5 pt-0 max-h-fit h-fit lg:gap-0 gap-5 relative">
-          <div className="lg:flex items-end lg:top-[10%] xl-1366:top-[5%] justify-center mt-0 xl:absolute relative lg:left-[-100px] xl-1366:left-[-150px] w-full lg:w-[800px] xl-1366:w-[875px] hidden">
+          <div className="xl:flex hidden items-end lg:top-[10%] xl-1366:top-[5%] justify-center mt-0 xl:absolute relative lg:left-[-100px] xl-1366:left-[-150px] w-full lg:w-[800px] xl-1366:w-[875px] hidden">
             <motion.img
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -141,7 +141,7 @@ const SustainEnviroment = () => {
                 400: { slidesPerView: 1.2, spaceBetween: 10 },
                 768: { slidesPerView: 2, spaceBetween: 20 },
                 769: { slidesPerView: 3, spaceBetween: 20 },
-                1024: { slidesPerView: 2.15, spaceBetween: 10 },
+                1024: { slidesPerView: 2.4, spaceBetween: 10 },
                 1336: { slidesPerView: 2.3, spaceBetween: 20 },
                 1536: { slidesPerView: 2.8, spaceBetween: 20 },
                 1920: { slidesPerView: 3.2, spaceBetween: 10 },
@@ -166,7 +166,7 @@ const SustainEnviroment = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ ease: [0.7, 0, 0.4, 1], duration: 1.4 }}
               viewport={{ once: true, amount: 0.3 }}
-              className=" flex sm:flex-row flex-col sm:items-center items-start justify-between gap-[20px] sm:gap-[92px] w-full "
+              className=" flex sm:flex-row flex-col sm:items-center items-start justify-between gap-[20px] sm:gap-[92px] w-full xl:pl-0 pl-[max(5%,calc((100vw-1250px)/2))] pr-[max(5%,calc((100vw-1250px)/2))]"
             >
               <div
                 onClick={() => setIsPopupOpen(true)}
@@ -181,7 +181,7 @@ const SustainEnviroment = () => {
                   alt=""
                 />
               </div>
-              <div className="flex gap-[14px] items-center justify-center mr-[max(5%,calc((100vw-1250px)/2))]">
+              <div className="flex gap-[14px] items-center justify-center">
                 <button id="arrowleft" className="h-[41px] w-[41px]">
                   <img
                     className="h-[41px] w-[41px]"

@@ -315,11 +315,11 @@ const SustainDownload2 = () => {
           </div>
           {/* Tabs */}
           <div className="pt-[40px] md:px-0 px-[5%] mr-0 md:mr-24">
-            <div className="tabs flex flex-wrap gap-2 md:gap-4">
+            <div className="tabs flex flex-wrap gap-2">
               {tabs.map((tab, index) => (
                 <button
                   key={tab.id || index}
-                  className={`px-3 h-[46px] whitespace-nowrap border-[#D7D7D7] border-opacity-30 border-[2px] text-white rounded-[10px] transition-all duration-200 ${
+                  className={`px-3 h-[36px] whitespace-nowrap border-[#D7D7D7] border-opacity-30 border-[2px] text-white rounded-[10px] transition-all duration-200 ${
                     activeIndex === index
                       ? "bg-red-700 border-red-700"
                       : "bg-transparent"
@@ -333,7 +333,7 @@ const SustainDownload2 = () => {
           </div>
 
           {/* Animated Content Section */}
-          <div className="relative xl-1920:w-[80%] xl-1024:w-[90%] lg:w-[600px] h-[300px] md:h-[250px] overflow-hidden px-[5%] md:px-0">
+          <div className="relative xl-1920:w-[80%] pt-5 xl-1024:w-[90%] lg:w-[600px] h-[300px] md:h-[250px] overflow-hidden px-[5%] md:px-0">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeIndex}
@@ -343,9 +343,9 @@ const SustainDownload2 = () => {
                 transition={{ duration: 0.2, ease: [0.7, 0, 0.4, 1] }}
                 className="absolute text-white"
               >
-                <h1 className="text-[20px] max-w-fit md:text-[28px] font-medium leading-[110%] md:border-b-[8px] border-b-[5px] border-[#F7E327]  pb-0 pt-5">
+                <h2 className="text-[20px] max-w-fit xl:text-[28px] md:text-[24px] font-medium leading-[110%] md:border-b-[8px] border-b-[5px] border-[#F7E327]  pb-0 pt-5">
                   {tabs[activeIndex].heading}
-                </h1>
+                </h2>
                 <p className="pt-6 md:pt-2 text-base text-[#6C8DAB]">
                   {tabs[activeIndex].content}
                 </p>
