@@ -169,7 +169,7 @@ export default function FormSec() {
         className="absolute w-full top-0 left-0 z-0"
       />
       <div className="flex relative z-0 xl:pt-[50px] md:mr-[max(5%,calc((100vw-1250px)/2))]">
-        <div className="bg-[#141D28] flex flex-col items-stretch justify-center flex-1 pl-[max(5%,calc((100vw-1250px)/2))] pr-[5%] md:pr-[60px] pt-[47px] sm:pb-0 pb-[47px] overflow-hidden">
+        <div className="bg-[#141D28] sm:py-0 py-[5%] flex flex-col items-stretch justify-center flex-1 pl-[max(5%,calc((100vw-1250px)/2))] pr-[5%] md:pr-[60px] overflow-hidden">
           {!isSubmitted && (
             <>
               <div className="lg:pb-[50px] pb-[20px] max-w-fit">
@@ -178,7 +178,7 @@ export default function FormSec() {
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ duration: 1.2, ease: [0.7, 0, 0.4, 1] }}
                   viewport={{ once: true, amount: 0.1 }}
-                  className="fpt-600 xl:text-[60px] lg:text-[40px] md:text-[32px] text-[20px] text-white leading-[150%] md:leading-[105%] md:pb-5 pb-1 2xl:text-[70px]"
+                  className="fpt-600 xl:text-[60px] lg:text-[40px] md:text-[32px] text-[28px] text-white leading-[150%] md:leading-[105%] 2xl:text-[70px]"
                 >
                   Join Us
                 </motion.h1>
@@ -390,7 +390,7 @@ export default function FormSec() {
           )}
         </div>
 
-        <div className="min-h-full hidden md:block overflow-hidden relative">
+        <div className="2xl:h-[600px] flex-1 hidden md:block overflow-hidden relative">
           <img
             className="object-cover min-h-full min-w-full"
             src="/Career/careerformimg.png"

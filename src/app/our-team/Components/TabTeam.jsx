@@ -32,7 +32,7 @@ const TabTeam = () => {
     {
       id: 2,
       name: "Rohit Hegde",
-      title: "Managing Director, KSH INFRA",
+      title: "Managing Director",
       description: `Rohit Hegde, Managing Director of KSH INFRA, is a visionary leader with deep expertise in real estate, infrastructure, and sustainable development. With a strong foundation in research, consulting, and strategic investment, he brings a sharp analytical mindset and a hands-on leadership style to the company. Known for his integrity, foresight, and commitment to excellence, Rohit has been instrumental in driving KSH INFRA’s growth across India. His passion for building future-ready, green infrastructure has positioned the brand as a trusted industry leader. Rohit’s people-first approach, combined with his strategic acumen, continues to inspire innovation and long-term value creation at KSH INFRA.`,
       category: "Operations Team",
       image: "/team/mem/rohit.webp",
@@ -44,7 +44,7 @@ const TabTeam = () => {
     {
       id: 3,
       name: "Rajesh Hegde",
-      title: "Managing Director",
+      title: "Director",
       description: `Rajesh Hegde serves as the Managing Director of KSH International, a key entity within the KSH Group. With over 18 years of leadership experience, he has been instrumental in steering the group's diversified ventures, encompassing industrial infrastructure, logistics, and manufacturing. Rajesh's strategic vision and commitment to excellence have significantly contributed to the group's sustained growth and reputation for quality and innovation. His leadership continues to drive the organization's pursuit of excellence in Industrial & Logistics infrastructure development.`,
       category: "News",
       image: "/team/mem/rajesh.webp",
@@ -134,17 +134,17 @@ const TabTeam = () => {
 
   return (
     <>
-      <div className='w-full bg-[#092241]'>
-        <div className='fix12 pt-[20px] pb-[20px] sm:pt-[50px] flex flex-col gap-[40px] sm:pb-[50px]'>
-          <h2 className='fpt-600 md:text-[44px] sm:text-[32px] text-[24px] text-white'>
+      <div className="w-full bg-[#092241]">
+        <div className="fix12 pt-[20px] pb-[20px] sm:pt-[50px] flex flex-col gap-[40px] sm:pb-[50px]">
+          <h2 className="fpt-600 md:text-[44px] sm:text-[32px] text-[24px] text-white">
             Meet Our Team
           </h2>
         </div>
       </div>
 
       {/* Team Cards with Clickable Modal */}
-      <div className='fix12 py-[70px] flex flex-wrap gap-5 min-1366:gap-20 justify-center'>
-        <AnimatePresence mode='wait'>
+      <div className="fix12 py-[70px] flex flex-wrap gap-5 min-1366:gap-20 justify-center">
+        <AnimatePresence mode="wait">
           {teamToDisplay.map((member) => (
             <motion.div
               key={member.id}
@@ -152,7 +152,7 @@ const TabTeam = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.3, ease: [0.7, 0, 0.4, 1] }}
-              className='w-fit'
+              className="w-fit"
             >
               <TeamCard
                 member={member}

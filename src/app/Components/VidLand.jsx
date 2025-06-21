@@ -189,7 +189,7 @@ const VidLand = () => {
     <div className="w-screen md:h-screen h-[90vh] overflow-hidden relative">
       {/* Desktop Video */}
       <video
-        className="w-screen min-h-full object-cover sm:flex hidden"
+        className="w-screen min-h-full object-cover sm:flex hidden brightness-110"
         autoPlay
         muted
         playsInline
