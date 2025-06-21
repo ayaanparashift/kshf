@@ -117,7 +117,7 @@ const TabTeam = () => {
       name: "Kartik Shah",
       title: "Principal Investments (West)",
       description: `Kartik Shah serves as Principal – Investments (West) at KSH INFRA, leading the company's investment strategy across western India. With considerable years of experience in real estate investment management, particularly in warehousing and residential sectors, he brings a wealth of expertise to his role. Kartik's responsibilities include identifying strategic land acquisitions, structuring investment deals, and fostering partnerships that align with KSH INFRA's growth objectives. His leadership is instrumental in expanding the company's footprint in key markets, ensuring the delivery of high-quality Industrial & Logistics infrastructure solutions.`,
-      // linkedin: "",
+      linkedin: "https://www.linkedin.com/in/kartik-shah-4b7b5b37/",
       category: "Partners | Advisors | EIRs",
       image: "/team/mem/kshah.webp",
       aboutmem:
