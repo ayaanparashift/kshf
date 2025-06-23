@@ -20,46 +20,146 @@ const TrustedPartners = ({ paddingB }) => {
       </div>
 
       <div className="relative overflow-hidden max-w-[1250px] w-[90%] bg-white gap-[26px] flex flex-col merqueSlider border mx-auto h-auto md:h-[415px] md:px-[65px] md:py-[40px]">
-        <div className="merqueSlide flex items-center justify-between h-[90px]">
+        <div className="merqueSlide flex items-center justify-between h-fit md:h-[90px]">
           <Marquee direction="left" speed={120}>
-            <div className="flex space-x-12 md:space-x-12">
-              <img src="/marqicons/row2/r22.png" alt="JCB" />
-              <img src="/marqicons/row4/r41.png" alt="JCB" />
-              <img src="/marqicons/row1/r11.png" alt="JCB" className="" />
-              <img src="/marqicons/row4/r43.png" alt="JCB" />
-              <img src="/marqicons/row1/r12.png" alt="JCB" />
-              <img src="/marqicons/row1/r15.png" alt="JCB" />
-              <img src="/marqicons/row1/r16.png" alt="JCB" />
-              <img src="/marqicons/row2/r23.png" alt="JCB" />
-              <img src="/marqicons/row2/r24.png" alt="JCB" />
+            <div className="flex space-x-4 md:space-x-12 h-fit">
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row2/r22.png"
+                alt="JCB"
+              />
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row4/r41.png"
+                alt="JCB"
+              />
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row1/r11.png"
+                alt="JCB"
+              />
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row4/r43.png"
+                alt="JCB"
+              />
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row1/r12.png"
+                alt="JCB"
+              />
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row1/r15.png"
+                alt="JCB"
+              />
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row1/r16.png"
+                alt="JCB"
+              />
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row2/r23.png"
+                alt="JCB"
+              />
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row2/r24.png"
+                alt="JCB"
+              />
             </div>
           </Marquee>
         </div>
-        <div className="merqueSlide flex items-center justify-between h-[90px]">
+        <div className="merqueSlide flex items-center justify-between h-fit md:h-[90px]">
           <Marquee direction="right" speed={120}>
-            <div className="flex space-x-12 md:space-x-12">
-              <img src="/marqicons/row1/r13.png" alt="JCB" />
-              <img src="/marqicons/row4/r44.png" alt="JCB" />
-              <img src="/marqicons/row2/r25.png" alt="JCB" />
-              <img src="/marqicons/row2/r26.png" alt="JCB" />
-              <img src="/marqicons/row2/r27.png" alt="JCB" />
-              <img src="/marqicons/row1/r17.png" alt="JCB" />
-              <img src="/marqicons/row3/r33.png" alt="JCB" />
-              <img src="/marqicons/row3/r37.png" alt="JCB" />
-              <img src="/marqicons/row3/r36.png" alt="JCB" />
-              <img src="/marqicons/row2/r21.png" alt="JCB" className="" />
+            <div className="flex space-x-4 md:space-x-12 h-fit">
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row1/r13.png"
+                alt="JCB"
+              />
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row4/r44.png"
+                alt="JCB"
+              />
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row2/r25.png"
+                alt="JCB"
+              />
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row2/r26.png"
+                alt="JCB"
+              />
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row2/r27.png"
+                alt="JCB"
+              />
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row1/r17.png"
+                alt="JCB"
+              />
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row3/r33.png"
+                alt="JCB"
+              />
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row3/r37.png"
+                alt="JCB"
+              />
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row3/r36.png"
+                alt="JCB"
+              />
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row2/r21.png"
+                alt="JCB"
+              />
             </div>
           </Marquee>
         </div>
-        <div className="merqueSlide flex items-center justify-between h-[90px]">
+        <div className="merqueSlide flex items-center justify-between h-fit md:h-[90px]">
           <Marquee direction="left" speed={120}>
-            <div className="flex space-x-12 md:space-x-12">
-              <img src="/marqicons/row4/r46.png" alt="JCB" />
-              <img src="/marqicons/row4/r47.png" alt="JCB" />
-              <img src="/marqicons/row4/r48.png" alt="JCB" />
-              <img src="/marqicons/row3/r31.png" alt="JCB" className="" />
-              <img src="/marqicons/row3/r34.png" alt="JCB" />
-              <img src="/marqicons/row3/r35.png" alt="JCB" />
+            <div className="flex space-x-4 md:space-x-12 h-fit">
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row4/r46.png"
+                alt="JCB"
+              />
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row4/r47.png"
+                alt="JCB"
+              />
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row4/r48.png"
+                alt="JCB"
+              />
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row3/r31.png"
+                alt="JCB"
+              />
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row3/r34.png"
+                alt="JCB"
+              />
+              <img
+                className="md:scale-100 scale-110"
+                src="/marqicons/row3/r35.png"
+                alt="JCB"
+              />
             </div>
           </Marquee>
         </div>
