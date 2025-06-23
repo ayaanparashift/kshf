@@ -999,9 +999,9 @@ const SlideSectionF = () => {
     >
       <div className="relative h-fit lg:h-[596px] flex lg:flex-row flex-col overflow-hidden w-[100%] xl-1920:mr-[17.4%] xl-1600:mr-[172px] xl-1536:mr-[140px] xl-1440:mr-[94px] xl-1366:mr-[66px] xl-1280:mr-[62px] xl-1024:mr-[50px]">
         {/* Left Section */}
-        <div className="leftCon bg-[#141D28] w-full lg:w-[60%] xl-1920:pl-[21%] xl-1600:pl-[174px] xl-1536:pl-[140px] xl-1440:pl-[90px] xl-1366:pl-[70px] xl-1280:pl-[64px] xl-1024:pl-[50px] xl-768:pl-[40px]">
+        <div className="leftCon bg-[#141D28] w-full lg:w-[60%] lg:pr-0 pr-[max(5%,calc((100vw-1250px)/2))] pl-[max(5%,calc((100vw-1250px)/2))]">
           {/* Heading & Tabs */}
-          <div className="px-[5%] md:px-0 md:flex items-center justify-between xl-1024:w-[90%] xl-768:pr-[40px] lg:w-[600px] pt-[70px] border-b-[1px] pb-3 border-[#D7D7D7] border-opacity-50 xl-1920:w-[80%]">
+          <div className="md:flex items-center justify-between xl-1024:w-[90%] lg:pr-[40px] lg:w-[600px] pt-[70px] border-b-[1px] pb-3 border-[#D7D7D7] border-opacity-50 xl-1920:w-[80%]">
             <h1 className="text-xl pb-4 md:pb-0 text-white font-semibold">
               Careers at KSH INFRA
             </h1>
@@ -1036,7 +1036,7 @@ const SlideSectionF = () => {
                 <h1 className="text-3xl md:text-6xl font-medium border-b-[8px] border-[#F7E327] w-fit pb-3 pt-10">
                   {tabsData[activeIndex].title}
                 </h1>
-                <p className="md:w-[60%] max-w-full md:mx-0 mx-auto pt-6 md:pt-5 md:pb-5 text-base text-[#6C8DAB]">
+                <p className="lg:w-[60%] max-w-full md:mx-0 mx-auto pt-6 md:pt-5 md:pb-5 text-base text-[#6C8DAB]">
                   {tabsData[activeIndex].description}
                 </p>
               </motion.div>

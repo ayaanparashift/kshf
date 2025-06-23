@@ -1,3 +1,14 @@
+// //////////////
+// //////////////
+// //////////////
+// //////////////
+// //////////////
+// //////////////
+// //////////////
+// //////////////
+// //////////////
+// //////////////
+
 "use client";
 import React, { useState, useEffect } from "react";
 import Main from "./Main";
@@ -34,7 +45,7 @@ const Parent = ({ staticData }) => {
                 opacity: 0,
                 transition: { duration: 0.7, ease: [0.7, 0, 0.4, 1] },
               }}
-              className="flex flex-col mt-0 lg:mt-[-35px] flex-grow md:h-fit h-[600px] md:min-h-[300px]"
+              className={`flex flex-col mt-0 lg:mt-[-35px] flex-grow md:h-fit items-center justify-center h-[550px] lg:min-h-[300px]`}
             >
               <Main
                 todos={todos}

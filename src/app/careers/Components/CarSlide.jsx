@@ -681,7 +681,7 @@ export const CarSlide = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <div className="w-full pt-[70px] overflow-visible">
+    <div className="w-full pt-[5%] lg:pt-[70px] overflow-visible">
       {/* Main Section */}
       <div className="w-full lg:bg-[linear-gradient(to_bottom,#ffffff_90%,#092241_10%)]">
         <div className="fix12 !overflow-visible">
@@ -717,7 +717,7 @@ export const CarSlide = () => {
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.8, ease: [0.7, 0, 0.4, 1] }}
                     viewport={{ amount: 0.1, once: false }}
-                    className="relative z-10 bg-[url(/Career/SlideImgs/slidethbg.png)] bg-cover bg-no-repeat bg-center flex justify-center items-center px-[12%] py-[12%] lg:px-0 lg:py-[60px] shadow-[4px_4px_34px_rgba(0,0,0,0.15)] overflow-visible"
+                    className="relative z-10 bg-[url(/Career/SlideImgs/slidethbg.png)] bg-cover bg-no-repeat bg-center flex justify-center items-center md:px-[5%] md:py-[5%] lg:px-0 lg:py-[60px] shadow-[4px_4px_34px_rgba(0,0,0,0.15)] overflow-visible"
                   >
                     <img
                       className="sm:w-[80%] w-full h-full"

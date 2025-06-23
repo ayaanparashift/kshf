@@ -11,7 +11,7 @@ const AboutF = () => {
     <div className="w-full max-h-fit relative">
       <div className="fix12 py-[50px] md:py-[92px] h-full flex flex-col justify-end">
         <LineHead heading={"About Us"} clr="text-[#092241]" bclr="#D7D7D7" />
-        <div className="flex md:flex-row flex-col justify-start items-start gap-[36px] sm:gap-[44px] md:gap-[84px]">
+        <div className="flex lg:flex-row flex-col justify-start items-start gap-[36px] sm:gap-[44px] lg:gap-[84px]">
           <div
             className="hidden xl:flex"
             style={{

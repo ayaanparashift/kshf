@@ -169,7 +169,7 @@ export default function FormSec() {
         className="absolute w-full top-0 left-0 z-0"
       />
       <div className="flex relative z-0 xl:pt-[50px] md:mr-[max(5%,calc((100vw-1250px)/2))]">
-        <div className="bg-[#141D28] sm:py-0 py-[5%] flex flex-col items-stretch justify-center flex-1 pl-[max(5%,calc((100vw-1250px)/2))] pr-[5%] md:pr-[60px] overflow-hidden">
+        <div className="bg-[#141D28] lg:py-0 py-[5%] flex flex-col items-stretch justify-center flex-1 pl-[max(5%,calc((100vw-1250px)/2))] pr-[5%] md:pr-[60px] overflow-hidden">
           {!isSubmitted && (
             <>
               <div className="lg:pb-[50px] pb-[20px] max-w-fit">

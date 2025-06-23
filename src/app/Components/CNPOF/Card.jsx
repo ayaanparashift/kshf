@@ -247,7 +247,7 @@ const Card = ({ todos, activeSidebar, acbtn }) => {
     // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-    <div className="flex flex-col xl:w-[600px] xl-1280:w-[650px] w-full md:pb-[30px] h-[410px] md:h-[480px]">
+    <div className="flex flex-col xl:w-[600px] xl-1280:w-[650px] w-full lg:pb-[30px] h-[400px] md:h-[410px] lg:h-[480px]">
       <div className="xl:min-w-fit lg:min-h-fit max-w-[700px]">
         <AnimatePresence mode="wait">
           <motion.div
@@ -256,7 +256,7 @@ const Card = ({ todos, activeSidebar, acbtn }) => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5, ease: [0.7, 0, 0.4, 1] }}
-            className="border-[10px] border-[#6E5E55] xl:min-w-fit max-w-[600px] h-[200px] md:h-[257px]"
+            className="border-[10px] border-[#6E5E55] xl:min-w-fit max-w-full md:h-[250px] lg:max-w-[600px] h-[200px] lg:h-[257px]"
           >
             <motion.img
               key={activeItem.image}

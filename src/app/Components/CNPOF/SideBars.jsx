@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 
 const SideBars = ({ todos, activeSidebar, setActiveSidebar }) => {
   return (
-    <div className="lg:w-fit flex flex-col gap-[10px] min-1366:gap-[20px] w-full sm:min-w-[305px] lg:mt-[250px]">
+    <div className="items-start justify-start lg:w-fit flex flex-col lg:min-h-[auto] md:h-[130px] gap-[10px] min-1366:gap-[20px] w-full sm:min-w-[305px] lg:mt-[250px]">
       {todos && todos.length > 0 ? (
         todos.map((item, index) => (
           <motion.p
             key={item.id}
             onClick={() => setActiveSidebar(item.id)}
-            className="cursor-pointer border-b min-1366:pb-[20px] min-1366:pr-[25px] pr-[10px] pb-[10px] md:max-w-[400px] min-1366:max-w-[305px] transition-colors duration-300 fsans-600"
+            className="cursor-pointer border-b min-1366:pb-[20px] min-1366:pr-[25px] pr-[10px] pb-[10px] w-full lg:max-w-[400px] min-1366:max-w-[305px] transition-colors duration-300 fsans-600"
             style={{
               color:
                 activeSidebar === item.id ? "#ffffff" : "rgba(255,255,255,0.4)",
