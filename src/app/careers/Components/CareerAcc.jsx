@@ -213,6 +213,77 @@ const CareerAcc = () => {
     });
   }, [openIndex]);
 
+  // return (
+  //   <div className="bg-[#FFFFFF] ">
+  //     <div className="min-1366:ml-[calc((100vw-1250px)/2)] xl-1280:ml-[60px] xl-1024:ml-[50px]">
+  //       <div className="flex justify-between items-stretch max-w-screen gap-[70px] xl:mr-0 mr-[max(5%,calc((100vw-1250px)/2))] xl:ml-0 ml-[max(5%,calc((100vw-1250px)/2))]">
+  //         {/* Left - Text Content */}
+  //         <motion.div
+  //           initial={{ opacity: 0 }}
+  //           whileInView={{ opacity: 1 }}
+  //           transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
+  //           viewport={{ once: true, amount: 0.3 }}
+  //           className="w-full flex justify-center flex-col py-[5%] lg:py-[120px]"
+  //         >
+  //           {accordionData.map((item, index) => (
+  //             <div
+  //               key={index}
+  //               className="border-[#D7D7D7] border-b-[1px] border-opacity-35 last:border-none"
+  //             >
+  //               {/* Header */}
+  //               <div
+  //                 className="flex items-center justify-between cursor-pointer py-[25px]"
+  //                 onClick={() => toggleAccordion(index)}
+  //               >
+  //                 <h1 className="text-[#7A7A7A] fsans-700 md:text-[22px] text-[18px]">
+  //                   {item.title}
+  //                 </h1>
+  //                 <img
+  //                   src={
+  //                     openIndex === index
+  //                       ? "Career/Icons/accm.svg"
+  //                       : "Career/Icons/accp.svg"
+  //                   }
+  //                   alt="Toggle"
+  //                 />
+  //               </div>
+
+  //               {/* Content - Slide Down/Up Without Layout Shift */}
+  //               <div
+  //                 ref={(el) => (contentRefs.current[index] = el)}
+  //                 className="overflow-hidden transition-all duration-500 ease-in-out"
+  //                 style={{ height: "0px" }}
+  //               >
+  //                 <p
+  //                   dangerouslySetInnerHTML={{ __html: item.content }}
+  //                   className="text-[#434343] fsans-400 text-base pt-0 pb-[25px]"
+  //                 ></p>
+  //               </div>
+  //             </div>
+  //           ))}
+  //         </motion.div>
+
+  //         {/* Right - Image */}
+  //         <div className="relative overflow-hidden hidden xl:block w-full min-h-full">
+  //           {accordionData[openIndex] && (
+  //             <img
+  //               src={accordionData[openIndex]?.image}
+  //               className="w-auto h-[948px] object-cover transition-opacity duration-500"
+  //               alt="Accordion Image"
+  //             />
+  //           )}
+  //           <motion.div
+  //             initial={{ x: 0 }}
+  //             whileInView={{ x: "100%" }}
+  //             transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
+  //             viewport={{ once: true, amount: 0.3 }}
+  //             className="absolute h-full left-0 top-0 bg-[#092241] z-20 w-full"
+  //           />
+  //         </div>
+  //       </div>
+  //     </div>
+  //   </div>
+  // );
   return (
     <div className="bg-[#FFFFFF] ">
       <div className="min-1366:ml-[calc((100vw-1250px)/2)] xl-1280:ml-[60px] xl-1024:ml-[50px]">
@@ -223,7 +294,7 @@ const CareerAcc = () => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
             viewport={{ once: true, amount: 0.3 }}
-            className="w-full flex justify-center flex-col py-[5%] lg:py-[120px]"
+            className="w-full h-auto max-h-[732px] lg:min-h-[732px] lg:h-[732px] flex justify-center flex-col"
           >
             {accordionData.map((item, index) => (
               <div
@@ -235,7 +306,7 @@ const CareerAcc = () => {
                   className="flex items-center justify-between cursor-pointer py-[25px]"
                   onClick={() => toggleAccordion(index)}
                 >
-                  <h1 className="text-[#7A7A7A] fsans-700 md:text-[22px] text-[18px] uppercase">
+                  <h1 className="text-[#7A7A7A] fsans-700 md:text-[22px] text-[18px]">
                     {item.title}
                   </h1>
                   <img
@@ -268,7 +339,7 @@ const CareerAcc = () => {
             {accordionData[openIndex] && (
               <img
                 src={accordionData[openIndex]?.image}
-                className="w-auto h-[948px] object-cover transition-opacity duration-500"
+                className="w-auto h-full object-cover transition-opacity duration-500"
                 alt="Accordion Image"
               />
             )}

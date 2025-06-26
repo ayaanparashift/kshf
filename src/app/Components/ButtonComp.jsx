@@ -4,11 +4,11 @@ import Link from "next/link";
 
 const ButtomComp = () => {
   return (
-    <motion.div
-      initial={{ y: 100, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
-      transition={{ duration: 1.2, ease: [0.7, 0, 0.4, 1], delay: 0.5 }}
-      viewport={{ once: true, amount: 0.1 }}
+    <div
+    // initial={{ y: 100, opacity: 0 }}
+    // whileInView={{ y: 0, opacity: 1 }}
+    // transition={{ duration: 1.2, ease: [0.7, 0, 0.4, 1], delay: 0.5 }}
+    // viewport={{ once: true, amount: 0.1 }}
     >
       <Link
         href="/about-ksh"
@@ -34,7 +34,7 @@ const ButtomComp = () => {
         />
         <p className="text-[#ffffff] fsans-600">Explore More</p>
       </button> */}
-    </motion.div>
+    </div>
   );
 };
 

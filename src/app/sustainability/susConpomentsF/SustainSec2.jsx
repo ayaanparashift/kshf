@@ -51,7 +51,7 @@ const SustainSec2 = () => {
 
           <div className="flex-1 relative overflow-hidden md:flex-none lg:flex-1 xl:flex-none xl-768:h-[300px] xl-768:pt-4  xl:w-[640px] xl:min-h-[540px]  ">
             <img
-              src="/AboutPage/aboutUsSec2.png"
+              src="/AboutPage/sussec2.png"
               className="w-full h-full object-cover"
               alt=""
             />

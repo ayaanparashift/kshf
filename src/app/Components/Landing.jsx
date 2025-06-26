@@ -33,7 +33,7 @@ const fadeIn2 = {
 const Landing = ({ isActive }) => {
   return (
     <motion.div
-      className="bg-[url(/fistfold.png)] bg-cover bg-center w-screen"
+      className="bg-[url(/fistfold.png)] bg-cover bg-center min-w-screen"
       initial="hidden"
       animate={isActive ? "visible" : "hidden"}
       exit="exit"

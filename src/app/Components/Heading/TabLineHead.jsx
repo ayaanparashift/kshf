@@ -11,12 +11,12 @@ const TabLineHead = ({ heading, acbtn, setAcBtn }) => {
   ];
 
   return (
-    <div className="relative max-w-[1280px] pb-[20px] lg:mb-[66px] mb-[36px] overflow-hidden whitespace-nowrap tablinehead">
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true, amount: 0.1 }}
-        transition={{ duration: 2, ease: [0.7, 0, 0.4, 1] }}
+    <div className="relative max-w-[1280px] border-b border-[#ffffff80] pb-[20px] lg:mb-[66px] mb-[36px] overflow-hidden whitespace-nowrap tablinehead">
+      <div
+        // initial={{ opacity: 0 }}
+        // whileInView={{ opacity: 1 }}
+        // viewport={{ once: true, amount: 0.1 }}
+        // transition={{ duration: 2, ease: [0.7, 0, 0.4, 1] }}
         className="flex items-center justify-between w-full lg:gap-0 gap-[20px]"
       >
         <h2 className="leading-[26px] text-[20px] fsans-600 text-[#ffffff] tbhead">
@@ -41,16 +41,16 @@ const TabLineHead = ({ heading, acbtn, setAcBtn }) => {
             </button>
           ))}
         </div>
-      </motion.div>
+      </div>
 
       {/* Animated Border Using Empty Div */}
-      <motion.div
+      {/* <motion.div
         className="absolute bottom-0 left-0 w-full h-[2px] opacity-[0.34] bg-[#D7D7D7]"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 0.34 }}
         viewport={{ once: true, amount: 0.1 }}
         transition={{ duration: 2, ease: [0.7, 0, 0.4, 1] }}
-      />
+      /> */}
     </div>
   );
 };

@@ -8,15 +8,15 @@ const TrustedPartners = ({ paddingB }) => {
       style={{ paddingBottom: paddingB }}
     >
       <div className="max-w-[1250px] w-[90%] mx-auto  pb-9 ">
-        <motion.h3
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ ease: [0.7, 0, 0.4, 1], duration: 1.4 }}
-          viewport={{ once: true, amount: 0.3 }}
+        <h3
+          // initial={{ opacity: 0 }}
+          // whileInView={{ opacity: 1 }}
+          // transition={{ ease: [0.7, 0, 0.4, 1], duration: 1.4 }}
+          // viewport={{ once: true, amount: 0.3 }}
           className="text-left w-full text-xl font-semibold  spotlightheaddd fsans-600 text-[#092241] pb-1 "
         >
           Our Trusted Partners
-        </motion.h3>
+        </h3>
       </div>
 
       <div className="relative overflow-hidden max-w-[1250px] w-[90%] bg-white gap-[26px] flex flex-col merqueSlider border mx-auto h-auto md:h-[415px] md:px-[65px] md:py-[40px]">
@@ -164,13 +164,13 @@ const TrustedPartners = ({ paddingB }) => {
           </Marquee>
         </div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ x: 0 }}
           whileInView={{ x: "100%" }}
           transition={{ ease: [0.7, 0, 0.4, 1], duration: 1.4 }}
           viewport={{ once: true, amount: 0.3 }}
           className="absolute h-full w-full top-0 left-0 z-50 bg-[#D2D4D8]"
-        />
+        /> */}
       </div>
     </div>
   );

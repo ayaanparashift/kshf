@@ -20,11 +20,11 @@ const AboutF = () => {
               minWidth: "502px !important",
             }}
           >
-            <motion.div
-              initial={{ width: 0 }}
-              whileInView={{ width: "502px" }} // Ensures width animation smoothly
-              viewport={{ once: true, amount: 0.1 }}
-              transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
+            <div
+              // initial={{ width: 0 }}
+              // whileInView={{ width: "502px" }} // Ensures width animation smoothly
+              // viewport={{ once: true, amount: 0.1 }}
+              // transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
               style={{
                 width: "502px",
                 overflow: "hidden",
@@ -41,15 +41,15 @@ const AboutF = () => {
                   objectFit: "cover",
                 }}
               />
-            </motion.div>
+            </div>
           </div>
 
           <div className="flex xl:hidden max-w-full w-full">
-            <motion.div
-              initial={{ x: "-99.99999%", opacity: 0 }}
-              whileInView={{ x: "0", opacity: 1 }}
-              viewport={{ amount: 0.01, once: true }}
-              transition={{ duration: 1.5, ease: [0.7, 0, 0.4, 1] }}
+            <div
+              // initial={{ x: "-99.99999%", opacity: 0 }}
+              // whileInView={{ x: "0", opacity: 1 }}
+              // viewport={{ amount: 0.01, once: true }}
+              // transition={{ duration: 1.5, ease: [0.7, 0, 0.4, 1] }}
               className="w-full max-w-full"
             >
               <img
@@ -57,19 +57,19 @@ const AboutF = () => {
                 alt="Warehouse"
                 className="w-full"
               />
-            </motion.div>
+            </div>
           </div>
 
           <div className="flex flex-col justify-center items-start gap-[28px] lg:gap-[36px] xl:gap-[48px]">
-            <motion.div
-              initial={{ y: 100, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              viewport={{ once: true, amount: 0.1 }}
-              transition={{
-                duration: 1.2,
-                easing: [0.7, 0, 0.4, 1],
-                delay: 0.6,
-              }}
+            <div
+            // initial={{ y: 100, opacity: 0 }}
+            // whileInView={{ y: 0, opacity: 1 }}
+            // viewport={{ once: true, amount: 0.1 }}
+            // transition={{
+            //   duration: 1.2,
+            //   easing: [0.7, 0, 0.4, 1],
+            //   delay: 0.6,
+            // }}
             >
               <h2
                 className="fsans-700 text-[22px] leading-[130%] 2xl:text-[31px] xl:text-[26px] aboutpioneer"
@@ -86,69 +86,69 @@ const AboutF = () => {
                 built on the foundations of trust, integrity, and environmental
                 sustainability.
               </h2>
-            </motion.div>
-            <motion.div
-              initial={{ y: 100, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              viewport={{ once: true, amount: 0.1 }}
-              transition={{
-                duration: 1.2,
-                easing: [0.7, 0, 0.4, 1],
-                delay: 0.6,
-              }}
+            </div>
+            <div
+            // initial={{ y: 100, opacity: 0 }}
+            // whileInView={{ y: 0, opacity: 1 }}
+            // viewport={{ once: true, amount: 0.1 }}
+            // transition={{
+            //   duration: 1.2,
+            //   easing: [0.7, 0, 0.4, 1],
+            //   delay: 0.6,
+            // }}
             >
               <p className="flato-400 text-[18px] leading-[26px] text-[#6C8DAB] w-[300px]">
                 We remain the preferred choice for leading organizations at a
                 growing number of industrial hubs nationwide.
               </p>
-            </motion.div>
+            </div>
             <ButtomComp />
           </div>
         </div>
         <div className="absolute right-[120px] xl-1920:right-[310px] w-[373px] h-[251px] min-w-[373px] 2xl:flex hidden">
-          <motion.div
+          <div
             className="flex justify-end h-[251px] overflow-hidden"
-            initial={{ width: 0 }}
-            whileInView={{ width: "373px" }}
-            viewport={{ once: true, amount: 0.1 }}
-            transition={{ duration: 1, ease: [0.7, 0, 0.4, 1], delay: 0 }}
+            // initial={{ width: 0 }}
+            // whileInView={{ width: "373px" }}
+            // viewport={{ once: true, amount: 0.1 }}
+            // transition={{ duration: 1, ease: [0.7, 0, 0.4, 1], delay: 0 }}
           >
             <img
               src="/homepage/abc2.png"
               alt="Truck"
               className="object-cover h-full"
             />
-          </motion.div>
+          </div>
         </div>
         <div className="absolute right-[0px]  w-[298.4px] h-[200.8px] min-w-[298.4px] xl:flex 2xl:hidden hidden">
-          <motion.div
+          <div
             className="flex justify-end h-[200.8px] overflow-hidden"
-            initial={{ width: 0 }}
-            whileInView={{ width: "298.4px" }}
-            viewport={{ once: true, amount: 0.1 }}
-            transition={{ duration: 1, ease: [0.7, 0, 0.4, 1], delay: 0 }}
+            // initial={{ width: 0 }}
+            // whileInView={{ width: "298.4px" }}
+            // viewport={{ once: true, amount: 0.1 }}
+            // transition={{ duration: 1, ease: [0.7, 0, 0.4, 1], delay: 0 }}
           >
             <img
               src="/homepage/abc2.png"
               alt="Truck"
               className="object-cover h-full"
             />
-          </motion.div>
+          </div>
         </div>
         <div className="absolute right-0 w-[186.5px] xl:right-[80px]  h-[125.5px] min-w-[186.5px] lg:flex xl:hidden md:flex hidden">
-          <motion.div
+          <div
             className="flex justify-end h-[125.5px] overflow-hidden"
-            initial={{ width: 0 }}
-            whileInView={{ width: "186.5px" }}
-            viewport={{ once: true, amount: 0.1 }}
-            transition={{ duration: 1, ease: [0.7, 0, 0.4, 1], delay: 0 }}
+            // initial={{ width: 0 }}
+            // whileInView={{ width: "186.5px" }}
+            // viewport={{ once: true, amount: 0.1 }}
+            // transition={{ duration: 1, ease: [0.7, 0, 0.4, 1], delay: 0 }}
           >
             <img
               src="/homepage/abc2.png"
               alt="Truck"
               className="object-cover h-full"
             />
-          </motion.div>
+          </div>
         </div>
       </div>
       <Countersec />

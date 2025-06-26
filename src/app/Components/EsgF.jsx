@@ -311,25 +311,25 @@ const EsgF = () => {
     <div className="h-fit">
       <div className="WContainer py-[56px] fix12">
         <LineHead heading={"SUSTAINABILITY"} clr="text-[#092241]" />
-        <motion.div
+        <div
           className="lg:flex md:gap-[20px]"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
+          // variants={containerVariants}
+          // initial="hidden"
+          // whileInView="visible"
+          // viewport={{ once: true, amount: 0.3 }}
         >
           <div className="lg:w-[40%]">
-            <motion.h3
-              variants={itemVariants}
-              viewport={{ once: true, amount: 0.3 }}
+            <h3
+              // variants={itemVariants}
+              // viewport={{ once: true, amount: 0.3 }}
               className="text-[#092241] text-3xl md:text-[60px] font-semibold leading-[105%]"
             >
               Environmental Sustainability is in Our DNA
-            </motion.h3>
+            </h3>
             <div className="pt-[32px]">
-              <motion.h3
-                variants={itemVariants}
-                viewport={{ once: true, amount: 0.3 }}
+              <h3
+                // variants={itemVariants}
+                // viewport={{ once: true, amount: 0.3 }}
                 className="text-[18px] leading-[26px] text-[#6C8DAB] flato-400 spotlightheaddd"
               >
                 Nurturing nature is at the heart of everything we do. We create
@@ -337,38 +337,38 @@ const EsgF = () => {
                 parks feature green spaces, energy-efficient buildings, and
                 sustainable water systems. Our commitment to the planet isn't
                 just good policy—it's a part of our value system.
-              </motion.h3>
+              </h3>
               <div className="pt-[23px] flex flex-col gap-4 w-[305px]">
-                <motion.p
-                  variants={itemVariants}
-                  viewport={{ once: true, amount: 0.3 }}
+                <p
+                  // variants={itemVariants}
+                  // viewport={{ once: true, amount: 0.3 }}
                   className="text-[16px] fsans-600 leading-[26px] text-[#092241] border-b border-[#D7D7D7] pb-[15px]"
                 >
                   <span className="font-bold text-red-700 pr-[11px]">01</span>{" "}
                   Environment
-                </motion.p>
-                <motion.p
-                  variants={itemVariants}
-                  viewport={{ once: true, amount: 0.3 }}
+                </p>
+                <p
+                  // variants={itemVariants}
+                  // viewport={{ once: true, amount: 0.3 }}
                   className="text-[16px] fsans-600 leading-[26px] text-[#092241] border-b border-[#D7D7D7] pb-[15px]"
                 >
                   <span className="font-bold text-red-700 pr-[11px]">02</span>{" "}
                   Social
-                </motion.p>
-                <motion.p
-                  variants={itemVariants}
-                  viewport={{ once: true, amount: 0.3 }}
+                </p>
+                <p
+                  // variants={itemVariants}
+                  // viewport={{ once: true, amount: 0.3 }}
                   className="text-[16px] fsans-600 leading-[26px] text-[#092241] border-b border-[#D7D7D7] pb-[15px]"
                 >
                   <span className="font-bold text-red-700 pr-[11px]">03</span>{" "}
                   Governance
-                </motion.p>
+                </p>
               </div>
               <Link href="/sustainability">
-                <motion.button
+                <button
                   // whileHover={{ x: 5 }}
-                  variants={itemVariants}
-                  viewport={{ once: true, amount: 0.3 }}
+                  // variants={itemVariants}
+                  // viewport={{ once: true, amount: 0.3 }}
                   className="flex pt-[45px] group transition-transform duration-[400ms] items-center justify-center gap-3"
                 >
                   <img
@@ -381,7 +381,7 @@ const EsgF = () => {
                   <p className="text-[#092241] text-[16px] fsans-600">
                     Explore More
                   </p>
-                </motion.button>
+                </button>
               </Link>
             </div>
           </div>
@@ -394,7 +394,7 @@ const EsgF = () => {
               muted
             ></video>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

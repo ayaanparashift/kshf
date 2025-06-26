@@ -257,7 +257,7 @@ const tabsData = [
     title: "Growth",
     description:
       "At KSH INFRA, we invest in your career growth. Our structured career paths, mentorship programs, and skill-building opportunities, ensure that every team member has the tools to succeed and grow.",
-    image: "/Slideimgs/Growth.png",
+    image: "/Slideimgs/ssf1.png",
     middleImage: "/Slideimgs/Growth-middle.png",
   },
   {
@@ -1060,12 +1060,12 @@ const SlideSectionF = () => {
           </div>
 
           <div className="flex items-center pt-[0]  md:w-[60%] justify-between pb-8 md:pb-[70px]">
-            <motion.div
+            <div
               className="flex cursor-pointer group items-center justify-between font-semibold text-[#ffffff] text-[16px] h-[50px] w-fit"
-              initial={{ x: 100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.9, delay: 0.1 }}
+              // initial={{ x: 100, opacity: 0 }}
+              // whileInView={{ x: 0, opacity: 1 }}
+              // viewport={{ once: true }}
+              // transition={{ duration: 0.9, delay: 0.1 }}
             >
               <Link
                 href="/careers"
@@ -1082,7 +1082,7 @@ const SlideSectionF = () => {
                   Explore More
                 </p>
               </Link>
-            </motion.div>
+            </div>
 
             <div className="flex gap-2 items-center">
               <button

@@ -125,11 +125,11 @@ const GenLineHead = ({
   return (
     <div className="pb-[20px] relative border-b mb-[60px] border-[#D7D7D7] overflow-hidden whitespace-nowrap max-w-[1280px] tablinehead flex-nowrap">
       {/* White masking div that slides out */}
-      <motion.div
+      <div
         className="absolute top-0 left-0 w-full h-full bg-[#EEF0F3] z-50"
-        initial={{ x: 0 }}
-        animate={{ x: "100%" }}
-        transition={{ duration: 2, ease: [0.7, 0, 0.4, 1] }}
+        // initial={{ x: 0 }}
+        // animate={{ x: "100%" }}
+        // transition={{ duration: 2, ease: [0.7, 0, 0.4, 1] }}
       />
 
       <div className="flex items-center justify-between w-full lg:gap-0 gap-[20px] relative z-20">

@@ -30,7 +30,7 @@ const AboutVision = () => {
                 </div>
                 <div className="bg-white text-base fsans-600 relative">
                   <p className="md:p-[35px] p-[20px] gradinetText2">
-                    Remagining and inspiring a green industrial future by
+                    Reimagining and inspiring a green industrial future by
                     focusing efforts on developing sustainable industrial and
                     warehousing infrastructure
                   </p>

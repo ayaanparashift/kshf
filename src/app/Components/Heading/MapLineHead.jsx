@@ -78,12 +78,12 @@ const MapLineHead = ({ heading, hideopen, ach }) => {
   ];
   return (
     <div className="absolute z-[1000] fix12 top-5 lg:top-[100px] left-[max(5%,calc((100vw-1250px)/2))] lg:mb-[0px] mb-[36px] tablinehead overflow-hidden whitespace-nowrap">
-      <motion.div
+      <div
         className="relative flex pb-2 gap-[10px] sm:gap-[0px] lg:pb-[20px] overflow-hidden whitespace-nowrap items-center justify-between w-full"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true, amount: 0.1 }}
-        transition={{ duration: 2, ease: [0.7, 0, 0.4, 1] }}
+        // initial={{ opacity: 0 }}
+        // whileInView={{ opacity: 1 }}
+        // viewport={{ once: true, amount: 0.1 }}
+        // transition={{ duration: 2, ease: [0.7, 0, 0.4, 1] }}
       >
         <h2 className="leading-[26px] text-[16px] lg:text-[20px] fsans-600 text-[#ffffff] tbhead border-b-[5px] border-[#F7E327]">
           {heading}
@@ -110,7 +110,7 @@ const MapLineHead = ({ heading, hideopen, ach }) => {
             </button>
           ))}
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };

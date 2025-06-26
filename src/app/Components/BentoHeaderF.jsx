@@ -16,36 +16,36 @@ const BentoHeaderF = () => {
       </div>
       <div className="flex md:flex-row flex-col md:gap-0 gap-[30px] items-center justify-between max-w-full overflow-hidden">
         <div className="lg:w-[60%] md:w-[50%] w-full">
-          <motion.h2
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.9 }}
+          <h2
+            // initial={{ x: -100, opacity: 0 }}
+            // whileInView={{ x: 0, opacity: 1 }}
+            // viewport={{ once: true }}
+            // transition={{ duration: 0.9 }}
             className="text-white xl:text-[88px] md:leading-[105%] pb-[15px] lg:text-[60px] md:text-[40px] text-3xl fpt-600 w-fit max-w-fit border-b-[10px] border-[#F7E327] fpt-600"
           >
             Latest <br className="md:flex hidden" />
             Insights
-          </motion.h2>
+          </h2>
         </div>
-        <motion.div
+        <div
           className="md:w-[50%] lg:w-[40%] w-full flex flex-col md:pb-0 pb-[10px] justify-between md:gap-[30px] md:h-auto gap-[30px]"
-          initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.9 }}
+          // initial={{ x: 100, opacity: 0 }}
+          // whileInView={{ x: 0, opacity: 1 }}
+          // viewport={{ once: true }}
+          // transition={{ duration: 0.9 }}
         >
-          <motion.p className="gradinetText text-[16px] lg:text-[20px] fsans-600">
+          <p className="gradinetText text-[16px] lg:text-[20px] fsans-600">
             Stay updated with the latest trends, developments, and milestones at
             KSH INFRA. From industry insights to project updates, explore how
             we’re shaping the future of Industrial & Logistics infrastructure.
-          </motion.p>
+          </p>
 
-          <motion.div
+          <div
             className="flex cursor-pointer group items-center justify-between font-semibold text-[#ffffff] text-[16px] h-[50px] w-fit"
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.9, delay: 0.1 }}
+            // initial={{ x: 100, opacity: 0 }}
+            // whileInView={{ x: 0, opacity: 1 }}
+            // viewport={{ once: true }}
+            // transition={{ duration: 0.9, delay: 0.1 }}
           >
             <Link
               href="/blogs"
@@ -62,8 +62,8 @@ const BentoHeaderF = () => {
                 Explore More
               </p>
             </Link>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </div>
     </div>
   );

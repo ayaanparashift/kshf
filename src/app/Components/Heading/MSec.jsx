@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 const MSec = ({ heading, clr, bclr, bopacity, fontSize, lineHeigth }) => {
   return (
     <div className="overflow-x-hidden h-fit w-full">
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true, amount: 0.1 }}
-        transition={{ duration: 2, ease: [0.7, 0, 0.4, 1] }}
+      <div
+        // initial={{ opacity: 0 }}
+        // whileInView={{ opacity: 1 }}
+        // viewport={{ once: true, amount: 0.1 }}
+        // transition={{ duration: 2, ease: [0.7, 0, 0.4, 1] }}
         className="overflow-x-hidden h-fit md:whitespace-nowrap"
       >
         <h2
@@ -18,7 +18,7 @@ const MSec = ({ heading, clr, bclr, bopacity, fontSize, lineHeigth }) => {
         >
           {heading}
         </h2>
-      </motion.div>
+      </div>
     </div>
   );
 };

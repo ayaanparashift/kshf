@@ -26,54 +26,50 @@ const LandingSwiper = () => {
 
   return (
     <div className="h-auto relative ">
-      <motion.div
+      <div
         className="relative overflow-hidden max-w-screen"
-        initial={{ maxWidth: 0 }}
-        whileInView={{ maxWidth: "100vw" }}
-        transition={{
-          duration: 1,
-          ease: [0.7, 0, 0.4, 1],
-        }}
-        viewport={{ amount: 0, once: true }}
-        style={{ maxWidth: "100vw" }}
+        // initial={{ maxWidth: 0 }}
+        // whileInView={{ maxWidth: "100vw" }}
+        // transition={{
+        //   duration: 1,
+        //   ease: [0.7, 0, 0.4, 1],
+        // }}
+        // viewport={{ amount: 0, once: true }}
+        // style={{ maxWidth: "100vw" }}
       >
         <Swiper
           slidesPerGroup={1}
           className="max-w-full"
           speed={1000}
+          spaceBetween={0}
           modules={[FreeMode, Navigation]}
           navigation={{ nextEl: ".landingr", prevEl: ".landingl" }}
           onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
         >
           <SwiperSlide>
-            <motion.div
-              initial={{ width: 0 }}
-              animate={{ width: activeIndex === 0 ? "100%" : 0 }}
-              transition={{ duration: 0.3, ease: [0.7, 0, 0.4, 1] }}
+            <div
+              className="overflow-hidden relative max-w-full"
+              // initial={{ width: 0 }}
+              // animate={{ width: activeIndex === 0 ? "100%" : 0 }}
+              // transition={{ duration: 0.3, ease: [0.7, 0, 0.4, 1] }}
             >
               <VidLand />
-            </motion.div>
+            </div>
           </SwiperSlide>
 
           <SwiperSlide>
-            <motion.div
-              initial={{ width: 0 }}
-              animate={{ width: activeIndex === 1 ? "100%" : 0 }}
-              transition={{ duration: 0.3, ease: [0.7, 0, 0.4, 1] }}
+            <div
+            // initial={{ width: 0 }}
+            // animate={{ width: activeIndex === 1 ? "100%" : 0 }}
+            // transition={{ duration: 0.3, ease: [0.7, 0, 0.4, 1] }}
             >
               <Landing isActive={activeIndex === 1} />
-            </motion.div>
+            </div>
           </SwiperSlide>
         </Swiper>
 
         {/* Navigation Buttons */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1.2, ease: [0.7, 0, 0.4, 1] }}
-          viewport={{ amount: 0, once: true }}
-          className="flex gap-10 items-center lg:justify-start justify-between absolute firstswbtns bottom-[20px] lg:bottom-[30px] z-10"
-        >
+        <div className="flex gap-10 items-center lg:justify-start justify-between absolute firstswbtns bottom-[20px] lg:bottom-[30px] z-10">
           <p className="text-white opacity-60 fsans-400 text-[16px]">
             Explore the Advantage <br />
             with KSH INFRA
@@ -86,8 +82,8 @@ const LandingSwiper = () => {
               <img className="w-10 h-10" src="/landingl.svg" alt="Next" />
             </button>
           </div>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </div>
   );
 };
