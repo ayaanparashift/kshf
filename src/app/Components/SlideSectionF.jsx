@@ -1001,19 +1001,35 @@ const SlideSectionF = () => {
         {/* Left Section */}
         <div className="leftCon bg-[#141D28] w-full lg:w-[60%] lg:pr-0 pr-[max(5%,calc((100vw-1250px)/2))] pl-[max(5%,calc((100vw-1250px)/2))]">
           {/* Heading & Tabs */}
-          <div className="md:flex items-center justify-between xl-1024:w-[90%] lg:pr-[40px] lg:w-[600px] pt-[70px] border-b-[1px] pb-3 border-[#D7D7D7] border-opacity-50 xl-1920:w-[80%]">
+          <div className="md:flex items-center justify-between xl-1024:w-[90%] lg:w-[600px] pt-8 md:pt-[70px] border-b-[1px] md:pb-3 border-[#D7D7D7] border-opacity-50 xl-1920:w-[80%]">
             <h1 className="text-xl pb-4 md:pb-0 text-white font-semibold">
               Careers at KSH INFRA
             </h1>
-            <div className="tabs flex gap-4">
+            {/* <div className="tabs md:justify-center justify-between flex gap-4">
               {tabsData.map((tab, index) => (
                 <button
                   key={tab.title}
-                  className={`px-3 h-[46px] transition-colors duration-500 border-[#D7D7D7] border-opacity-50 border-[2px] text-white rounded-[10px] ${
+                  className={`px-3 h-[46px] transition-colors duration-500 border-[#D7D7D7] border-opacity-50 border-0 md:border-[2px] text-white rounded-[10px] ${
                     activeIndex === index
-                      ? "bg-red-700 border-red-700"
+                      ? "md:bg-red-700 text-red-700 border-red-700"
                       : "bg-transparent"
                   }`}
+                  onClick={() => handleTabClick(index)}
+                >
+                  {tab.title}
+                </button>
+              ))}
+            </div> */}
+            <div className="tabs md:justify-center justify-between flex gap-4">
+              {tabsData.map((tab, index) => (
+                <button
+                  key={tab.title}
+                  className={`px-3 h-[46px] md:font-normal font-bold transition-colors duration-500 border-[#D7D7D7] border-opacity-50 border-0 md:border-[2px] rounded-[10px]
+        ${
+          activeIndex === index
+            ? "md:bg-red-700 md:text-white  text-[#fff] border-red-700"
+            : "bg-transparent md:text-white text-gray-500"
+        }`}
                   onClick={() => handleTabClick(index)}
                 >
                   {tab.title}
@@ -1023,7 +1039,7 @@ const SlideSectionF = () => {
           </div>
 
           {/* Animated Content Section */}
-          <div className="relative w-full h-[350px] xl-1024:h-[350px] overflow-hidden px-[5%] md:px-0">
+          <div className="relative w-full h-[300px] md:h-[350px] overflow-hidden">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeIndex}
@@ -1033,7 +1049,7 @@ const SlideSectionF = () => {
                 transition={{ duration: 0.5, ease: [0.7, 0, 0.4, 1] }}
                 className="text-white"
               >
-                <h1 className="text-3xl md:text-6xl font-medium border-b-[8px] border-[#F7E327] w-fit pb-3 pt-10">
+                <h1 className="text-3xl md:text-6xl font-medium border-b-[8px] border-[#F7E327] w-fit pb-3 pt-5 md:pt-10">
                   {tabsData[activeIndex].title}
                 </h1>
                 <p className="lg:w-[60%] max-w-full md:mx-0 mx-auto pt-6 md:pt-5 md:pb-5 text-base text-[#6C8DAB]">
@@ -1043,7 +1059,7 @@ const SlideSectionF = () => {
             </AnimatePresence>
           </div>
 
-          <div className="flex items-center pt-[0] px-[5%] md:px-0 md:w-[60%] justify-between pb-[70px]">
+          <div className="flex items-center pt-[0]  md:w-[60%] justify-between pb-8 md:pb-[70px]">
             <motion.div
               className="flex cursor-pointer group items-center justify-between font-semibold text-[#ffffff] text-[16px] h-[50px] w-fit"
               initial={{ x: 100, opacity: 0 }}

@@ -439,7 +439,7 @@ const CapabilitiesF = () => {
                           <img
                             src={img}
                             alt=""
-                            className="min-h-full min-w-full object-cover"
+                            className="min-h-full min-w-full object-cover brightness-110"
                           />
                         </SwiperSlide>
                       ))}
@@ -478,7 +478,7 @@ const CapabilitiesF = () => {
                             <img
                               src={img}
                               alt=""
-                              className="w-full h-full object-cover"
+                              className="w-full h-full object-cover brightness-110"
                             />
                           </SwiperSlide>
                         ))}
@@ -516,7 +516,7 @@ const CapabilitiesF = () => {
                             <img
                               src={img}
                               alt=""
-                              className="w-full h-full object-cover"
+                              className="w-full h-full object-cover brightness-110"
                             />
                           </SwiperSlide>
                         ))}

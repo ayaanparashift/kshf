@@ -6,7 +6,7 @@ import CSbgbl from "./Components/CSblbg";
 import TrustedPartners from "../Components/TrustedPartners";
 // import CaseSideTop from "./Components/CaseSideTop";
 import Res from "./Components/Res";
-// import CaseSideTop from "./Components/CaseSideTop";
+import CaseSideTop from "./Components/CaseSideTop";
 // import CaseSideBtm from "./Components/CaseSideBtm";
 
 export const metadata = {

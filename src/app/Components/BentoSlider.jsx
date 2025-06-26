@@ -498,7 +498,7 @@ const BentoSlider = () => {
 
           {/* Mobile Nav */}
           <div className="md:hidden py-8">
-            <div className="flex justify-end gap-4 mb-5">
+            <div className="flex justify-end mt-[-25%] gap-4 mb-5">
               <button ref={mobilePrev} className="w-10 h-10">
                 <img src="/landingr.svg" className="w-full h-full" alt="Prev" />
               </button>

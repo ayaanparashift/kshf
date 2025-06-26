@@ -319,7 +319,7 @@ const AboutGrowth = () => {
       </div>
 
       {/* Remaining boxes (Investor Relations, Careers @KSH) */}
-      <div className="lg:flex items-center justify-between xl:pt-[65px] pt-5 xl-1280:gap-[5%] xl-1024:gap-[30px]">
+      <div className="flex lg:flex-row flex-col items-center justify-between xl:pt-[65px] pt-5 gap-5 xl:gap-[5%] lg:gap-[30px]">
         {aboutGrowthData.slice(1).map((item, index) => (
           <Link className="group" href={item.link} key={index}>
             <motion.div
