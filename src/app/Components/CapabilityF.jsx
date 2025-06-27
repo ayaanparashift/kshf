@@ -342,7 +342,7 @@ const CapabilitiesF = () => {
             </div>
 
             {/* Animated Content */}
-            <div className="w-full pt-[30px] xl:pt-0 ">
+            <div className="w-full min-1366:pt-[30px] ">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activeTab}
