@@ -289,7 +289,7 @@ const Accordion = ({ accordionData, acch }) => {
   return (
     <div
       className={`w-full min-1920:max-w-[80%] pl-[max(5%,calc((100vw-1250px)/2))] xl:pl-0 xl:ml-auto pr-[max(5%,calc((100vw-1250px)/2))] flex flex-col gap-[16px] ${
-        acch > 450 ? "md:h-[550px]" : "md:h-[450px]"
+        acch > 450 ? "xl:h-[550px]" : "xl:h-[450px]"
       }`}
     >
       {accordionData.map((item, index) => {

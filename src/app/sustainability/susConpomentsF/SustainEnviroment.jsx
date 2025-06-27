@@ -182,7 +182,7 @@ const SustainEnviroment = () => {
                   alt=""
                 />
               </div>
-              <div className="flex gap-[14px] items-center justify-center">
+              {/* <div className="flex gap-[14px] items-center justify-center">
                 <button id="arrowleft" className="h-[41px] w-[41px]">
                   <img
                     className="h-[41px] w-[41px]"
@@ -197,7 +197,7 @@ const SustainEnviroment = () => {
                     alt="ArrowRight"
                   />
                 </button>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </div>

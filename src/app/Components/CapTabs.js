@@ -16,7 +16,7 @@ export const tabs = [
     content:
       "Our smart capital deployment approach and strong partnerships help us build start-of-the-art facilities suitable for a whole range of industries.<br/><br/> We know how to use capital wisely to allocate resources across people, technology, and the environment to deliver infrastructure that exactly fits your business needs.",
     images: {
-      top: ["/OurCapabilities/capf.png"],
+      top: ["/OurCapabilities/captf.png"],
       bottom1: ["/OurCapabilities/capBottom1_1.png"],
       bottom2: ["/OurCapabilities/capBottom2_1.png"],
     },

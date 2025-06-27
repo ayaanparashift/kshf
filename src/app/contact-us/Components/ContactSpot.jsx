@@ -39,13 +39,13 @@ const ContactSpot = () => {
         className="absolute bottom-0 w-full object-cover"
         alt=""
       /> */}
-      <motion.img
-        initial={{ opacity: 0, translateY: "100px" }}
-        whileInView={{ opacity: 1, translateY: 0 }}
-        transition={{ duration: 1.5, ease: [0.7, 0, 0.4, 1] }}
-        viewport={{ amount: 0.1, once: true }}
-        src="./contact/contact-spot.png"
-        className="absolute bottom-0 w-full -z-10"
+      <img
+        // initial={{ opacity: 0, translateY: "100px" }}
+        // whileInView={{ opacity: 1, translateY: 0 }}
+        // transition={{ duration: 1.5, ease: [0.7, 0, 0.4, 1] }}
+        // viewport={{ amount: 0.1, once: true }}
+        src="./contact/conspot.webp"
+        className="absolute bottom-0 -z-10 max-w-full"
         alt=""
       />
     </div>

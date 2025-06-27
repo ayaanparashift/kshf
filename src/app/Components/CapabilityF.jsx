@@ -320,14 +320,14 @@ const CapabilitiesF = () => {
             {/* Tabs */}
             <div className="mt-6 overflow-hidden mr-0 md:mr-10 max-w-[600px]">
               <div
-                className="flex flex-wrap w-full gap-2" // 👈 changed from flex-nowrap to flex-wrap
+                className="flex flex-wrap w-full min-1920:gap-3 gap-2" // 👈 changed from flex-nowrap to flex-wrap
                 ref={containerRef}
               >
                 {tabs.map((tab, idx) => (
                   <button
                     key={tab.title}
                     ref={(el) => (tabRefs.current[idx] = el)}
-                    className={`px-3 whitespace-nowrap h-[36px] border border-[#D7D7D7] border-opacity-35 text-white rounded-[10px] transition-all duration-300 ${
+                    className={`px-3 whitespace-nowrap min-1920:h-[50px] min-1920:text-[18px] h-[36px] border border-[#D7D7D7] border-opacity-35 text-white rounded-[10px] transition-all duration-300 ${
                       activeTab === idx ? "bg-[#E30613] text-black" : ""
                     }`}
                     onClick={() => {
@@ -342,7 +342,7 @@ const CapabilitiesF = () => {
             </div>
 
             {/* Animated Content */}
-            <div className="w-full min-1366:pt-[30px] ">
+            <div className="w-full ">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activeTab}
@@ -353,11 +353,11 @@ const CapabilitiesF = () => {
                   className="w-full  contentArea overflow-hidden"
                 >
                   <div className="flex pt-5 flex-col gap-4 xl-768:gap-10 md:h-[290px] h-[400px] xl:h-[300px] 2xl:h-[350px] md:mr-10 mr-0 overflow-hidden">
-                    <h1 className="tabHeading text-2xl max-w-fit md:text-[40px] md:leading-[40px] lg:text-[30px] fpt-500 text-white font-medium border-b-[8px] border-[#F7E327]">
+                    <h1 className="tabHeading text-2xl max-w-fit min-1920:text-[40px] min-1920:leading-[180%] md:text-[40px] md:leading-[40px] lg:text-[30px] fpt-500 text-white font-medium border-b-[8px] border-[#F7E327]">
                       {tabs[activeTab].heading}
                     </h1>
                     <p
-                      className="tabContent fsans-400 text-[16px] min-[1920px]:text-[20px] min-1366:text-[18px] gradinetText leading-[26px]"
+                      className="tabContent fsans-400 text-[16px] min-1920:text-[20px] min-1366:text-[18px] gradinetText leading-[26px]"
                       dangerouslySetInnerHTML={{
                         __html: tabs[activeTab].content,
                       }}
