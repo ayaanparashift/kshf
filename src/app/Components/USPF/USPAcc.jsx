@@ -200,29 +200,7 @@ const useIsMobile = () => {
   return isMobile;
 };
 
-const accordionData = [
-  {
-    title: "Safe Guarding the Nature is part of our DNA",
-    content:
-      "We integrate sustainable practices in every aspect of infrastructure development, emphasizing harmony with nature.",
-  },
-  {
-    title: "Positioned at a prime location seamless connectivity",
-    content:
-      "The KSH INFRA Code of Conduct Handbook sets a high bar for compliance. This encompasses every aspect of how our team interacts with internal and external stakeholders",
-  },
-  {
-    title: "Built on the foundations of trust, integrity, & sustainability.",
-    content:
-      "Our values drive us to build long-lasting client relationships and environmentally responsible industrial spaces.",
-  },
-  {
-    title: "Offers competitive pricing models and eco-friendly operations",
-    content:
-      "We ensure affordability without compromising on green operations and modern infrastructure.",
-  },
-];
-const Accordion = () => {
+const Accordion = ({ accordionData, acch }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const isMobile = useIsMobile(); // 👈 new hook here
 
@@ -309,7 +287,11 @@ const Accordion = () => {
   //     </div>
   //   );
   return (
-    <div className="w-full min-1920:max-w-[80%] pl-[max(5%,calc((100vw-1250px)/2))] xl:pl-0 xl:ml-auto md:h-[450px] pr-[max(5%,calc((100vw-1250px)/2))] flex flex-col gap-[16px]">
+    <div
+      className={`w-full min-1920:max-w-[80%] pl-[max(5%,calc((100vw-1250px)/2))] xl:pl-0 xl:ml-auto pr-[max(5%,calc((100vw-1250px)/2))] flex flex-col gap-[16px] ${
+        acch > 450 ? "md:h-[550px]" : "md:h-[450px]"
+      }`}
+    >
       {accordionData.map((item, index) => {
         const isActive = index === activeIndex;
 
@@ -317,12 +299,12 @@ const Accordion = () => {
           <div
             key={index}
             onClick={() => setActiveIndex(index)}
-            className={`w-full rounded-[10px] backdrop-blur-md border border-transparent ${
-              isActive ? "bg-[#092241]" : "bg-[#EEF0F390]"
+            className={`w-full cursor-pointer rounded-[10px] p-5 backdrop-blur-md border border-transparent ${
+              isActive ? "bg-[#6C8DAB]" : "bg-[#EEF0F390]"
             } transition-colors duration-300`}
           >
             {/* Title row */}
-            <div className="flex items-center justify-between px-5 py-[20px] cursor-pointer">
+            <div className="flex items-center justify-between ">
               <p
                 className={`text-[16px] md:text-[22px] fsans-600 leading-[150%] font-semibold transition-colors duration-300 ${
                   isActive ? "text-white" : "text-[#1A1A1A]"
@@ -378,7 +360,7 @@ const Accordion = () => {
                   }}
                   className="overflow-hidden"
                 >
-                  <div className="px-5 pb-4 text-white text-[14px] md:text-[16px] leading-[150%] fsans-400">
+                  <div className="text-white text-[14px] md:text-[16px] leading-[150%] fsans-400">
                     {item.content}
                   </div>
                 </motion.div>

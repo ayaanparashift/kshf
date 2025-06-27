@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import SwiperCard from "../../Components/USPF/SwiperCard";
 import { motion } from "framer-motion";
 import Popup from "./Popup";
+import Accordion from "../../Components/USPF/USPAcc";
 
 const SustainEnviroment = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -47,34 +48,34 @@ const SustainEnviroment = () => {
   const swcontent = [
     {
       title: "Intelligent Energy Management",
-      icon: "/Sustainability/icons/sus1.svg",
+      // icon: "/Sustainability/icons/sus1.svg",
       content:
         "Optimizing energy consumption for efficiency and sustainability.",
     },
     {
       title: "Preserving Water Resources",
-      icon: "/Sustainability/icons/sus2.svg",
+      // icon: "/Sustainability/icons/sus2.svg",
       content: "Implementing smart water conservation and recycling systems.",
     },
     {
       title: "Waste Minimization and Segregation",
-      icon: "/Sustainability/icons/sus3.svg",
+      // icon: "/Sustainability/icons/sus3.svg",
       content: "Reducing, reusing, and recycling for a cleaner environment.",
     },
     {
       title: "Well-being",
-      icon: "/Sustainability/icons/sus4.svg",
+      // icon: "/Sustainability/icons/sus4.svg",
       content:
         "Prioritizing employee health, safety, and a balanced work environment.",
     },
     {
       title: "A Positive Environmental Effect",
-      icon: "/Sustainability/icons/sus5.svg",
+      // icon: "/Sustainability/icons/sus5.svg",
       content: "Reducing carbon footprint through eco-friendly initiatives.",
     },
     {
       title: "Sustainable Development Policy",
-      icon: "/Sustainability/icons/sus6.svg",
+      // icon: "/Sustainability/icons/sus6.svg",
       content:
         "Building infrastructure with long-term environmental responsibility.",
     },
@@ -109,7 +110,7 @@ const SustainEnviroment = () => {
               viewport={{ once: true, amount: 0.3 }}
               src="Sustainability/SustainEnvironmental.png"
               alt="Sus"
-              className="min-1440:scale-110"
+              className="min-1440:scale-125"
             />
           </div>
 
@@ -128,7 +129,7 @@ const SustainEnviroment = () => {
               </p>
             </motion.div>
 
-            <Swiper
+            {/* <Swiper
               slidesPerGroup={1}
               className="xl:w-full sm:w-[90%] mx-auto customsw"
               spaceBetween={20}
@@ -159,8 +160,8 @@ const SustainEnviroment = () => {
                   />
                 </SwiperSlide>
               ))}
-            </Swiper>
-
+            </Swiper> */}
+            <Accordion acch={650} accordionData={swcontent} />
             <motion.div
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}

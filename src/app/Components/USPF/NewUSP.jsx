@@ -411,6 +411,34 @@ const Usp = () => {
   //       "Our developments are future-proofed with energy-efficient ventilation (6–8 air changes/hour), solar power options, and eco-conscious designs that minimize carbon footprint—ensuring long-term environmental, social, and business sustainability.",
   //   },
   // ];
+
+  const accordionData = [
+    {
+      title: "Safe Guarding the Nature is part of our DNA",
+      content:
+        "We integrate sustainable practices in every aspect of infrastructure development, emphasizing harmony with nature.",
+    },
+    {
+      title: "Positioned at a prime location seamless connectivity",
+      content:
+        "The KSH INFRA Code of Conduct Handbook sets a high bar for compliance. This encompasses every aspect of how our team interacts with internal and external stakeholders",
+    },
+    {
+      title: "Built on the foundations of trust, integrity, & sustainability.",
+      content:
+        "Our values drive us to build long-lasting client relationships and environmentally responsible industrial spaces.",
+    },
+    {
+      title: "Offers competitive pricing models and eco-friendly operations",
+      content:
+        "We ensure affordability without compromising on green operations and modern infrastructure.",
+    },
+    {
+      title: "Offers competitive pricing models and eco-friendly operations",
+      content:
+        "We ensure affordability without compromising on green operations and modern infrastructure.",
+    },
+  ];
   return (
     <div className="bg-white uspcontainer w-full flex items-center justify-center flex-col overflow-hidden">
       <div className="flex flex-col max-w-[100vw] h-fit">
@@ -438,7 +466,7 @@ const Usp = () => {
             </motion.div>
 
             {/* Swiper Slider */}
-            <Accordion />
+            <Accordion acch={450} accordionData={accordionData} />
           </div>
         </div>
       </div>
