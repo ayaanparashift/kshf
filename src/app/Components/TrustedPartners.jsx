@@ -84,6 +84,11 @@ const TrustedPartners = ({ paddingB }) => {
               <img className="" src="/marqicons/rowm1/rm5.png" alt="JCB" />
               <img className="" src="/marqicons/rowm1/rm6.png" alt="JCB" />
               <img className="" src="/marqicons/rowm1/rm7.png" alt="JCB" />
+              <img className="" src="/marqicons/rowm2/rm1.png" alt="JCB" />
+              <img className="" src="/marqicons/rowm2/rm2.png" alt="JCB" />
+              <img className="" src="/marqicons/rowm2/rm3.png" alt="JCB" />
+              <img className="" src="/marqicons/rowm4/rm6.png" alt="JCB" />
+              <img className="" src="/marqicons/rowm4/rm7.png" alt="JCB" />
             </div>
           </Marquee>
         </div>
@@ -92,13 +97,13 @@ const TrustedPartners = ({ paddingB }) => {
         <div className="merqueSlide flex items-center justify-between h-fit md:h-[90px]">
           <Marquee direction="right" speed={120}>
             <div className="flex space-x-4 md:space-x-12 h-fit">
-              <img className="" src="/marqicons/rowm2/rm1.png" alt="JCB" />
-              <img className="" src="/marqicons/rowm2/rm2.png" alt="JCB" />
-              <img className="" src="/marqicons/rowm2/rm3.png" alt="JCB" />
               <img className="" src="/marqicons/rowm2/rm4.png" alt="JCB" />
               <img className="" src="/marqicons/rowm2/rm6.png" alt="JCB" />
-              <img className="" src="/marqicons/rowm2/rm7.png" alt="JCB" />{" "}
+              <img className="" src="/marqicons/rowm2/rm7.png" alt="JCB" />
               <img className="" src="/marqicons/rowm3/rm1.png" alt="JCB" />
+              <img className="" src="/marqicons/rowm2/rm5.png" alt="JCB" />
+              <img className="" src="/marqicons/rowm3/rm2.png" alt="JCB" />
+              <img className="" src="/marqicons/rowm3/rm3.png" alt="JCB" />
             </div>
           </Marquee>
         </div>
@@ -107,31 +112,20 @@ const TrustedPartners = ({ paddingB }) => {
         <div className="merqueSlide flex items-center justify-between h-fit md:h-[90px]">
           <Marquee direction="left" speed={120}>
             <div className="flex space-x-4 md:space-x-12 h-fit">
-              <img className="" src="/marqicons/rowm2/rm5.png" alt="JCB" />
-              <img className="" src="/marqicons/rowm3/rm2.png" alt="JCB" />
-              <img className="" src="/marqicons/rowm3/rm3.png" alt="JCB" />
               <img className="" src="/marqicons/rowm3/rm4.png" alt="JCB" />
               <img className="" src="/marqicons/rowm3/rm5.png" alt="JCB" />
               <img className="" src="/marqicons/rowm3/rm6.png" alt="JCB" />
+              <img className="" src="/marqicons/rowm4/rm1.png" alt="JCB" />
+              <img className="" src="/marqicons/rowm4/rm4.png" alt="JCB" />
+              <img className="" src="/marqicons/rowm4/rm5.png" alt="JCB" />
+              <img className="" src="/marqicons/rowm4/rm2.png" alt="JCB" />
+              <img className="" src="/marqicons/rowm4/rm3.png" alt="JCB" />
               <img className="" src="/marqicons/rowm3/rm7.png" alt="JCB" />
             </div>
           </Marquee>
         </div>
 
         {/* Row 4 */}
-        <div className="merqueSlide flex items-center justify-between h-fit md:h-[90px]">
-          <Marquee direction="right" speed={120}>
-            <div className="flex space-x-4 md:space-x-12 h-fit">
-              <img className="" src="/marqicons/rowm4/rm1.png" alt="JCB" />
-              <img className="" src="/marqicons/rowm4/rm2.png" alt="JCB" />
-              <img className="" src="/marqicons/rowm4/rm3.png" alt="JCB" />
-              <img className="" src="/marqicons/rowm4/rm4.png" alt="JCB" />
-              <img className="" src="/marqicons/rowm4/rm5.png" alt="JCB" />
-              <img className="" src="/marqicons/rowm4/rm6.png" alt="JCB" />
-              <img className="" src="/marqicons/rowm4/rm7.png" alt="JCB" />
-            </div>
-          </Marquee>
-        </div>
       </div>
     </div>
   );
