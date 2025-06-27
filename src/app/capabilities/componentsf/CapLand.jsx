@@ -52,7 +52,8 @@ const CapLand = () => {
       <div className="bg-[#fff]">
         <div className="fix12 flex lg:flex-row-reverse flex-col gap-10 py-24">
           <div className="LeftCon flex-1 relative overflow-hidden">
-            <img src="/Cap/capCapital.png" alt="" />
+            {/* <img src="/Cap/capCapital.png" alt="" /> */}
+            <img src="/OurCapabilities/captf.png" alt="" />
             <motion.div
               initial={{ x: 0 }}
               whileInView={{ x: "100%" }}

@@ -161,7 +161,7 @@ const SustainEnviroment = () => {
                 </SwiperSlide>
               ))}
             </Swiper> */}
-            <Accordion acch={650} accordionData={swcontent} />
+            <Accordion accw={90} acch={650} accordionData={swcontent} />
             <motion.div
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}

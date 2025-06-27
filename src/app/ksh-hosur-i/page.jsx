@@ -9,6 +9,7 @@ import MapSection from "./componentsf/MapSection";
 import PhVdslider from "./componentsf/PhVdslider";
 import CharSlide from "./componentsf/CharSlide";
 import ParkInfra from "./componentsf/ParkInfra";
+import CharAcc from "./componentsf/CharAcc";
 // import ParkInfra from "../ksh-chakan-i/componentsf/ParkInfra";
 export const metadata = {
   title: "KSH INFRA: Industrial & Warehouse Park in Hosur",
@@ -24,7 +25,8 @@ const page = () => {
         <TabMenu />
         <ParkOverview />
         <ParkInfo />
-        <CharSlide />
+        {/* <CharSlide /> */}
+        <CharAcc />
         <ParkInfra />
         <PhVdslider />
         <LastSw />

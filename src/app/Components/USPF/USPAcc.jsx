@@ -200,7 +200,7 @@ const useIsMobile = () => {
   return isMobile;
 };
 
-const Accordion = ({ accordionData, acch }) => {
+const Accordion = ({ accordionData, acch, accw }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const isMobile = useIsMobile(); // 👈 new hook here
 
@@ -290,7 +290,7 @@ const Accordion = ({ accordionData, acch }) => {
     <div
       className={`w-full min-1920:max-w-[80%] pl-[max(5%,calc((100vw-1250px)/2))] xl:pl-0 xl:ml-auto pr-[max(5%,calc((100vw-1250px)/2))] flex flex-col gap-[16px] ${
         acch > 450 ? "xl:h-[550px]" : "xl:h-[450px]"
-      }`}
+      } ${accw > 80 ? "w-full" : "xl:w-[90%]"}`}
     >
       {accordionData.map((item, index) => {
         const isActive = index === activeIndex;

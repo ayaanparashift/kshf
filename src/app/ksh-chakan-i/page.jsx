@@ -8,6 +8,7 @@ import CharSlide from "./componentsf/CharSlide";
 import PhVdslider from "./componentsf/PhVdslider";
 import MapSection from "./componentsf/MapSection";
 import MapCard from "./componentsf/MapCard";
+import CharAcc from "./componentsf/CharAcc";
 // import ParkInfra from "./componentsf/ParkInfra";
 // import MapSection from "./componentsf/MapSection";
 export const metadata = {
@@ -25,7 +26,8 @@ const page = () => {
         <ParkOverview />
         <ParkInfo />
         <MapSection />
-        <CharSlide />
+        {/* <CharSlide /> */}
+        <CharAcc />
         <PhVdslider />
         <LastSw />
       </div>

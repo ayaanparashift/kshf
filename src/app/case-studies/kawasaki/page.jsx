@@ -9,6 +9,7 @@ import CasINSpot from "./Cmponents/CasINSpot";
 // import FormSec from "../Components/FormSec";
 import CSbgbl from "../Components/CSblbg";
 import Res from "../Components/Res";
+import VidT from "../Components/VidT";
 // import BlogInsideSpot from "../bloginside/Components/BlogInsideSpot";
 export const metadata = {
   title:
@@ -22,6 +23,7 @@ const page = () => {
       <CasINSpot />
       <CaseINSec2 />
       {/* <CaseINAbout /> */}
+      <VidT />
       <CaseINChalleng />
       <CaseSolution />
       {/* <CaseINBenefit /> */}

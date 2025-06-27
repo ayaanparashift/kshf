@@ -8,6 +8,7 @@ import MapSection from "./componentsf/MapSection";
 import CharSlide from "./componentsf/CharSlide";
 import PhVdslider from "./componentsf/PhVdslider";
 import ParkInfra from "./componentsf/ParkInfra";
+import CharAcc from "../ksh-chakan-i/componentsf/CharAcc";
 
 export const metadata = {
   title:
@@ -24,7 +25,8 @@ const page = () => {
         <ParkOverview />
         <ParkInfo />
         <MapSection />
-        <CharSlide />
+        {/* <CharSlide /> */}
+        <CharAcc />
         <ParkInfra />
         <PhVdslider />
         <LastSw />

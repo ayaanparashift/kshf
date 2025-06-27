@@ -7,6 +7,8 @@ import TrustedPartners from "../Components/TrustedPartners";
 // import CaseSideTop from "./Components/CaseSideTop";
 import Res from "./Components/Res";
 import CaseSideTop from "./Components/CaseSideTop";
+import VidT from "./Components/VidT";
+import TextT from "./Components/TextT";
 // import CaseSideBtm from "./Components/CaseSideBtm";
 
 export const metadata = {
@@ -24,6 +26,8 @@ const page = () => {
       {/* <Res /> */}
       {/* <FormSec /> */}
       <CSbgbl />
+      <VidT />
+      {/* <TextT /> */}
     </div>
   );
 };
