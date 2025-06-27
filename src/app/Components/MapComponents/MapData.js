@@ -78,7 +78,7 @@ export const hotspotData = {
     {
       id: 2,
       park_no: "01",
-      park_name: "Hosur",
+      park_name: "Bangalore",
       x: "48.7%",
       y: "70%",
       scale: 2,
@@ -119,7 +119,7 @@ export const hotspotData = {
     {
       id: 2,
       park_no: "01",
-      park_name: "Hosur",
+      park_name: "Bangalore",
       x: "42%",
       y: "65%",
       scale: 1.8,
@@ -161,7 +161,7 @@ export const hotspotData = {
     {
       id: 2,
       park_no: "01",
-      park_name: "Hosur",
+      park_name: "Bangalore",
       x: "36%",
       y: "69%",
       scale: 2,

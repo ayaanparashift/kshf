@@ -466,7 +466,7 @@ const Usp = () => {
             </motion.div>
 
             {/* Swiper Slider */}
-            <Accordion acch={450} accordionData={accordionData} />
+            <Accordion accw={100} acch={450} accordionData={accordionData} />
           </div>
         </div>
       </div>

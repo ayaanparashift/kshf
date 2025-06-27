@@ -304,7 +304,7 @@ const Accordion = ({ accordionData, acch, accw }) => {
             } transition-colors duration-300`}
           >
             {/* Title row */}
-            <div className="flex items-center justify-between ">
+            <div className="flex items-center justify-between">
               <p
                 className={`text-[16px] md:text-[22px] fsans-600 leading-[150%] font-semibold transition-colors duration-300 ${
                   isActive ? "text-white" : "text-[#1A1A1A]"
