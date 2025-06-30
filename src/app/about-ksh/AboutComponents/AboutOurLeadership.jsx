@@ -1,4 +1,3 @@
-"use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -7,14 +6,14 @@ const AboutOurLeadership = () => {
     <div className="bg-[#EEF0F3] overflow-hidden max-w-full">
       <div className="fix12 py-8 lg:py-[90px] relative">
         {/* Wrapper to prevent overflow */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{
-            duration: 1.4,
-            ease: [0.7, 0, 0.4, 1],
-          }}
-          viewport={{ once: true, amount: 0.3 }}
+        <div
+          // initial={{ opacity: 0 }}
+          // whileInView={{ opacity: 1 }}
+          // transition={{
+          //   duration: 1.4,
+          //   ease: [0.7, 0, 0.4, 1],
+          // }}
+          // viewport={{ once: true, amount: 0.3 }}
           className="relative pb-[10px] border-b border-[#D7D7D7] overflow-hidden"
         >
           {/* Content container */}
@@ -67,19 +66,19 @@ const AboutOurLeadership = () => {
           </div>
 
           {/* Mask covering entire section including the border */}
-        </motion.div>
+        </div>
 
         {/* Image Section */}
-        <motion.div className="ImgCon relative overflow-hidden pt-[30px] lg:pt-[50px]">
+        <div className="ImgCon relative overflow-hidden pt-[30px] lg:pt-[50px]">
           <img src="/AboutPage/AboutOurLeadership.png" alt="" />
-          <motion.div
+          {/* <motion.div
             className="absolute top-0 left-0 w-full h-full bg-[#EEF0F3]"
             initial={{ translateX: 0 }}
             whileInView={{ translateX: "100%" }}
             transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
             viewport={{ once: true, amount: 0.3 }}
-          />
-        </motion.div>
+          /> */}
+        </div>
       </div>
     </div>
   );

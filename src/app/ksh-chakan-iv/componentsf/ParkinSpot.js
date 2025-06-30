@@ -386,7 +386,7 @@ const ParkinSpot = ({}) => {
                     alt="some"
                   />
 
-                  <motion.div className="absolute top-0 left-0 w-full h-full z-20 bg-[#092241]" />
+                  {/* <motion.div className="absolute top-0 left-0 w-full h-full z-20 bg-[#092241]" /> */}
                 </div>
               </div>
 
@@ -402,7 +402,7 @@ const ParkinSpot = ({}) => {
           </div>
         </div>
       </div>
-      {/* 
+
       <AnimatePresence>
         {showEnquire && (
           <motion.div
@@ -415,7 +415,7 @@ const ParkinSpot = ({}) => {
             <EnquireNow closeEnquire={handleCloseEnquire} />
           </motion.div>
         )}
-      </AnimatePresence> */}
+      </AnimatePresence>
       <AnimatePresence>
         {showEnquire && (
           <>

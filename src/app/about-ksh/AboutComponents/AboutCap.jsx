@@ -259,11 +259,11 @@ const AboutCap = () => {
           bopacity="34%"
           clr="#141414"
         />
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.8 }}
-          transition={{ duration: 0.5, ease: [0.7, 0, 0.4, 1] }}
+        <p
+          // initial={{ opacity: 0 }}
+          // whileInView={{ opacity: 1 }}
+          // viewport={{ once: true, amount: 0.8 }}
+          // transition={{ duration: 0.5, ease: [0.7, 0, 0.4, 1] }}
           className="text-[#202020] mt-[-45px] flex sm:w-full items-start text-[16px] fsans-600 leading-[26px]"
         >
           The KSH Group has a storied past, leading to over 450 employees today
@@ -273,19 +273,19 @@ const AboutCap = () => {
           a steadfast commitment to excellence. KSH INFRA adheres firmly to this
           philosophy when undertaking projects for developing industrial and
           logistics parks.
-        </motion.p>
+        </p>
       </div>
       <div className="bg-[#092241] md:h-[665px] flex items-end justify-end">
         <div className="border-white w-full md:mr-0 ml-[max(5%,calc((100vw-1250px)/2))] mr-[max(5%,calc((100vw-1250px)/2))] lg:pb-0 pb-[100px] lg:gap-0 gap-[50px] flex lg:flex-row flex-col overflow-hidden relative z-[1]">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{
-              duration: 1.4,
-              ease: [0.7, 0, 0.4, 1],
-              delay: 0.2,
-            }}
-            viewport={{ once: true, amount: 0.3 }}
+          <div
+            // initial={{ opacity: 0 }}
+            // whileInView={{ opacity: 1 }}
+            // transition={{
+            //   duration: 1.4,
+            //   ease: [0.7, 0, 0.4, 1],
+            //   delay: 0.2,
+            // }}
+            // viewport={{ once: true, amount: 0.3 }}
             className="leftCon flex-1 flex flex-col justify-center min-h-[665px]"
           >
             <div className="tabs flex flex-wrap overflow-x-scroll overflow-y-hidden gap-4 xl-768:w-[95%] xl-1024:w-[90%] xl-1280:w-[90%] xl-1440:w-[90%]">
@@ -359,7 +359,7 @@ const AboutCap = () => {
                 </button>
               </div>
             </div>
-          </motion.div>
+          </div>
           <div className="rightCon relative flex-1 lg:max-w-[638px]">
             <div className="relative min-h-full overflow-hidden">
               <AnimatePresence>
@@ -385,7 +385,7 @@ const AboutCap = () => {
                   </motion.div>
                 ))}
               </AnimatePresence>
-              <motion.div
+              {/* <motion.div
                 className="absolute top-0 left-0 bg-[#092241] w-full h-full z-20"
                 initial={{ x: 0 }}
                 whileInView={{ x: "100%" }}
@@ -395,7 +395,7 @@ const AboutCap = () => {
                   delay: 1,
                 }}
                 viewport={{ amount: 0.5, once: true }}
-              />
+              /> */}
             </div>
           </div>
         </div>

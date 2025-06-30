@@ -93,7 +93,7 @@
 
 // export default AboutGrowth;
 
-"use client";
+// "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
 // const AboutGrowth = () => {
@@ -260,28 +260,28 @@ const AboutGrowth = () => {
     <div className="Main fix12 py-16 lg:py-[100px]">
       <div className="xl:flex items-center justify-between xl-1280:gap-[5%] xl-1024:gap-[30px]">
         <div className="xl-1024:flex-1 xl:w-[521px] xl-1280:w-[50%] flex xl:pb-0 pb-5">
-          <motion.h1
-            initial={{ width: 0 }}
-            whileInView={{ width: "fit-content" }}
-            transition={{ duration: 1.7, ease: [0.7, 0, 0.4, 1] }}
-            viewport={{ amount: 0.1, once: true }}
+          <h1
+            // initial={{ width: 0 }}
+            // whileInView={{ width: "fit-content" }}
+            // transition={{ duration: 1.7, ease: [0.7, 0, 0.4, 1] }}
+            // viewport={{ amount: 0.1, once: true }}
             className="text-[#092241] select-none pb-2 whitespace-nowrap overflow-hidden text-3xl xl-1024:text-5xl min-1280:text-6xl fpt-500 border-[#F7E327] border-b-[6px]"
           >
             Trust. Growth.
             <br /> Opportunity. &nbsp;&nbsp;&nbsp;&nbsp;
-          </motion.h1>
+          </h1>
         </div>
 
         {/* First box only (Sustainability) */}
         <Link href={aboutGrowthData[0].link}>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{
-              duration: 1,
-              ease: [0.7, 0, 0.4, 1],
-            }}
-            viewport={{ once: true, amount: 0.5 }}
+          <div
+            // initial={{ opacity: 0 }}
+            // whileInView={{ opacity: 1 }}
+            // transition={{
+            //   duration: 1,
+            //   ease: [0.7, 0, 0.4, 1],
+            // }}
+            // viewport={{ once: true, amount: 0.5 }}
             className="xl-1024:flex-1 group xl:w-[612px] xl-1280:w-[50%] lg:h-[330px] md:flex border-2 lg:mt-0"
           >
             <div className="xl-1024:min-w-[190px] md:min-w-[292px] overflow-hidden">
@@ -314,7 +314,7 @@ const AboutGrowth = () => {
                 <p>Learn More</p>
               </div>
             </div>
-          </motion.div>
+          </div>
         </Link>
       </div>
 
@@ -322,15 +322,15 @@ const AboutGrowth = () => {
       <div className="flex lg:flex-row flex-col items-center justify-between xl:pt-[65px] pt-5 gap-5 lg:gap-[30px]">
         {aboutGrowthData.slice(1).map((item, index) => (
           <Link className="group" href={item.link} key={index}>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{
-                duration: 1,
-                ease: [0.7, 0, 0.4, 1],
-                delay: item.delay,
-              }}
-              viewport={{ once: true, amount: 0.5 }}
+            <div
+              // initial={{ opacity: 0 }}
+              // whileInView={{ opacity: 1 }}
+              // transition={{
+              //   duration: 1,
+              //   ease: [0.7, 0, 0.4, 1],
+              //   delay: item.delay,
+              // }}
+              // viewport={{ once: true, amount: 0.5 }}
               className={`xl:w-[612px] group xl-1280:w-[50%] lg:h-[330px] md:flex border-2 ${
                 index !== 0 ? "" : "lg:mt-0"
               }`}
@@ -360,7 +360,7 @@ const AboutGrowth = () => {
                   <p>Learn More</p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </Link>
         ))}
       </div>

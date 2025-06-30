@@ -1,4 +1,3 @@
-"use client";
 import { motion } from "framer-motion";
 const AboutVision = () => {
   return (
@@ -9,16 +8,16 @@ const AboutVision = () => {
             <div className="hidden xl:block xl:w-[531px]" />
 
             <div className="xl:w-[531px] w-full h-full flex flex-col justify-end">
-              <motion.h1
-                initial={{ y: 100 }}
-                whileInView={{ y: -20 }}
-                transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-                viewport={{ amount: 0.1, once: true }}
+              <h1
+                // initial={{ y: 100 }}
+                // whileInView={{ y: -20 }}
+                // transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
+                // viewport={{ amount: 0.1, once: true }}
                 className="text-transparent z-10 fpt-700 text-6xl xl:text-[140px] font-bold stroke-[#6C8DAB] xl:mb-[-30px] mb-[-7px]"
                 style={{ WebkitTextStroke: "1px #6C8DAB" }}
               >
                 Purpose
-              </motion.h1>
+              </h1>
 
               <div className="relative z-20 overflow-hidden">
                 <div>
@@ -35,13 +34,13 @@ const AboutVision = () => {
                     warehousing infrastructure
                   </p>
                 </div>
-                <motion.div
+                {/* <motion.div
                   className="absolute top-0 left-0 w-full h-full bg-[#092241]"
                   initial={{ y: 0 }}
                   whileInView={{ y: "-100%" }}
                   transition={{ duration: 1.7, ease: [0.7, 0, 0.4, 1] }}
                   viewport={{ once: true, amount: 0.3 }}
-                />
+                /> */}
               </div>
             </div>
           </div>
@@ -49,16 +48,16 @@ const AboutVision = () => {
           {/* vision mission */}
           <div className="flex flex-col min-768:flex-row gap-11 xl-1024:gap-11 xl:flex-row justify-between xl:h-[856px] mt-[50px] xl:mt-[-120px]">
             <div className="xl-768:flex-1 xl-1024:flex-1 xl:flex-none xl:w-[531px]">
-              <motion.h1
-                initial={{ y: 100 }}
-                whileInView={{ y: 0 }}
-                transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-                viewport={{ amount: 0.1, once: true }}
+              <h1
+                // initial={{ y: 100 }}
+                // whileInView={{ y: 0 }}
+                // transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
+                // viewport={{ amount: 0.1, once: true }}
                 className="text-transparent z-10 relative fpt-700 text-6xl  xl:text-[140px] font-bold stroke-[#6C8DAB] xl:mb-[-30px] mb-[-7px]"
                 style={{ WebkitTextStroke: "1px #6C8DAB" }}
               >
                 Vision
-              </motion.h1>
+              </h1>
               <div className="relative z-20 overflow-hidden">
                 <div className="">
                   <img
@@ -74,27 +73,27 @@ const AboutVision = () => {
                     across key markets in India
                   </p>
                 </div>
-                <motion.div
+                {/* <div
                   className="absolute top-0 left-0 w-full h-full bg-[#092241]"
                   initial={{ y: 0 }}
                   whileInView={{ y: "-100%" }}
                   transition={{ duration: 1.7, ease: [0.7, 0, 0.4, 1] }}
                   viewport={{ once: true, amount: 0.3 }}
-                />
+                /> */}
               </div>
             </div>
 
             <div className="xl-768:flex-1 xl-1024:flex-1 xl:flex-none xl:w-[531px] h-full flex flex-col justify-end  ">
-              <motion.h1
-                initial={{ y: 100 }}
-                whileInView={{ y: 0 }}
-                transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-                viewport={{ amount: 0.1, once: true }}
+              <h1
+                // initial={{ y: 100 }}
+                // whileInView={{ y: 0 }}
+                // transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
+                // viewport={{ amount: 0.1, once: true }}
                 className="text-transparent z-10 fpt-700 text-6xl  xl:text-[140px] font-bold stroke-[#6C8DAB] xl:mb-[-30px] mb-[-7px]"
                 style={{ WebkitTextStroke: "1px #6C8DAB" }}
               >
                 Mission
-              </motion.h1>
+              </h1>
 
               <div className="relative z-20 overflow-hidden">
                 <div>
@@ -113,13 +112,13 @@ const AboutVision = () => {
                     demonstrating excellence in corporate governance
                   </p>
                 </div>
-                <motion.div
+                {/* <motion.div
                   className="absolute top-0 left-0 w-full h-full bg-[#092241]"
                   initial={{ y: 0 }}
                   whileInView={{ y: "-100%" }}
                   transition={{ duration: 1.7, ease: [0.7, 0, 0.4, 1] }}
                   viewport={{ once: true, amount: 0.3 }}
-                />
+                /> */}
               </div>
             </div>
           </div>
@@ -127,37 +126,37 @@ const AboutVision = () => {
           {/* Bottom */}
           <div className=" xl-1024:pt-20 xl:pt-28  gap-11 flex flex-col lg:flex-row justify-between items-center xl-1024:items-end xl-768:items-start pt-11 lg:pt-0">
             <div className="flex-1 xl:flex-none xl:w-[531px]">
-              <motion.h1
-                initial={{ y: 100 }}
-                whileInView={{ y: 0 }}
-                transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-                viewport={{ amount: 0.1, once: true }}
+              <h1
+                // initial={{ y: 100 }}
+                // whileInView={{ y: 0 }}
+                // transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
+                // viewport={{ amount: 0.1, once: true }}
                 className="text-transparent z-10 relative fpt-700 text-6xl  xl:text-[140px] font-bold stroke-[#6C8DAB] xl:mb-[-30px] mb-[-7px]"
                 style={{ WebkitTextStroke: "1px #6C8DAB" }}
               >
                 Values
-              </motion.h1>
+              </h1>
               <div className="relative overflow-hidden z-20">
                 <div className="">
                   <img src="./AboutPage/values.png" alt="" />
                 </div>
-                <motion.div
+                {/* <motion.div
                   className="absolute top-0 left-0 w-full h-full bg-[#092241]"
                   initial={{ y: 0 }}
                   whileInView={{ y: "-100%" }}
                   transition={{ duration: 1.7, ease: [0.7, 0, 0.4, 1] }}
                   viewport={{ once: true, amount: 0.3 }} // Triggers when 30% of the block is visible
-                />
+                /> */}
               </div>
             </div>
 
             <div className="flex-1 xl:flex-none parent lg:w-[535px]">
               <div className="flex flex-col lg:flex-row md:gap-0 gap-5 ">
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
-                  viewport={{ amount: 0.1, once: true }}
+                <div
+                  // initial={{ opacity: 0 }}
+                  // whileInView={{ opacity: 1 }}
+                  // transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
+                  // viewport={{ amount: 0.1, once: true }}
                   className="flex-1 lg:h-[150px] xl-1024:pb-4 xl-1024:h-auto lg:pr-[35px] lg:border-r-[1px] border-solid border-transparent"
                   style={{
                     borderImage:
@@ -172,16 +171,16 @@ const AboutVision = () => {
                     industry standards while empowering our people to drive
                     positive, meaningful change.
                   </p>
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{
-                    duration: 1,
-                    ease: [0.7, 0, 0.4, 1],
-                    delay: 0.1,
-                  }}
-                  viewport={{ amount: 0.1, once: true }}
+                </div>
+                <div
+                  // initial={{ opacity: 0 }}
+                  // whileInView={{ opacity: 1 }}
+                  // transition={{
+                  //   duration: 1,
+                  //   ease: [0.7, 0, 0.4, 1],
+                  //   delay: 0.1,
+                  // }}
+                  // viewport={{ amount: 0.1, once: true }}
                   className="flex-1 lg:h-[150px] xl-1024:h-auto  lg:pl-[35px] "
                 >
                   <h1 className="text-3xl fpt-500 pb-[6px] text-white">
@@ -192,18 +191,18 @@ const AboutVision = () => {
                     believe in working together, leveraging diverse strengths,
                     and achieving success as one team.
                   </p>
-                </motion.div>
+                </div>
               </div>
               <div className="flex flex-col lg:flex-row md:gap-0 gap-5 ">
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{
-                    duration: 1,
-                    ease: [0.7, 0, 0.4, 1],
-                    delay: 0.2,
-                  }}
-                  viewport={{ amount: 0.1, once: true }}
+                <div
+                  // initial={{ opacity: 0 }}
+                  // whileInView={{ opacity: 1 }}
+                  // transition={{
+                  //   duration: 1,
+                  //   ease: [0.7, 0, 0.4, 1],
+                  //   delay: 0.2,
+                  // }}
+                  // viewport={{ amount: 0.1, once: true }}
                   className="flex-1 lg:h-[150px] xl-1024:h-auto pr-[35px] lg:border-r-[1px] lg:border-t-[1px] border-solid border-transparent"
                   style={{
                     borderImage:
@@ -219,16 +218,16 @@ const AboutVision = () => {
                     actions have a positive impact on all stakeholders and the
                     environment.
                   </p>
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{
-                    duration: 1,
-                    ease: [0.7, 0, 0.4, 1],
-                    delay: 0.3,
-                  }}
-                  viewport={{ once: true, amount: 0.3 }}
+                </div>
+                <div
+                  // initial={{ opacity: 0 }}
+                  // whileInView={{ opacity: 1 }}
+                  // transition={{
+                  //   duration: 1,
+                  //   ease: [0.7, 0, 0.4, 1],
+                  //   delay: 0.3,
+                  // }}
+                  // viewport={{ once: true, amount: 0.3 }}
                   className="flex-1  lg:h-[150px] xl-1024:h-auto lg:pl-[35px] lg:border-t-[1px] border-solid border-transparent"
                   style={{
                     borderImage:
@@ -241,7 +240,7 @@ const AboutVision = () => {
                     foster a supportive, inclusive, and respectful workplace
                     while contributing to the well-being of society as a whole.
                   </p>
-                </motion.div>
+                </div>
               </div>
             </div>
           </div>

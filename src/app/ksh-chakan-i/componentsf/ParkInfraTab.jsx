@@ -115,11 +115,11 @@ const ParkInfraTab = ({ heading, activeTab, setActiveTab }) => {
   return (
     <div className="relative max-w-[1280px] sm:pb-[20px] lg:mb-[66px] sm:mb-[36px] overflow-hidden ParkInfraTab">
       {/* Desktop Layout */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true, amount: 0.1 }}
-        transition={{ duration: 2, ease: [0.7, 0, 0.4, 1] }}
+      <div
+        // initial={{ opacity: 0 }}
+        // whileInView={{ opacity: 1 }}
+        // viewport={{ once: true, amount: 0.1 }}
+        // transition={{ duration: 2, ease: [0.7, 0, 0.4, 1] }}
         className="hidden lg:flex items-center justify-between w-full lg:gap-0 gap-[20px]"
       >
         <h2 className="leading-[26px] text-[20px] fsans-600 text-[#ffffff] tbhead">
@@ -141,27 +141,27 @@ const ParkInfraTab = ({ heading, activeTab, setActiveTab }) => {
             </button>
           ))}
         </div>
-      </motion.div>
+      </div>
 
       {/* Mobile Layout */}
       <div className="flex flex-col lg:hidden">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.1 }}
-          transition={{ duration: 2, ease: [0.7, 0, 0.4, 1] }}
+        <div
+        // initial={{ opacity: 0 }}
+        // whileInView={{ opacity: 1 }}
+        // viewport={{ once: true, amount: 0.1 }}
+        // transition={{ duration: 2, ease: [0.7, 0, 0.4, 1] }}
         >
           <h2 className="leading-[26px] text-[20px] fsans-600 text-[#ffffff] tbhead">
             {heading}
           </h2>
-        </motion.div>
+        </div>
         {/* Non-absolute horizontal line for mobile */}
-        <motion.div
+        <div
           className="w-full h-[2px] opacity-[0.34] bg-[#D7D7D7] my-2"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 0.34 }}
-          viewport={{ once: true, amount: 0.1 }}
-          transition={{ duration: 2, ease: [0.7, 0, 0.4, 1] }}
+          // initial={{ opacity: 0 }}
+          // whileInView={{ opacity: 0.34 }}
+          // viewport={{ once: true, amount: 0.1 }}
+          // transition={{ duration: 2, ease: [0.7, 0, 0.4, 1] }}
         />
 
         <div
@@ -185,12 +185,12 @@ const ParkInfraTab = ({ heading, activeTab, setActiveTab }) => {
       </div>
 
       {/* Keep the desktop horizontal line */}
-      <motion.div
+      <div
         className="hidden lg:block absolute bottom-0 left-0 w-full h-[2px] opacity-[0.34] bg-[#D7D7D7]"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 0.34 }}
-        viewport={{ once: true, amount: 0.1 }}
-        transition={{ duration: 2, ease: [0.7, 0, 0.4, 1] }}
+        // initial={{ opacity: 0 }}
+        // whileInView={{ opacity: 0.34 }}
+        // viewport={{ once: true, amount: 0.1 }}
+        // transition={{ duration: 2, ease: [0.7, 0, 0.4, 1] }}
       />
     </div>
   );
