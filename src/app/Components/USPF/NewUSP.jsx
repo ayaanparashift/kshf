@@ -414,36 +414,36 @@ const Usp = () => {
 
   const accordionData = [
     {
-      title: "Safe Guarding the Nature is part of our DNA",
+      title: "1. Strategic Locations with Seamless Connectivity",
       content:
-        "We integrate sustainable practices in every aspect of infrastructure development, emphasizing harmony with nature.",
+        "Positioned near major hubs for cost efficiency and growth, our parks offer excellent access to highways, smart docking, and streamlined logistics that simplify transport and distribution.",
     },
     {
-      title: "Positioned at a prime location seamless connectivity",
+      title: "2. Customizable and Ready-to-Move Facilities",
       content:
-        "The KSH INFRA Code of Conduct Handbook sets a high bar for compliance. This encompasses every aspect of how our team interacts with internal and external stakeholders",
+        "Choose from pre-built spaces ready for immediate occupancy or fully custom-built solutions tailored to your operational needs, ensuring flexibility for evolving business demands.",
     },
     {
-      title: "Built on the foundations of trust, integrity, & sustainability.",
+      title: "3. Advanced Safety and Emergency Preparedness",
       content:
-        "Our values drive us to build long-lasting client relationships and environmentally responsible industrial spaces.",
+        "Equipped with 24-hour security, CCTV, drone monitoring, and robust emergency response teams with on-site medical support, our parks prioritize safety at every level.",
     },
     {
-      title: "Offers competitive pricing models and eco-friendly operations",
+      title: "4. Sustainable and Smart Resource Management",
       content:
-        "We ensure affordability without compromising on green operations and modern infrastructure.",
+        "From solar power and Miyawaki-inspired green areas to smart energy systems and eco-friendly practices, our parks are designed to minimize costs and reduce environmental impact.",
     },
     {
-      title: "Offers competitive pricing models and eco-friendly operations",
+      title: "5. Community Engagement and Modern Facility Management",
       content:
-        "We ensure affordability without compromising on green operations and modern infrastructure.",
+        "Dynamic wellness spaces, community-focused initiatives, and innovative management apps come together to create environments that enhance productivity and well-being.",
     },
   ];
   return (
     <div className="bg-white uspcontainer w-full flex items-center justify-center flex-col overflow-hidden">
       <div className="flex flex-col max-w-[100vw] h-fit">
         <div className="relative z-10 pt-20 max-w-[1250px] w-[90%] mx-auto xl:pt-[92px] h-fit flex flex-col">
-          <LineHead heading={"Key Differentiators of KSH INFRA Parks"} />
+          <LineHead heading={"What Sets KSH INFRA Parks Ahead"} />
         </div>
         <div className="flex xl:flex-row flex-col-reverse md:p-0 px-5 pt-0 max-h-fit lg:gap-0 gap-5 relative">
           <div className="xl:flex hidden items-end bottom-0 xl:bottom-[30px] justify-center mt-0 xl:absolute relative xl:left-0 w-full xl:w-[700px]">

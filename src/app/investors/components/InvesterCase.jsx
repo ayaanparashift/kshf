@@ -266,8 +266,8 @@ const InvesterCase = () => {
     <>
       <div className="bg-[#092241] py-16">
         <div className="fix12  ">
-          <div className="lg:flex justify-between items-center gap-5 xl:gap-10">
-            <div className="leftCon relative overflow-hidden lg:w-[500px]  flex-shrink-0 flex items-center justify-center">
+          <div className="lg:flex justify-between items-start gap-5 xl:gap-10">
+            <div className="leftCon relative overflow-hidden lg:w-[500px]  flex-shrink-0 flex items-start justify-start">
               <img src="/investorRel/inin.png" alt="" />
               {/* <motion.div
                 className="absolute top-0 left-0 w-full h-full bg-[#092241]"
@@ -299,19 +299,13 @@ const InvesterCase = () => {
                   Industrial & Logistics real estate in India, was founded in
                   2007. The company has a strong team of industry experts with
                   vast experience in the industrial real estate market.
-                  IndoSpace's unwavering focus on the industrial and warehousing
-                  sector in India demonstrates its dedication to meeting the
-                  needs of its clients. The company has partnered with KSH INFRA
-                  to deliver an ecosystem of sustainable, ESG-positive
-                  industrial parks in several strategically important economic
-                  zones in India.
                 </p>
-                <p className="text-base fsans-400 leading-[26px] text-[#eee]">
+                {/* <p className="text-base fsans-400 leading-[26px] text-[#eee]">
                   IndoSpace is investing INR 1,000 crore (~ USD 120 million) in
                   a JV with KSH INFRA to develop a 10-million square feet
                   portfolio of world-class warehousing and industrial parks
                   across the country over the next five years.
-                </p>
+                </p> */}
                 {/* <a
                   target="_blank"
                   href="https://www.indospace.in/about/"
@@ -332,7 +326,7 @@ const InvesterCase = () => {
       {/* ---------- */}
       <div className="bg-[#EEF0F3] py-16">
         <div className="fix12  ">
-          <div className="lg:flex justify-between items-center gap-5 xl:gap-10 flex-row-reverse">
+          <div className="lg:flex justify-between items-start gap-5 xl:gap-10 flex-row-reverse">
             <div className="leftCon relative overflow-hidden lg:w-[500px]  flex-shrink-0 flex items-center justify-center">
               <img src="./investorRel/inmt.png" alt="" />
               {/* <motion.div
@@ -389,7 +383,7 @@ const InvesterCase = () => {
       {/* ---------- */}
       <div className="bg-[#092241] py-16">
         <div className="fix12  ">
-          <div className="lg:flex justify-between items-center gap-5 xl:gap-10">
+          <div className="lg:flex justify-between items-start gap-5 xl:gap-10">
             <div className="leftCon relative overflow-hidden lg:w-[500px]  flex-shrink-0 flex items-center justify-center">
               <img src="/investorRel/inms.png" alt="" />
               {/* <motion.div

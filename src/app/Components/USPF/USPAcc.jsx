@@ -360,7 +360,7 @@ const Accordion = ({ accordionData, acch, accw }) => {
                   }}
                   className="overflow-hidden"
                 >
-                  <div className="text-white text-[14px] md:text-[16px] leading-[150%] fsans-400">
+                  <div className="text-white text-[14px] md:text-[16px] leading-[150%] fsans-400 pt-2">
                     {item.content}
                   </div>
                 </motion.div>

@@ -90,44 +90,43 @@ import "swiper/css/free-mode";
 const iframeUrls = [
   {
     id: 1,
-    title: "Bengaluru International Airport",
-    km: 90,
+    title: "Pune International Airport",
+    km: 39,
     icon: "/ParkPage/mapicons/apl.svg",
     mapframe:
-      "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d497761.7169384042!2d77.47064889407676!3d12.92292183586535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3badd5005bf8ec2d%3A0x6fc352b9c63e655e!2sKSH%20Hosur%20Park%20I%2C%20JX22%2BHGG%2C%20Shoolagiri%2C%20Tamil%20Nadu%20635119!3m2!1d12.601438199999999!2d77.95131339999999!4m5!1s0x3bae1cfe75446265%3A0x296c70e9a129418e!2sKempegowda%20International%20Airport%20Bengaluru%2C%20Karnataka%20534320!3m2!1d13.198908999999999!2d77.7068926!5e0!3m2!1sen!2sin!4v1751188675215!5m2!1sen!2sin",
+      "https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d241910.97913655167!2d73.869054!3d18.67032!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3bc2b501e48b0589%3A0x4515b5fdacda6de4!2sKSH%20Infra%20Chakan%20Industrial%20Park%203%2C%20Village-%20Varale%2C%20Tal-%20Khed%2C%20Pune%2C%20Maharashtra%20410507!3m2!1d18.7870954!2d73.7935248!4m5!1s0x3bc2c134e6c4ff8f%3A0xa810745cf9310798!2sPune%20International%20Airport%2C%20New%20Airport%20Rd%2C%20Pune%20International%20Airport%20Area%2C%20Lohegaon%2C%20Pune%2C%20Maharashtra%20411032!3m2!1d18.579342999999998!2d73.9089168!5e0!3m2!1sen!2sin!4v1744263038202!5m2!1sen!2sin",
   },
   {
     id: 2,
-    title: "Chennai International Airport",
-    km: 286,
-    icon: "/ParkPage/mapicons/road.svg",
+    title: "Mumbai International Airport",
+    km: 143,
+    icon: "/ParkPage/mapicons/apl.svg",
     mapframe:
-      "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d995753.5229422647!2d78.39417003825847!3d12.865081284921866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3badd5005bf8ec2d%3A0x6fc352b9c63e655e!2sKSH%20Hosur%20Park%20I%2C%20JX22%2BHGG%2C%20Shoolagiri%2C%20Tamil%20Nadu%20635119!3m2!1d12.601438199999999!2d77.95131339999999!4m5!1s0x3a525e1f5da86397%3A0x21092f216ee26e47!2sChennai%20International%20Airport%2C%20Airport%20Rd%2C%20Meenambakkam%2C%20Chennai%2C%20Tamil%20Nadu%20600027!3m2!1d12.993959499999999!2d80.1706653!5e0!3m2!1sen!2sin!4v1751190384534!5m2!1sen!2sin",
+      "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d966322.9434910385!2d73.32064299999999!3d18.900430000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3bc2b501e48b0589%3A0x4515b5fdacda6de4!2sKSH%20Infra%20Chakan%20Industrial%20Park%203%2C%20Village-%20Varale%2C%20Tal-%20Khed%2C%20Pune%2C%20Maharashtra%20410507!3m2!1d18.7870954!2d73.7935248!4m5!1s0x3be7c85099bd2947%3A0x1ecc1a60c474a8ae!2sChhatrapati%20Shivaji%20Maharaj%20International%20Airport%20Mumbai%2C%20Mumbai%2C%20Maharashtra%20400099!3m2!1d19.0902177!2d72.86281199999999!5e0!3m2!1sen!2sin!4v1744263184893!5m2!1sen!2sin",
   },
   {
     id: 3,
-    title: "Chennai seaport",
-    km: 300,
-    icon: "/ParkPage/mapicons/apl.svg",
+    title: "Seaport 1",
+    km: 141,
+    icon: "/ParkPage/mapicons/ship.svg",
     mapframe:
-      "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d376833.3640717693!2d79.57139957282862!3d12.934518395679525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3badd5005bf8ec2d%3A0x6fc352b9c63e655e!2sKSH%20Hosur%20Park%20I%2C%20JX22%2BHGG%2C%20Shoolagiri%2C%20Tamil%20Nadu%20635119!3m2!1d12.601438199999999!2d77.95131339999999!4m5!1s0x3a526f46253ae517%3A0x6d34df28245008f5!2sChennai%20Port%2C%20E%20Kal%20Mandapam%20Rd%2C%20Chennai%20Port%20Trust%2C%20Chennai%2C%20Tamil%20Nadu%20600001!3m2!1d13.0815305!2d80.292059!5e0!3m2!1sen!2sin!4v1751189004452!5m2!1sen!2sin",
+      "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d483298.0045152374!2d72.98957999880616!3d18.85308467926921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3bc2b501e48b0589%3A0x4515b5fdacda6de4!2sKSH%20Infra%20Chakan%20Industrial%20Park%203%2C%20Village-%20Varale%2C%20Tal-%20Khed%2C%20Pune%2C%20Maharashtra%20410507!3m2!1d18.7870954!2d73.7935248!4m5!1s0x3be7ce2a7be46f77%3A0x9cb4ef85dc485d31!2sNew%20Dock%20Rd%2C%20Indira%20Docks%2C%20Mumbai%20Port%20Trust%2C%20Mazgaon%2C%20Mumbai%2C%20Maharashtra!3m2!1d18.945432699999998!2d72.8489853!5e0!3m2!1sen!2sin!4v1744264861051!5m2!1sen!2sin",
   },
   {
     id: 4,
     title: "National Highways",
-    km: 30,
-    icon: "/ParkPage/mapicons/ship.svg",
+    km: 103,
+    icon: "/ParkPage/mapicons/road.svg",
     mapframe:
-      "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d51250.21622705815!2d77.74760205615776!3d12.804239742921263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3badd5005bf8ec2d%3A0x6fc352b9c63e655e!2sKSH%20Hosur%20Park%20I%2C%20JX22%2BHGG%2C%20Shoolagiri%2C%20Tamil%20Nadu%20635119!3m2!1d12.601438199999999!2d77.95131339999999!4m5!1s0x3bae718992c21bff%3A0x3766764d23679e90!2sHosur%20toll%2C%20QQGG%2BGW2%2C%20NH%2048%2C%20Attibele%2C%20Karnataka%20562107!3m2!1d12.7762672!2d77.7772461!5e0!3m2!1sen!2sin!4v1751189763525!5m2!1sen!2sin",
+      "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d966652.1931949159!2d73.44267199999999!3d18.843329000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3bc2b501e48b0589%3A0x4515b5fdacda6de4!2sKSH%20Infra%20Chakan%20Industrial%20Park%203%2C%20Village-%20Varale%2C%20Tal-%20Khed%2C%20Pune%2C%20Maharashtra%20410507!3m2!1d18.7870954!2d73.7935248!4m5!1s0x3be7c2a7865b0105%3A0xff03de4c645d7a0c!2sNational%20Highways%20Authority%20of%20India%20PIU-Panvel%2C%20Survey%20No-63%2C%20Chinchpada-Kalamboli%20Bypass%20Road%2C%20Panvel%2C%20Maharashtra%20410206!3m2!1d18.9806882!2d73.08750599999999!5e0!3m2!1sen!2sin!4v1744263243359!5m2!1sen!2sin",
   },
-
   {
     id: 5,
-    title: "National Highways",
-    km: 46,
+    title: "City Center",
+    km: 33,
     icon: "/ParkPage/mapicons/clock.svg",
     mapframe:
-      "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d124609.68030452594!2d78.00308669468635!3d12.57878935623037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3bac34eea94a44a3%3A0x3157b247283329e1!2sNH%20Service%20Road%2C%20Tamil%20Nadu!3m2!1d12.526701!2d78.2342895!4m5!1s0x3badd5005bf8ec2d%3A0x6fc352b9c63e655e!2sKSH%20Hosur%20Park%20I%2C%20JX22%2BHGG%2C%20Shoolagiri%2C%20Tamil%20Nadu%20635119!3m2!1d12.601438199999999!2d77.95131339999999!5e0!3m2!1sen!2sin!4v1751191111471!5m2!1sen!2sin",
+      "https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d121034.50564964209!2d73.682246!3d18.559232!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3bc2b501e48b0589%3A0x4515b5fdacda6de4!2sKSH%20Infra%20Chakan%20Industrial%20Park%203%2C%20Village-%20Varale%2C%20Tal-%20Khed%2C%20Pune%2C%20Maharashtra%20410507!3m2!1d18.7870954!2d73.7935248!4m5!1s0x3bc2bb496bf06797%3A0x52a541e25e980cf0!2sAbsolute%20Global%20Outsourcing%20Private%20Limited%20%7C%20Best%20B2B%20Lead%20Generation%20Company%2C%20no.%20306%2C307%2C%20City%20Centre%20-%20Kolte%20Patil%20Office%2C%20Tal%20Mulshi%2C%20308%2C%20Hinjewadi%20Phase%201%20Rd%2C%20behind%20Persistant%2C%20Hinjawadi%20Rajiv%20Gandhi%20Infotech%20Park%2C%20Hinjawadi%2C%20Pimpri-Chinchwad%2C%20Maharashtra%20411057!3m2!1d18.5882594!2d73.7372457!5e0!3m2!1sen!2sin!4v1744264066645!5m2!1sen!2sin",
   },
 ];
 

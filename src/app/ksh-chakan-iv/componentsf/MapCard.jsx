@@ -145,34 +145,28 @@ const MapCard = ({ activeIndex, onSelectAirport }) => {
   const airports = [
     {
       id: 1,
-      title: "Bengaluru International Airport",
-      km: 90,
+      title: "Pune International Airport",
+      km: 39,
       icon: "/ParkPage/mapicons/apl.svg",
     },
     {
       id: 2,
-      title: "Chennai International Airport",
-      km: 286,
+      title: "Mumbai International Airport",
+      km: 143,
       icon: "/ParkPage/mapicons/apl.svg",
     },
-    {
-      id: 3,
-      title: "Chennai seaport",
-      km: 300,
-      icon: "/ParkPage/mapicons/ship.svg",
-    },
+    { id: 3, title: "Seaport 1", km: 141, icon: "/ParkPage/mapicons/ship.svg" },
     {
       id: 4,
       title: "National Highways",
-      km: 30,
+      km: 103,
       icon: "/ParkPage/mapicons/road.svg",
     },
-
     {
       id: 5,
-      title: "National Highways",
-      km: 46,
-      icon: "/ParkPage/mapicons/road.svg",
+      title: "City Center",
+      km: 33,
+      icon: "/ParkPage/mapicons/clock.svg",
     },
   ];
 

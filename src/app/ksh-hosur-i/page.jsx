@@ -25,6 +25,7 @@ const page = () => {
         <TabMenu />
         <ParkOverview />
         <ParkInfo />
+        <MapSection />
         {/* <CharSlide /> */}
         <CharAcc />
         <ParkInfra />

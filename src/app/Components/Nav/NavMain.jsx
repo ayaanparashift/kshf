@@ -104,10 +104,6 @@ export default function NavMain({ onClose }) {
           <>
             <motion.div
               className="fixed inset-0 bg-black bg-opacity-70 z-[1000000000]"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1 }}
               onClick={handleCloseEnquire}
             />
             <motion.div

@@ -27,31 +27,13 @@ const ParkinSpot = ({}) => {
           {/* Left Side Content */}
           <div className="flex flex-col flex-1 max-w-full gap-5 min-1366:gap-10 justify-center relative">
             <div className="flex flex-col max-w-fit">
-              <motion.h1
-                initial={{ x: -100, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{ duration: 1.2, ease: [0.7, 0, 0.4, 1] }}
-                viewport={{ once: true, amount: 0 }}
-                className="fpt-600 xl:text-[50px] lg:text-[40px] md:text-[32px] text-[20px] text-white leading-[150%] md:leading-[105%] 2xl:text-[64px]"
-              >
+              <motion.h1 className="fpt-600 xl:text-[50px] lg:text-[40px] md:text-[32px] text-[20px] text-white leading-[150%] md:leading-[105%] 2xl:text-[64px]">
                 KSH Hosur Park I
               </motion.h1>
-              <motion.div
-                initial={{ x: -150, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{ duration: 1.2, ease: [0.7, 0, 0.4, 1] }}
-                viewport={{ once: true, amount: 0 }}
-                className="bg-[#F7E327] h-[10px] w-full"
-              />
+              <motion.div className="bg-[#F7E327] h-[10px] w-full" />
             </div>
 
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-              viewport={{ once: true, amount: 0 }}
-              className="fsans-500 gradinetText text-[14px] lg:text-[14px] min-1366:text-[16px] leading-[26px]"
-            >
+            <motion.p className="fsans-500 gradinetText text-[14px] lg:text-[14px] min-1366:text-[16px] leading-[26px]">
               Located near Bangalore, KSH Hosur Park 1 puts you right in India's
               thriving industrial and tech corridor. The Hosur region is growing
               fast, making this the perfect location for companies ready to
@@ -64,10 +46,6 @@ const ParkinSpot = ({}) => {
             <div>
               <motion.button
                 onClick={handleEnquireClick}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-                viewport={{ once: true, amount: 0 }}
                 className="bg-[#E30613] max-w-fit h-[50px] flex items-center text-base fsans-600 text-white px-[21px] py-[14px] gap-[10px] rounded-3xl group"
               >
                 <p>Enquire Now</p>
@@ -92,13 +70,7 @@ const ParkinSpot = ({}) => {
                     alt="some"
                   />
 
-                  <motion.div
-                    className="absolute top-0 left-0 w-full h-full z-20 bg-[#092241]"
-                    initial={{ x: 0 }}
-                    whileInView={{ x: "100%" }}
-                    transition={{ duration: 1.2, ease: [0.7, 0, 0.4, 1] }}
-                    viewport={{ once: true, amount: 0 }}
-                  />
+                  <motion.div className="absolute top-0 left-0 w-full h-full z-20 bg-[#092241]" />
                 </div>
               </div>
 
@@ -134,10 +106,6 @@ const ParkinSpot = ({}) => {
             {/* Full-screen dark overlay */}
             <motion.div
               className="fixed inset-0 bg-black bg-opacity-70 z-[1000]"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1 }}
               onClick={handleCloseEnquire}
             />
 

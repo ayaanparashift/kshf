@@ -23,7 +23,7 @@ const InvesterSec2 = () => {
           className="bg-[#F7E327] h-[5px] w-full"
         ></motion.div>
         <div className=" flex flex-col lg:flex-row justify-between gap-[20px] lg:gap-[5%] pt-[30px]">
-          <div className="flex-1 xl:w-[538px] xl:min-h-[540px] ">
+          <div className="flex-1 xl:w-[538px] h-fit ">
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -32,21 +32,21 @@ const InvesterSec2 = () => {
               className="text-[#434343] text-base leading-[26px] fsans-400 flex flex-col justify-between  gap-3"
             >
               <p>
-                Large global investors have placed confidence in KSH INFRA. We
-                have built over 4 million square feet of warehousing and
-                industrial infrastructure for major global companies like
+                Large global investors have placed their confidence in KSH
+                INFRA. We have built over 4 million square feet of warehousing
+                and industrial infrastructure for major global companies like
                 Kawasaki Motors, Jabil, Faurecia, Gedia, Rieter, Linamar,
                 Saleri, and Kimberly Clark.
-              </p>
+              </p>{" "}
               <p>
-                {" "}
-                Our successes come from strong backing by prestigious global
-                investors such as the Pacific Century Group of Hong Kong, Morgan
-                Stanley Real Estate Investing (MSREI) of the USA, and Mapletree
-                Investments of Singapore.
+                Our success is driven by the trust and backing of prestigious
+                global investment partners who share our commitment to
+                excellence and sustainable growth. Every project undergoes
+                rigorous improvement to achieve IGBC Platinum certification,
+                setting the benchmark for eco-conscious industrial
+                infrastructure.
               </p>
-              <p>
-                {" "}
+              {/* <p>
                 Our recent Joint Venture Agreement with IndoSpace Capital to
                 develop 10 million square feet of industrial infrastructure
                 across key markets in India positions us as the preferred
@@ -54,15 +54,14 @@ const InvesterSec2 = () => {
                 logistics, and other sectors.
               </p>
               <p>
-                {" "}
                 Every project undergoes rigorous improvement to achieve IGBC
                 Platinum certification, setting the benchmark for eco-conscious
                 industrial infrastructure.
-              </p>
+              </p> */}
             </motion.div>
           </div>
 
-          <div className="flex-1 xl:flex-none overflow-hidden relative xl:w-[640px] xl:min-h-[540px] bg-yellow-300 ">
+          <div className="flex-1 xl:flex-none overflow-hidden relative xl:w-[440px] h-auto aspect-square bg-yellow-300 ">
             <img
               src="./investorRel/InvesSpotSec2.png"
               className="w-full h-full object-cover"
