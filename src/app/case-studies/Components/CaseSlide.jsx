@@ -30,10 +30,6 @@ const CaseSlide = () => {
   return (
     <div className="z-10 relative py-[60px] flex gap-[30px] flex-col w-full overflow-hidden">
       <motion.div
-        initial={{ x: 100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-        viewport={{ amount: 0.5, once: true }}
         className="ml-[max(5%,calc((100vw-1250px)/2))]"
         id="slidercontpp2"
       >

@@ -299,8 +299,8 @@ const CapabilitiesF = () => {
   };
 
   return (
-    <div className="bg-[#092241] overflow-hidden min-1920:h-[80vh] xl:h-[100vh] ">
-      <div className="bg-[#092241] md:py-0 py-10 min-1920:h-[80vh] xl:h-[100vh] overflow-hidden">
+    <div className="bg-[#092241] overflow-hidden min-1920:h-[80vh] xl:h-[110vh] ">
+      <div className="bg-[#092241] md:py-0 py-10 min-1920:h-[80vh] xl:h-[110vh] overflow-hidden">
         <div className="ml-[max(5%,calc((100vw-1250px)/2))] h-full mr-[max(5%,calc((100vw-1250px)/2))] sm:mr-0 lg:gap-0 gap-[50px] flex lg:flex-row flex-col md:justify-normal justify-center">
           {/* Left Container */}
           <div className="leftCon xl:pr-10 2xl:pr-20 w-full xl:w-1/2 md:py-5 flex flex-col min-h-full justify-center">
@@ -411,7 +411,8 @@ const CapabilitiesF = () => {
           {/*  */}
           {/* Right Container */}
           <div className="rightCon min-h-full w-full min-1920:min-h-[870px] min-1440:min-h-[780.5px] min-1920:max-h-[870px] xl:w-1/2 hidden md:flex flex-col overflow-hidden relative">
-            <div className="relative min-1920:flex-[0.55] flex-[0.65] h-full">
+            <div className="relative flex-[0.65] h-full">
+              {/* <div className="relative min-1920:flex-[0.55] flex-[0.65] h-full"> */}
               <AnimatePresence>
                 {tabs.slice(0, activeTab + 1).map((tab, idx) => (
                   <motion.div
@@ -449,7 +450,8 @@ const CapabilitiesF = () => {
               </AnimatePresence>
             </div>
 
-            <div className="flex flex-row min-1920:flex-[0.45] flex-[0.35] relative h-full">
+            <div className="flex flex-row flex-[0.35] relative h-full">
+              {/* <div className="flex flex-row min-1920:flex-[0.45] flex-[0.35] relative h-full"> */}
               <div className="w-[50%] relative h-auto">
                 <AnimatePresence>
                   {tabs.slice(0, activeTab + 1).map((tab, idx) => (

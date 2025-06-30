@@ -29,13 +29,7 @@ const CaseStudy = () => {
 
   return (
     <div className="z-10 relative py-[60px] w-full">
-      <motion.div
-        initial={{ x: 100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-        viewport={{ amount: 0.5, once: true }}
-        className="fix12 grid grid-cols-1 md:grid-cols-2 gap-[30px]"
-      >
+      <motion.div className="fix12 grid grid-cols-1 md:grid-cols-2 gap-[30px]">
         {CaseStudyContent.map((content, index) => (
           <SlideCard
             key={index}

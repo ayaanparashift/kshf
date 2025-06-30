@@ -55,30 +55,12 @@ const LastSw = () => {
     <div className="bg-white pt-[72px] pb-[95px] flex gap-[49px] flex-col w-full overflow-hidden">
       <div className="flex md:flex-row flex-col items-start md:gap-0 gap-[20px] fix12 justify-between">
         <div>
-          <motion.h3
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-            viewport={{ amount: 0.5, once: true }}
-            className="fsans-600 leading-[111%] max-w-fit spotlightheaddd text-[24px] md:text-[44px] text-[#092241]"
-          >
+          <h3 className="fsans-600 leading-[111%] max-w-fit spotlightheaddd text-[24px] md:text-[44px] text-[#092241]">
             Other Parks
-          </motion.h3>
-          <motion.div
-            initial={{ x: -150, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-            viewport={{ amount: 0.5, once: true }}
-            className="bg-[#F7E327] h-[5px]  w-full "
-          />
+          </h3>
+          <div className="bg-[#F7E327] h-[5px]  w-full " />
         </div>
-        <motion.div
-          initial={{ y: -100, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-          viewport={{ amount: 0.1, once: true }}
-          className="flex gap-[14px] items-center justify-center"
-        >
+        <div className="flex gap-[14px] items-center justify-center">
           <button className="swiper-button-prev-landing h-[41px] w-[41px]">
             <img
               className="h-[41px] w-[41px]"
@@ -93,16 +75,9 @@ const LastSw = () => {
               alt="ArrowRight"
             />
           </button>
-        </motion.div>
+        </div>
       </div>
-      <motion.div
-        initial={{ x: 100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-        viewport={{ amount: 0.5, once: true }}
-        className="ml-[max(5%,calc((100vw-1250px)/2))]"
-        id="slidercontpp2"
-      >
+      <div className="ml-[max(5%,calc((100vw-1250px)/2))]" id="slidercontpp2">
         <Swiper
           modules={[Navigation, FreeMode]}
           navigation={{
@@ -157,7 +132,7 @@ const LastSw = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </motion.div>
+      </div>
     </div>
   );
 };
