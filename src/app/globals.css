@@ -430,15 +430,17 @@ h6:not(.spotlightheaddd) {
 }
 .hotspot:hover {
   background-color: #f7e327;
-  width: 70px;
-  height: 70px;
+  width: 85px;
+  height: 85px;
 }
 .upcoming {
   font-size: 8px !important;
 }
 .hotspot2:hover {
   background-color: #ffffff !important;
-
+  border: 2px solid #f7e327;
+  width: 100px !important;
+  height: 100px !important;
   .park_name {
     color: #000000 !important;
     font-size: 10px !important;
@@ -450,9 +452,9 @@ h6:not(.spotlightheaddd) {
     height: 26px;
     transition: all 0.5s;
   }
-  border: 2px solid #f7e327;
-  width: 100px !important;
-  height: 100px !important;
+  .park_name {
+    bottom: 10px !important;
+  }
 }
 .hotspot.active {
   background-color: transparent;
@@ -571,8 +573,8 @@ span.park_name {
 
 .hotspot:hover span.park_name {
   opacity: 1;
-  font-size: 10px;
-  bottom: 10px !important;
+  font-size: 9px;
+  bottom: 15px;
 }
 
 .hotspot.active span.park_name {
