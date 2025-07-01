@@ -299,11 +299,11 @@ const SustainDownload2 = () => {
     >
       <div className="relative h-fit lg:h-[596px] flex lg:flex-row flex-col overflow-hidden  w-[100%] xl-1920:mr-[17.4%] xl-1600:mr-[172px] xl-1536:mr-[140px] xl-1440:mr-[94px] xl-1366:mr-[66px] xl-1280:mr-[62px]">
         {/* Left Section */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
-          viewport={{ amount: 0.3, once: true }}
+        <div
+          // initial={{ opacity: 0 }}
+          // whileInView={{ opacity: 1 }}
+          // transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
+          // viewport={{ amount: 0.3, once: true }}
           className="leftCon overflow-hidden bg-[#141D28] w-full lg:w-[60%] xl-1920:pl-[21%] xl-1600:pl-[174px] xl-1536:pl-[140px] xl-1440:pl-[90px] xl-1366:pl-[70px] xl-1280:pl-[64px] xl-1024:pl-[50px] xl-768:pl-[40px]"
         >
           {/* Heading  */}
@@ -372,7 +372,7 @@ const SustainDownload2 = () => {
               </button>
             </div>
           </div>
-        </motion.div>
+        </div>
 
         {/* Right Section (Swiper) */}
         <div className="rightCon overflow-hidden relative w-full lg:w-[40%] h-full CertificationsRigthImgBg">

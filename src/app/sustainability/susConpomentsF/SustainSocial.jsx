@@ -12,15 +12,15 @@ const SustainSocial = () => {
     <div className="bg-[#EEF0F3] overflow-hidden">
       {/* <div className="md:ml-[calc((100vw-1250px)/2)] py-16 xl-1280:ml-[50px] xl-1024:ml-[45px] xl-768:ml-[40px] w-[90%] mx-auto"> */}
       <div className="fix12 md:pt-8 lg:pt-16 pt-14 flex flex-col gap-[40px]">
-        <motion.h1
-          initial={{ width: 0 }}
-          whileInView={{ width: "100%" }}
-          transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-          viewport={{ once: true, amount: 0.3 }}
+        <h1
+          // initial={{ width: 0 }}
+          // whileInView={{ width: "100%" }}
+          // transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
+          // viewport={{ once: true, amount: 0.3 }}
           className="text-[#092241] fpt-500 md:text-[44px] sm:text-[32px] text-[24px] border-b-[#D7D7D7] border-b-[1px] md:pb-3 overflow-hidden whitespace-nowrap"
         >
           Social Commitment
-        </motion.h1>
+        </h1>
         <p className="fsans-600 text-[16px] text-[#434343] leading-[26px]">
           We are consciously aware of the effects that large projects can have
           on the community. Our goal is to ensure that these effects are

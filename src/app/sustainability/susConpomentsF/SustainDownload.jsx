@@ -218,19 +218,19 @@ const SustainDownload = () => {
     <div>
       <div className="bgSusDown">
         <div className="flex flex-col md:flex-row w-[90%] mx-auto justify-center gap-[50px] md:h-[352px] items-center md:py-10 py-14">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
-            viewport={{ amount: 0.1, once: true }}
+          <div
+          // initial={{ opacity: 0 }}
+          // whileInView={{ opacity: 1 }}
+          // transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
+          // viewport={{ amount: 0.1, once: true }}
           >
             <img src="Sustainability/downloadBook.png" alt="Download Book" />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, ease: [0.7, 0, 0.4, 1], delay: 0.2 }}
-            viewport={{ amount: 0.3, once: true }}
+          </div>
+          <div
+            // initial={{ opacity: 0 }}
+            // whileInView={{ opacity: 1 }}
+            // transition={{ duration: 1, ease: [0.7, 0, 0.4, 1], delay: 0.2 }}
+            // viewport={{ amount: 0.3, once: true }}
             className="text-white flex flex-col gap-8 md:items-start items-center justify-center "
           >
             <h1 className="fsans-600 text-center text-xl">
@@ -258,7 +258,7 @@ const SustainDownload = () => {
                 />
               </svg>
             </button>
-          </motion.div>
+          </div>
         </div>
       </div>
 

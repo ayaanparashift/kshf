@@ -56,22 +56,22 @@ const SustainGovernence = () => {
               protects your investment while delivering high growth.
             </p>
           </div>
-          <motion.div
+          {/* <motion.div
             initial={{ x: 0 }}
             whileInView={{ x: "100%" }}
             transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
             viewport={{ once: true, amount: 0.3 }}
             className="absolute h-full left-0 top-0 bg-[#092241] z-20 w-full"
-          />
+          /> */}
         </div>
 
         {/* Accordion Content */}
         <div className="flex justify-between max-w-screen xl-1280:gap-14">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
-            viewport={{ once: true, amount: 0.3 }}
+          <div
+            // initial={{ opacity: 0 }}
+            // whileInView={{ opacity: 1 }}
+            // transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
+            // viewport={{ once: true, amount: 0.3 }}
             className="w-[90%] mx-auto left min-1024:w-auto min-1024:mx-0"
           >
             {accordionData.map((item, index) => (
@@ -108,7 +108,7 @@ const SustainGovernence = () => {
                 </div>
               </div>
             ))}
-          </motion.div>
+          </div>
 
           {/* Dynamic Image Change with Fade-in Effect */}
           <div className="relative overflow-hidden hidden lg:block right">
@@ -128,13 +128,13 @@ const SustainGovernence = () => {
                 alt="Accordion Image"
               />
             </AnimatePresence>
-            <motion.div
+            {/* <motion.div
               initial={{ x: 0 }}
               whileInView={{ x: "100%" }}
               transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
               viewport={{ once: true, amount: 0.3 }}
               className="absolute h-full left-0 top-0 bg-[#092241] z-20 w-full"
-            />
+            /> */}
           </div>
         </div>
       </div>

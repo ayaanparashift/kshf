@@ -86,28 +86,28 @@ const SustainEnviroment = () => {
       <div className="flex flex-col max-w-[100vw] h-fit">
         <div className="relative z-10 pt-[50px] max-w-[1250px] w-[90%] mx-auto lg:pt-[92px] h-fit flex flex-col">
           <div className="overflow-x-hidden h-fit w-full">
-            <motion.div
-              initial={{ width: 0 }}
-              whileInView={{ width: "100%" }}
-              viewport={{ once: true, amount: 0.1 }}
-              transition={{ duration: 2, ease: [0.7, 0, 0.4, 1] }}
+            <div
+              // initial={{ width: 0 }}
+              // whileInView={{ width: "100%" }}
+              // viewport={{ once: true, amount: 0.1 }}
+              // transition={{ duration: 2, ease: [0.7, 0, 0.4, 1] }}
               className="overflow-x-hidden h-fit whitespace-nowrap"
             >
               <h2 className="md:text-[44px] text-[22px] leading-[111%] w-full pb-[10px] border-b xl:mb-[66px] mb-[36px] text-[#092241] border-[#d7d7d7]">
                 KSH INFRA Parks:
                 <br className="lg:hidden flex" /> Committed to the Environment
               </h2>
-            </motion.div>
+            </div>
           </div>
         </div>
 
         <div className="flex xl:flex-row flex-col-reverse md:p-0 px-5 pt-0 max-h-fit h-fit lg:gap-0 gap-5 relative">
           <div className="xl:flex hidden items-end lg:top-[10%] xl-1366:top-[5%] justify-center mt-0 xl:absolute relative lg:left-[-100px] xl-1366:left-[-150px] w-full lg:w-[800px] xl-1366:w-[875px] hidden">
-            <motion.img
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ ease: [0.7, 0, 0.4, 1], duration: 1.4 }}
-              viewport={{ once: true, amount: 0.3 }}
+            <img
+              // initial={{ opacity: 0 }}
+              // whileInView={{ opacity: 1 }}
+              // transition={{ ease: [0.7, 0, 0.4, 1], duration: 1.4 }}
+              // viewport={{ once: true, amount: 0.3 }}
               src="Sustainability/SustainEnvironmental.png"
               alt="Sus"
               className="min-1440:scale-125"
@@ -115,11 +115,11 @@ const SustainEnviroment = () => {
           </div>
 
           <div className="xl:w-full mx-auto flex flex-col h-fit max-w-full justify-center items-start gap-[33px] xl:pb-[110px] min-1280:pl-[540px] min-1366:pl-[600px] min-1440:pl-[665px] pb-14">
-            <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ ease: [0.7, 0, 0.4, 1], duration: 1.4 }}
-              viewport={{ once: true, amount: 0.3 }}
+            <div
+              // initial={{ opacity: 0, y: 100 }}
+              // whileInView={{ opacity: 1, y: 0 }}
+              // transition={{ ease: [0.7, 0, 0.4, 1], duration: 1.4 }}
+              // viewport={{ once: true, amount: 0.3 }}
               className="flex sm:flex-row flex-col sm:items-center items-start justify-start gap-[20px] sm:gap-[92px] w-full sm:w-[90%] sm:mx-auto xl:w-auto lg:mr-[max(5%,calc((100vw-1250px)/2))]"
             >
               <p className="fsans-400 text-[16px] leading-[26px] text-[#434343] z-[1]">
@@ -127,7 +127,7 @@ const SustainEnviroment = () => {
                 sustainable environmental practices while creating modern,
                 high-quality warehousing and industrial parks.
               </p>
-            </motion.div>
+            </div>
 
             {/* <Swiper
               slidesPerGroup={1}
@@ -162,11 +162,11 @@ const SustainEnviroment = () => {
               ))}
             </Swiper> */}
             <Accordion accw={90} acch={650} accordionData={swcontent} />
-            <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ ease: [0.7, 0, 0.4, 1], duration: 1.4 }}
-              viewport={{ once: true, amount: 0.3 }}
+            <div
+              // initial={{ opacity: 0, y: 100 }}
+              // whileInView={{ opacity: 1, y: 0 }}
+              // transition={{ ease: [0.7, 0, 0.4, 1], duration: 1.4 }}
+              // viewport={{ once: true, amount: 0.3 }}
               className=" flex sm:flex-row flex-col sm:items-center items-start justify-between gap-[20px] sm:gap-[92px] w-full xl:pl-0 pl-[max(5%,calc((100vw-1250px)/2))] pr-[max(5%,calc((100vw-1250px)/2))]"
             >
               <div
@@ -198,7 +198,7 @@ const SustainEnviroment = () => {
                   />
                 </button>
               </div> */}
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>
