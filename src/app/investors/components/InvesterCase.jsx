@@ -278,20 +278,20 @@ const InvesterCase = () => {
               /> */}
             </div>
             <div className="RightCon flex-1 lg:p-4 xl-768:mt-14">
-              <motion.h1
-                initial={{ width: 0 }}
-                whileInView={{ width: "100%" }}
-                transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-                viewport={{ amount: 0.1, once: true }}
+              <h1
+                // initial={{ width: 0 }}
+                // whileInView={{ width: "100%" }}
+                // transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
+                // viewport={{ amount: 0.1, once: true }}
                 className=" text-white pb-2 text-3xl whitespace-nowrap overflow-hidden leading-[33px] border-b-[#D7D7D7] border-b-[1px]"
               >
                 IndoSpace
-              </motion.h1>
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-                viewport={{ amount: 0.1, once: true }}
+              </h1>
+              <div
+                // initial={{ opacity: 0 }}
+                // whileInView={{ opacity: 1 }}
+                // transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
+                // viewport={{ amount: 0.1, once: true }}
                 className="relative overflow-hidden pt-5 xl:pt-10 space-y-[40px]"
               >
                 <p className="xl:text-base text-sm fsans-400 leading-[26px] text-[#eee]">
@@ -318,7 +318,7 @@ const InvesterCase = () => {
                     alt="Redarrow"
                   />
                 </a> */}
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>
@@ -338,20 +338,20 @@ const InvesterCase = () => {
               /> */}
             </div>
             <div className="RightCon max-w-1/2 flex flex-wrap wrap  xl-768:mt-14">
-              <motion.h1
-                initial={{ width: 0 }}
-                whileInView={{ width: "100%" }}
-                transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-                viewport={{ amount: 0.1, once: true }}
+              <h1
+                // initial={{ width: 0 }}
+                // whileInView={{ width: "100%" }}
+                // transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
+                // viewport={{ amount: 0.1, once: true }}
                 className="text-[#151515]  whitespace-nowrap overflow-hidden pb-2 text-3xl leading-[33px] border-b-[#464646] border-b-[1px]"
               >
                 Mapletree Investments - Singapore
-              </motion.h1>
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-                viewport={{ amount: 0.1, once: true }}
+              </h1>
+              <div
+                // initial={{ opacity: 0 }}
+                // whileInView={{ opacity: 1 }}
+                // transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
+                // viewport={{ amount: 0.1, once: true }}
                 className=" pt-10 space-y-[40px]"
               >
                 <p className="text-[#303030] text-base fsans-400 leading-[26px] ">
@@ -375,7 +375,7 @@ const InvesterCase = () => {
                     alt="Redarrow"
                   />
                 </a> */}
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>
@@ -395,20 +395,20 @@ const InvesterCase = () => {
               /> */}
             </div>
             <div className="RightCon flex-1 lg:p-4 xl-768:mt-14">
-              <motion.h1
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-                viewport={{ amount: 0.1, once: true }}
+              <h1
+                // initial={{ opacity: 0 }}
+                // whileInView={{ opacity: 1 }}
+                // transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
+                // viewport={{ amount: 0.1, once: true }}
                 className=" text-white  overflow-hidden pb-2 text-3xl leading-[33px] border-b-[#D7D7D7] border-b-[1px]"
               >
                 Morgan Stanley Real Estate Investing (MSREF)
-              </motion.h1>
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-                viewport={{ amount: 0.1, once: true }}
+              </h1>
+              <div
+                // initial={{ opacity: 0 }}
+                // whileInView={{ opacity: 1 }}
+                // transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
+                // viewport={{ amount: 0.1, once: true }}
                 className="overflow-hidden relative pt-5 xl:pt-10 space-y-[40px]"
               >
                 <p className="text-sm xl:text-base fsans-400 leading-[26px] text-[#eee]">
@@ -436,7 +436,7 @@ const InvesterCase = () => {
                     alt="Redarrow"
                   />
                 </a> */}
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>
@@ -456,20 +456,20 @@ const InvesterCase = () => {
               /> */}
             </div>
             <div className="RightCon flex-1 lg:p-4 xl-768:mt-14">
-              <motion.h1
-                initial={{ width: 0 }}
-                whileInView={{ width: "100%" }}
-                transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-                viewport={{ amount: 0.1, once: true }}
+              <h1
+                // initial={{ width: 0 }}
+                // whileInView={{ width: "100%" }}
+                // transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
+                // viewport={{ amount: 0.1, once: true }}
                 className="text-[#151515]  whitespace-nowrap overflow-hidden pb-2 text-3xl leading-[33px] border-b-[#464646] border-b-[1px]"
               >
                 Pacific Century Group
-              </motion.h1>
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-                viewport={{ amount: 0.1, once: true }}
+              </h1>
+              <div
+                // initial={{ opacity: 0 }}
+                // whileInView={{ opacity: 1 }}
+                // transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
+                // viewport={{ amount: 0.1, once: true }}
                 className="overflow-hidden pt-5 xl:pt-10 space-y-[40px]"
               >
                 <p className="text-[#303030] text-sm xl:text-base fsans-400 leading-[26px] ">
@@ -493,7 +493,7 @@ const InvesterCase = () => {
                     alt="Redarrow"
                   />
                 </a> */}
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>

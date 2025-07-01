@@ -19,13 +19,7 @@ h-fit lg:h-[502px] flex flex-col overflow-hidden bg-white"
         <div className="flex lg:flex-row flex-col w-full h-full items-center gap-10">
           <div className="min-h-full justify-start ml-[max(5%,calc((100vw-1250px)/2))] md:mr-0 mr-[max(5%,calc((100vw-1250px)/2))]  flex flex-col w-auto lg:w-[75%] xl:w-[40%] py-0 lg:py-[70px]">
             <LineHead heading="About Chakan, Pune" />
-            <motion.h3
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-              viewport={{ once: true, amount: 0.5 }}
-              className="xl-1280:text-[22px] gradinetText3 leading-[130%] spotlightheaddd fsans-400 text-[20px] mt-[-20px] xl:1024:mt-[-40px] xl-1280:mt-[-20px]"
-            >
+            <motion.h3 className="xl-1280:text-[22px] gradinetText3 leading-[130%] spotlightheaddd fsans-400 text-[20px] mt-[-20px] xl:1024:mt-[-40px] xl-1280:mt-[-20px]">
               Chakan, near Pune, is one of India’s fastest-growing integrated
               industrial hubs. With excellent connectivity and a thriving
               ecosystem of global manufacturers and logistics providers, it has

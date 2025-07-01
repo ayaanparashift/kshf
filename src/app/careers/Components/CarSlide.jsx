@@ -685,15 +685,15 @@ export const CarSlide = () => {
       {/* Main Section */}
       <div className="w-full lg:bg-[linear-gradient(to_bottom,#ffffff_90%,#092241_10%)]">
         <div className="fix12 !overflow-visible">
-          <motion.h1
-            initial={{ width: 0 }}
-            whileInView={{ width: "100%" }}
-            transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-            viewport={{ amount: 0.1, once: true }}
+          <h1
+            // initial={{ width: 0 }}
+            // whileInView={{ width: "100%" }}
+            // transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
+            // viewport={{ amount: 0.1, once: true }}
             className="md:text-[44px] text-[24px] text-[#092241] leading-[111%] w-full pb-[10px] border-b border-[#D7D7D7] whitespace-nowrap overflow-hidden"
           >
             What our team says!
-          </motion.h1>
+          </h1>
 
           <Swiper
             modules={[Thumbs, Navigation]}
@@ -788,11 +788,11 @@ export const CarSlide = () => {
             </button>
           </div>
 
-          <motion.div
-            initial={{ x: "-200px", opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-            viewport={{ amount: 0.1, once: true }}
+          <div
+          // initial={{ x: "-200px", opacity: 0 }}
+          // whileInView={{ x: 0, opacity: 1 }}
+          // transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
+          // viewport={{ amount: 0.1, once: true }}
           >
             <Swiper
               onSwiper={setThumbsSwiper}
@@ -823,7 +823,7 @@ export const CarSlide = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>

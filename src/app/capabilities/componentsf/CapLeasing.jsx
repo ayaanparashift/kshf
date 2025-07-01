@@ -7,19 +7,19 @@ const CapLeasing = () => {
         <div className="fix12 flex flex-col gap-10 py-24 lg:flex-row-reverse">
           <div className="LeftCon flex-1 relative overflow-hidden">
             <img src="/Cap/caplea.png" alt="" />
-            <motion.div
-              initial={{ x: 0 }}
-              whileInView={{ x: "100%" }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
+            {/* <div
+              // initial={{ x: 0 }}
+              // whileInView={{ x: "100%" }}
+              // viewport={{ once: true, amount: 0.3 }}
+              // transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
               className="absolute top-0 left-0 w-full h-full bg-[#fff]"
-            />
+            /> */}
           </div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
+          <div
+            // initial={{ opacity: 0 }}
+            // whileInView={{ opacity: 1 }}
+            // viewport={{ once: true, amount: 0.3 }}
+            // transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
             className="rigCon flex-1 flex flex-col gap-10"
           >
             <h1 className="text-3xl ftp-500 text-[#092241] leading-[33px] border-b-[#828282] border-b-[1px] pb-2">
@@ -40,7 +40,7 @@ const CapLeasing = () => {
                 supporting all your activities.
               </p>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </>

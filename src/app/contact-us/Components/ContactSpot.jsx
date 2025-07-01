@@ -8,11 +8,11 @@ const ContactSpot = () => {
     <div className="relative bg-[#092241] h-[430px] md:h-[100vh] min-1600:h-[100vh] overflow-hidden z-0">
       {/* <div className=""> */}
       <div className="fix12 pt-[140px] ">
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
-          viewport={{ amount: 0.1, once: true }}
+        <p
+          // initial={{ opacity: 0 }}
+          // whileInView={{ opacity: 1 }}
+          // transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
+          // viewport={{ amount: 0.1, once: true }}
           className="text-[#D7D7D7A3] text-[13px] md:text-base fsans-400"
         >
           {" "}
@@ -23,16 +23,16 @@ const ContactSpot = () => {
             Home
           </Link>{" "}
           &gt; Contact
-        </motion.p>
-        <motion.h1
-          initial={{ width: 0 }}
-          whileInView={{ width: "fit-content" }}
-          transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
-          viewport={{ amount: 0.1, once: true }}
+        </p>
+        <h1
+          // initial={{ width: 0 }}
+          // whileInView={{ width: "fit-content" }}
+          // transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
+          // viewport={{ amount: 0.1, once: true }}
           className="md:text-[60px] text-[30px] md:w-[400px] w-fit ftp-500 text-white border-b-[6px] border-[#F7E327] whitespace-nowrap overflow-hidden"
         >
           Contact Us
-        </motion.h1>
+        </h1>
       </div>
       {/* <img
         src="./contact/contactheader.webp"

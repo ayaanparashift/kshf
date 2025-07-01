@@ -22,23 +22,17 @@ const ParkInfo = () => {
             alt="Park Info"
             className="w-full"
           />
-          <motion.div
+          {/* <motion.div
             className="absolute top-0 left-0 w-full h-full bg-[#EEF0F3]"
             initial={{ x: 0 }}
             whileInView={{ x: "-100%" }}
             transition={{ duration: 1.7, ease: [0.7, 0, 0.4, 1] }}
             viewport={{ once: true, amount: 0.3 }} // Adjust amount to control trigger point
-          />
+          /> */}
         </div>
 
         {/* Right Stats Section */}
-        <motion.div
-          className="md:w-1/2 w-full space-y-6"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1.7, ease: [0.7, 0, 0.4, 1] }}
-          viewport={{ once: true, amount: 0.3 }}
-        >
+        <motion.div className="md:w-1/2 w-full space-y-6">
           {stats.map((stat, index) => (
             <div
               key={index}

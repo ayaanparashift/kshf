@@ -87,30 +87,30 @@ const CapProperty = () => {
             className="min-h-full h-full"
             alt="Cap Project"
           />
-          <motion.div
+          {/* <motion.div
             initial={{ x: 0 }}
             whileInView={{ x: "-100%" }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
             className="absolute top-0 left-0 w-full h-full bg-[#092241]"
-          />
+          /> */}
         </div>
         <div className="conCap flex-1 flex flex-col justify-between">
-          <motion.h1
-            initial={{ width: 0 }}
-            whileInView={{ width: "100%" }}
-            viewport={{ once: true, amount: 0.1 }}
-            transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
+          <h1
+            // initial={{ width: 0 }}
+            // whileInView={{ width: "100%" }}
+            // viewport={{ once: true, amount: 0.1 }}
+            // transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
             className="md:text-[30px] text-[24px] overflow-hidden fpt-500 whitespace-nowrap leading-[33px] text-white border-b-[#D7D7D7] border-b-[1px] pb-2"
           >
             Property Management
-          </motion.h1>
+          </h1>
           <div className="flex flex-col justify-between">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true, amount: 0.1 }}
-              transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
+            <div
+              // initial={{ opacity: 0 }}
+              // whileInView={{ opacity: 1 }}
+              // viewport={{ once: true, amount: 0.1 }}
+              // transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
               className="flex flex-col gap-[34px] py-10"
             >
               <h1 className="text-xl leading-[26px] fsans-600 text-[#E6E6E6]">
@@ -122,13 +122,13 @@ const CapProperty = () => {
                 tenant satisfaction above all else. Our property management
                 approach spans several focus areas:
               </p>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true, amount: 0.7 }}
-              transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
+            <div
+              // initial={{ opacity: 0 }}
+              // whileInView={{ opacity: 1 }}
+              // viewport={{ once: true, amount: 0.7 }}
+              // transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
               className="bg-[#EEF0F3] border border-[#D7D7D7] overflow-hidden"
             >
               {accordionData.map((item, index) => (
@@ -181,7 +181,7 @@ const CapProperty = () => {
                   </AnimatePresence>
                 </div>
               ))}
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

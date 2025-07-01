@@ -289,11 +289,11 @@ const CareerAcc = () => {
       <div className="min-1366:ml-[calc((100vw-1250px)/2)] xl-1280:ml-[60px] xl-1024:ml-[50px]">
         <div className="flex justify-between items-stretch max-w-screen gap-[70px] xl:mr-0 mr-[max(5%,calc((100vw-1250px)/2))] xl:ml-0 ml-[max(5%,calc((100vw-1250px)/2))]">
           {/* Left - Text Content */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
-            viewport={{ once: true, amount: 0.3 }}
+          <div
+            // initial={{ opacity: 0 }}
+            // whileInView={{ opacity: 1 }}
+            // transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
+            // viewport={{ once: true, amount: 0.3 }}
             className="w-full h-auto max-h-[732px] lg:min-h-[732px] lg:h-[732px] flex justify-center flex-col"
           >
             {accordionData.map((item, index) => (
@@ -332,7 +332,7 @@ const CareerAcc = () => {
                 </div>
               </div>
             ))}
-          </motion.div>
+          </div>
 
           {/* Right - Image */}
           <div className="relative overflow-hidden hidden xl:block w-full min-h-full">
@@ -343,13 +343,13 @@ const CareerAcc = () => {
                 alt="Accordion Image"
               />
             )}
-            <motion.div
+            {/* <motion.div
               initial={{ x: 0 }}
               whileInView={{ x: "100%" }}
               transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
               viewport={{ once: true, amount: 0.3 }}
               className="absolute h-full left-0 top-0 bg-[#092241] z-20 w-full"
-            />
+            /> */}
           </div>
         </div>
       </div>

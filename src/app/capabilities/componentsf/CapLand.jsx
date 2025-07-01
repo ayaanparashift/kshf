@@ -7,19 +7,19 @@ const CapLand = () => {
         <div className="fix12 flex flex-col lg:flex-row gap-10 py-24">
           <div className="LeftCon flex-1 relative overflow-hidden">
             <img src="/Cap/caplan.png" alt="" />
-            <motion.div
-              initial={{ x: 0 }}
-              whileInView={{ x: "-100%" }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
+            {/* <motion.div
+              // initial={{ x: 0 }}
+              // whileInView={{ x: "-100%" }}
+              // viewport={{ once: true, amount: 0.3 }}
+              // transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
               className="absolute top-0 left-0 w-full h-full bg-[#092241]"
-            />
+            /> */}
           </div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
+          <div
+            // initial={{ opacity: 0 }}
+            // whileInView={{ opacity: 1 }}
+            // viewport={{ once: true, amount: 0.3 }}
+            // transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
             className="rigCon flex-1 flex flex-col gap-10"
           >
             <h1
@@ -44,7 +44,7 @@ const CapLand = () => {
                 strategic positioning.
               </p>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
 
@@ -54,19 +54,19 @@ const CapLand = () => {
           <div className="LeftCon flex-1 relative overflow-hidden">
             {/* <img src="/Cap/capCapital.png" alt="" /> */}
             <img src="/OurCapabilities/captf.png" alt="" />
-            <motion.div
+            {/* <motion.div
               initial={{ x: 0 }}
               whileInView={{ x: "100%" }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
               className="absolute top-0 left-0 w-full h-full bg-[#fff]"
-            />
+            /> */}
           </div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
+          <div
+            // initial={{ opacity: 0 }}
+            // whileInView={{ opacity: 1 }}
+            // viewport={{ once: true, amount: 0.3 }}
+            // transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
             className="rigCon flex-1 flex flex-col gap-10"
           >
             <h1 className="text-3xl ftp-500 text-[#092241] leading-[33px] border-b-[#828282] border-b-[1px] pb-2">
@@ -85,7 +85,7 @@ const CapLand = () => {
                 efficient spaces.
               </p>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </>

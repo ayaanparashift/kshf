@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 const Map = () => {
   return (
     <div className="bg-[#092241] py-[50px] md:py-[100px]">
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
-        viewport={{ amount: 0.3, once: true }}
+      <div
+        // initial={{ opacity: 0 }}
+        // whileInView={{ opacity: 1 }}
+        // transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
+        // viewport={{ amount: 0.3, once: true }}
         className="fix12"
       >
         {/* <iframe
@@ -28,7 +28,7 @@ const Map = () => {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-      </motion.div>
+      </div>
     </div>
   );
 };

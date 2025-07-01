@@ -173,20 +173,20 @@ export default function FormSec() {
           {!isSubmitted && (
             <>
               <div className="lg:pb-[50px] pb-[20px] max-w-fit">
-                <motion.h1
-                  initial={{ x: "-100%", opacity: 0 }}
-                  whileInView={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 1.2, ease: [0.7, 0, 0.4, 1] }}
-                  viewport={{ once: true, amount: 0.1 }}
+                <h1
+                  // initial={{ x: "-100%", opacity: 0 }}
+                  // whileInView={{ x: 0, opacity: 1 }}
+                  // transition={{ duration: 1.2, ease: [0.7, 0, 0.4, 1] }}
+                  // viewport={{ once: true, amount: 0.1 }}
                   className="fpt-600 xl:text-[60px] lg:text-[40px] md:text-[32px] text-[28px] text-white leading-[150%] md:leading-[105%] 2xl:text-[70px]"
                 >
                   Join Us
-                </motion.h1>
-                <motion.div
-                  initial={{ x: "-100%", opacity: 0 }}
-                  whileInView={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 1.2, ease: [0.7, 0, 0.4, 1] }}
-                  viewport={{ once: true, amount: 0 }}
+                </h1>
+                <div
+                  // initial={{ x: "-100%", opacity: 0 }}
+                  // whileInView={{ x: 0, opacity: 1 }}
+                  // transition={{ duration: 1.2, ease: [0.7, 0, 0.4, 1] }}
+                  // viewport={{ once: true, amount: 0 }}
                   className="bg-[#F7E327] h-[5px] md:h-[10px] w-full"
                 />
               </div>

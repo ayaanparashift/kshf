@@ -329,6 +329,7 @@ const VidT = () => {
           >
             <video
               ref={videoRef}
+              controls
               src="/homepage/homef.webm"
               className="min-w-full object-cover"
               playsInline

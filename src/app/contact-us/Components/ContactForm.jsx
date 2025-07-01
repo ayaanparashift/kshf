@@ -722,15 +722,15 @@ const ContactForm = () => {
 
           {/* Submit Button */}
           <div className="w-full">
-            <motion.button
-              whileTap={{ scale: 0.95 }}
+            <button
+              // whileTap={{ scale: 0.95 }}
               type="submit"
               disabled={isSending}
               className="bg-[#E30613] w-fit gap-[10px] px-[21px] py-[14px] flex items-center text-base fsans-600 text-white justify-around rounded-3xl"
             >
               <p>{isSending ? "Sending..." : "Submit"}</p>
               <img src="/rightUpArrow.svg" alt="Arrow" />
-            </motion.button>
+            </button>
           </div>
         </form>
       ) : (

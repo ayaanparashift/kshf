@@ -26,7 +26,7 @@ const page = () => {
       {/* <Res /> */}
       {/* <FormSec /> */}
       <CSbgbl />
-      <VidT />
+      {/* <VidT /> */}
       {/* <TextT /> */}
     </div>
   );
