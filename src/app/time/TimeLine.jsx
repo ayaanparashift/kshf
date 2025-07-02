@@ -279,13 +279,7 @@ const timelineData = [
       "Mr. Kushal Subbaya Hegde established his first business Kamal Motors’, an exclusive Bosch products’ distribution business in Ahmednagar District, Maharashtra",
     image: "/time/t2.jpg",
   },
-  {
-    id: 2,
-    year: 1979,
-    content:
-      "Expanded the Bosch products’ distribution business into Pune city, Maharashtra by taking over the operations of 'Waterloo Motors'",
-    image: "/time/t1.jpg",
-  },
+
   {
     id: 3,
     year: 1981,
@@ -293,13 +287,7 @@ const timelineData = [
       "Founded 'KSH International’ - Mumbai plant, with 360 MT annual commercial production of Paper Insulated Copper Conductors (PICC)and forayed into manufacturing",
     image: "/time/t4.jpg",
   },
-  {
-    id: 4,
-    year: 1989,
-    content:
-      "Established ‘Kushal Motors’ in Pune city, Maharashtra to cater the original equipment customers of Bosch.",
-    image: "/time/t3.jpg",
-  },
+
   {
     id: 5,
     year: 1991,
@@ -347,7 +335,7 @@ const timelineData = [
     id: 11,
     year: 2018,
     content:
-      "Established two projects under 'KSH INFRA! admeasuring 1 Million sqft, and successfully exited the projects to Morgan Stanley Investment Fund, USA",
+      "Established two projects under 'KSH INFRA admeasuring 1 Million sqft, and successfully exited the projects to Morgan Stanley Investment Fund, USA",
     image: "/time/t11.jpg",
   },
   {
