@@ -9,6 +9,7 @@ import PhVdslider from "./componentsf/PhVdslider";
 import MapSection from "./componentsf/MapSection";
 import MapCard from "./componentsf/MapCard";
 import CharAcc from "./componentsf/CharAcc";
+import PDTab from "../Components/PDTab";
 // import ParkInfra from "./componentsf/ParkInfra";
 // import MapSection from "./componentsf/MapSection";
 export const metadata = {
@@ -23,7 +24,8 @@ const page = () => {
       <div className="bg-[#EEF0F3]">
         <ParkinSpot />
         <TabMenu />
-        <ParkOverview />
+        {/* <ParkOverview /> */}
+        <PDTab />
         <ParkInfo />
         <MapSection />
         {/* <CharSlide /> */}
