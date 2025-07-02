@@ -319,7 +319,7 @@ const Card = ({ todos, activeSidebar, acbtn }) => {
     //     </motion.div>
     //   </AnimatePresence>
     // </div>
-    <div className="flex lg:justify-between flex-col xl:w-[600px] xl-1280:w-[650px] w-full h-[400px] md:h-[410px] lg:h-[480px]">
+    <div className="flex lg:justify-end flex-col xl:w-[600px] xl-1280:w-[650px] w-full h-[400px] md:h-[410px] lg:h-[480px]">
       <div className="xl:min-w-fit lg:min-h-fit max-w-[700px]">
         <AnimatePresence mode="wait">
           <motion.div
