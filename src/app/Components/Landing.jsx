@@ -48,7 +48,7 @@ const Landing = ({ isActive }) => {
           exit="exit"
         >
           <motion.h1
-            className="fpt-600 max-w-fit min-1366:text-[65px] xl:text-[52px] lg:text-[40px] text-[30px] text-white border-b-[5px] md:border-b-[10px] border-[#F7E327] leading-[150%] md:leading-[105%] min-1600:text-[70px]"
+            className="fpt-600 max-w-fit min-1366:text-[65px] xl:text-[52px] lg:text-[40px] text-[28px] text-white border-b-[5px] md:border-b-[10px] border-[#F7E327] leading-[105%] min-1600:text-[70px]"
             variants={fadeIn2}
           >
             Delivering
