@@ -129,7 +129,7 @@ export default function Navbar() {
     setTimeout(() => {
       setMenuOpen(false);
       setIsClosing(false);
-    }, 500);
+    }, 0);
   };
 
   const [showNavbar, setShowNavbar] = useState(true);
