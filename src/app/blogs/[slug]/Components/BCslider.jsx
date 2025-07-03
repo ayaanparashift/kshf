@@ -100,7 +100,7 @@ export default function BCSlider({ relatedBlogs }) {
           <img
             id="arrowright"
             className="cursor-pointer"
-            src="/buttonarrows/arrowRight.svg"
+            src="/buttonarrows/arrowright.svg"
             alt="Next"
           />
         </span>
