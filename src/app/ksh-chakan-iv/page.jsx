@@ -9,6 +9,7 @@ import PhVdslider from "./componentsf/PhVdslider";
 import ParkInfra from "../ksh-chakan-i/componentsf/ParkInfra";
 import CharAcc from "../ksh-chakan-i/componentsf/CharAcc";
 import MapSection from "./componentsf/MapSection";
+import PDTab from "../Components/PDTab";
 
 export const metadata = {
   title:
@@ -21,7 +22,8 @@ const page = () => {
     <div className="bg-[#EEF0F3]">
       <ParkinSpot />
       <TabMenu />
-      <ParkOverview />
+      {/* <ParkOverview /> */}
+      <PDTab />
       <ParkInfo />
       <MapSection />
       {/* <CharSlide /> */}

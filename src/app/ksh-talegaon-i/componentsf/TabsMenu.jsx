@@ -7,7 +7,7 @@ const TabMenu = () => {
     { title: "Park Overview", link: "#park-overview" },
     { title: "Park Highlights", link: "#park-highlight" },
     { title: "Location & Connectivity", link: "#location-connectivity" },
-    // { title: "Park Infrastructure", link: "#park-infrastructure" },
+    { title: "Park Infrastructure", link: "#park-infrastructure" },
     {
       title: "Download Brochure",
       link: "https://www.kshinfra.com/wp-content/uploads/2025/06/Talegaon_Park_1_Brochure.pdf",

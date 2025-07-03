@@ -204,7 +204,7 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="newLetterSection lg:flex justify-between items-end md:pt-[105px] pt-[60px] pb-[40px] md:pb-[60px] border-b border-[rgba(215,215,215,0.34)]">
+    <div className="newLetterSection w-[80%] mx-auto lg:flex justify-between items-end md:pt-[105px] pt-[60px] pb-[40px] md:pb-[60px] border-b border-[rgba(215,215,215,0.34)]">
       <div className="leftCon">
         <h2 className="text-3xl w-fit pb-1 font-semibold text-white border-b-4 border-[#F7E327]">
           Get the latest <br /> updates & insights

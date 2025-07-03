@@ -312,6 +312,7 @@ const PDTab = () => {
 
   return (
     <div
+      id="park-overview"
       style={{
         background: "linear-gradient(to bottom, #141D28 70%, #EEF0F3 30%)",
       }}

@@ -8,6 +8,7 @@ import MapSection from "./componentsf/MapSection";
 // import CharSlide from "./componentsf/CharSlide";
 import PhVdslider from "./componentsf/PhVdslider";
 import ParkInfra from "../ksh-chakan-i/componentsf/ParkInfra";
+import PDTab from "../Components/PDTab";
 export const metadata = {
   title:
     "KSH Talegaon Premium Industrial and Logistics Park in Pune with Build-to-Suit Infrastructure",
@@ -21,7 +22,8 @@ const page = () => {
       <div className="bg-[#EEF0F3]">
         <ParkinSpot />
         <TabMenu />
-        <ParkOverview />
+        {/* <ParkOverview /> */}
+        <PDTab />
         <ParkInfo />
         <MapSection />
         {/* <ParkInfra /> */}
