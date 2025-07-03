@@ -103,8 +103,40 @@ const ParkContent = ({
   videos,
   activeTab,
 }) => {
+  // return (
+  //   <div className="flex flex-col md:flex-row justify-between w-full gap-[0px] min-h-[478px]">
+  //     {/* Video Section */}
+  //     <AnimatePresence mode="wait">
+  //       <motion.div
+  //         key={Date.now()}
+  //         initial={{ opacity: 0 }}
+  //         animate={{ opacity: 1 }}
+  //         exit={{ opacity: 0 }}
+  //         transition={{ duration: 0.5, ease: "easeInOut" }}
+  //         className="w-full md:w-[80%] h-full xl-1280:min-h-[478px] md:min-h-[502px] flex items-center justify-center bg-black"
+  //       >
+  //         <video
+  //           src={selectedVideo}
+  //           // controls
+  //           autoPlay
+  //           muted
+  //           loop
+  //           preload="metadata"
+  //           className="min-h-[190px] sm:h-full max-w-full object-contain shadow-lg"
+  //         />
+  //       </motion.div>
+  //     </AnimatePresence>
+  //     {/* Card Section */}
+  //     <Parkinfracard
+  //       onSelectVideo={setSelectedVideo}
+  //       selectedVideo={selectedVideo}
+  //       videos={videos} // Pass the videos prop here
+  //       activeTab={activeTab}
+  //     />
+  //   </div>
+  // );
   return (
-    <div className="flex flex-col md:flex-row justify-between w-full gap-[20px] min-h-[478px]">
+    <div className="flex flex-col md:flex-row justify-between w-full gap-[0px] min-h-[535px]">
       {/* Video Section */}
       <AnimatePresence mode="wait">
         <motion.div

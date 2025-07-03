@@ -171,8 +171,47 @@ import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 
 const Parkinfracard = ({ onSelectVideo, selectedVideo, videos, activeTab }) => {
+  // return (
+  //   <div className="w-[25%] min-h-[478px] min-1366:h-[527px] lg:min-h-[478px] overflow-hidden px-[20px] flex flex-col justify-center gap-[20px] bg-[#E4E7EB] overflow-y-auto">
+  //     <AnimatePresence mode="wait">
+  //       {videos.map((videoItem) => {
+  //         const isActive = videoItem.video === selectedVideo;
+  //         return (
+  //           <motion.div
+  //             // Generate a unique key for each card that updates on tab change.
+  //             key={`card-${activeTab}-${videoItem.id}`}
+  //             initial={{ x: activeTab === 2 ? "100%" : "-100%", opacity: 0 }}
+  //             animate={{ x: 0, opacity: 1 }}
+  //             exit={{
+  //               x: activeTab === 2 ? "100%" : "-100%",
+  //               opacity: 0,
+  //               transition: { duration: 0.8, ease: [0.7, 0, 0.4, 1] },
+  //             }}
+  //             transition={{ duration: 0.8, ease: [0.7, 0, 0.4, 1] }}
+  //             onClick={() => onSelectVideo(videoItem.video)}
+  //             className={`cursor-pointer [&:not(:last-child)]:border-b-[1px] overflow-hidden pb-[20px] transition-colors duration-300 ${
+  //               isActive
+  //                 ? "border-b-[#092241]"
+  //                 : " border-b-[#6C8DAB] hover:border-b-[#092241]"
+  //             }`}
+  //           >
+  //             <p
+  //               className={`text-[16px] spotlightheaddd fsans-600 transition-colors duration-200  ${
+  //                 isActive
+  //                   ? "text-[#092241]"
+  //                   : "text-[#6C8DAB] hover:text-[#092241]"
+  //               }`}
+  //             >
+  //               {videoItem.title}
+  //             </p>
+  //           </motion.div>
+  //         );
+  //       })}
+  //     </AnimatePresence>
+  //   </div>
+  // );
   return (
-    <div className="w-[25%] min-h-[478px] min-1366:h-[527px] lg:min-h-[478px] overflow-hidden px-[20px] flex flex-col justify-center gap-[20px] bg-[#E4E7EB] overflow-y-auto">
+    <div className="w-[25%] min-h-full overflow-hidden px-[20px] flex flex-col justify-center gap-[20px] bg-[#E4E7EB] overflow-y-auto">
       <AnimatePresence mode="wait">
         {videos.map((videoItem) => {
           const isActive = videoItem.video === selectedVideo;

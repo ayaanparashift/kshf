@@ -146,13 +146,13 @@ export default function Navbar() {
   }, []);
 
   return (
-    <>
+    <div className="max-w-screen overflow-hidden">
       <motion.div
         initial={{ y: 0 }}
         animate={{ y: showNavbar ? 0 : -100 }}
         // transition={{ duration: 0.2, ease: [0.7, 0, 0.4, 1] }}
         transition={{ duration: 0.2 }}
-        className={`fixed top-0 left-0 w-screen h-[100px] z-[1000000] 
+        className={`fixed top-0 inset-x-0 h-[100px] z-[1000000] 
         flex items-center justify-center transition-colors duration-500
         ${
           atTop
@@ -199,6 +199,6 @@ export default function Navbar() {
           </>
         )}
       </AnimatePresence>
-    </>
+    </div>
   );
 }
