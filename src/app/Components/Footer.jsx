@@ -14,7 +14,7 @@
 //             <img src="/footerIcon.svg" alt="" />
 //           </div>
 //           <div>
-//             <h2 className="pb-5 text-lg fsans-600">Quick links</h2>
+//             <p className="pb-5 text-lg fsans-600">Quick links</p>
 //             <div className="flex flex-col gap-4 text-[#9acbf880] fsans-600 text-[16px]">
 //               <Link href="/">Home</Link>
 //               <Link href="/about-ksh">About Us</Link>
@@ -24,7 +24,7 @@
 //             </div>
 //           </div>
 //           <div>
-//             <h2 className="pb-5 text-lg fsans-600">Our Parks</h2>
+//             <p className="pb-5 text-lg fsans-600">Our Parks</p>
 //             <div className="flex flex-col gap-4 text-[#9acbf880] fsans-600 text-[16px]">
 //               <Link href="/ksh-chakan-iv">Chakan IV</Link>
 //               <Link href="/ksh-chakan-iii">Chakan III</Link>
@@ -35,7 +35,7 @@
 //             </div>
 //           </div>
 //           <div>
-//             <h2 className="pb-5 text-lg fsans-600">Others</h2>
+//             <p className="pb-5 text-lg fsans-600">Others</p>
 //             <div className="flex flex-col gap-4 text-[#9acbf880] fsans-600 text-[16px]">
 //               <Link href="/investors">Investor</Link>
 //               <Link href="/capabilities">Capabilities</Link>
@@ -161,7 +161,7 @@ const Footer = () => {
   //           </div>
   //         </div>
   //         <div>
-  //           <h2 className="pb-5 text-lg fsans-600">Quick links</h2>
+  //           <p className="pb-5 text-lg fsans-600">Quick links</p>
   //           <div className="flex flex-col gap-4 text-[#cfe6fc90] fsans-600 text-[16px]">
   //             <Link href="/">Home</Link>
   //             <Link href="/about-ksh">About Us</Link>
@@ -171,7 +171,7 @@ const Footer = () => {
   //           </div>
   //         </div>
   //         <div>
-  //           <h2 className="pb-5 text-lg fsans-600">Our Parks</h2>
+  //           <p className="pb-5 text-lg fsans-600">Our Parks</p>
   //           <div className="flex flex-col gap-4 text-[#cfe6fc90] fsans-600 text-[16px]">
   //             <Link href="/ksh-chakan-iv">Chakan IV</Link>
   //             <Link href="/ksh-chakan-iii">Chakan III</Link>
@@ -182,7 +182,7 @@ const Footer = () => {
   //           </div>
   //         </div>
   //         <div>
-  //           <h2 className="pb-5 text-lg fsans-600">Others</h2>
+  //           <p className="pb-5 text-lg fsans-600">Others</p>
   //           <div className="flex flex-col gap-4 text-[#cfe6fc90] fsans-600 text-[16px]">
   //             <Link href="/investors">Investor</Link>
   //             <Link href="/capabilities">Capabilities</Link>
@@ -594,7 +594,7 @@ const Footer = () => {
          pb-[41px] "
         >
           <div>
-            <h2 className="pb-5 text-lg fsans-600">Quick links</h2>
+            <p className="pb-5 text-lg fsans-600">Quick links</p>
             <div className="flex flex-col gap-4 text-[#cfe6fc90] fsans-600 text-[16px]">
               <Link href="/">Home</Link>
               <Link href="/about-ksh">About Us</Link>
@@ -604,7 +604,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h2 className="pb-5 text-lg fsans-600">Our Parks</h2>
+            <p className="pb-5 text-lg fsans-600">Our Parks</p>
             <div className="flex flex-col gap-4 text-[#cfe6fc90] fsans-600 text-[16px]">
               <Link href="/ksh-chakan-iv">Chakan IV</Link>
               <Link href="/ksh-chakan-iii">Chakan III</Link>
@@ -615,7 +615,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h2 className="pb-5 text-lg fsans-600">Others</h2>
+            <p className="pb-5 text-lg fsans-600">Others</p>
             <div className="flex flex-col gap-4 text-[#cfe6fc90] fsans-600 text-[16px]">
               <Link href="/investors">Investor</Link>
               <Link href="/capabilities">Capabilities</Link>
@@ -626,7 +626,7 @@ const Footer = () => {
           </div>
           <div className="flex-col flex h-full justify-between gap-5">
             <div className="flex flex-col gap-4 text-[#cfe6fc90] fsans-600 text-[16px] ">
-              <h2 className="text-lg fsans-600 text-white">Connect</h2>
+              <p className="text-lg fsans-600 text-white">Connect</p>
               <a
                 href="mailto:leasing@kshinfra.com"
                 className="flex items-center gap-3 text-[#cfe6fc90] hover:text-[#9acbf8]"
@@ -653,7 +653,7 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex flex-col gap-4">
-              <h2 className="pt-5 text-lg fsans-600">Follow</h2>
+              <p className="pt-5 text-lg fsans-600">Follow</p>
               <div className="flex iconinfo items-center gap-[10px]">
                 <Link
                   target="__blank"
@@ -1001,7 +1001,7 @@ const Footer = () => {
             </div>
             <div className="">
               <div className="text-[#cfe6fc90] text-sm font-semibold leading-6 max-w-full ">
-                <p className="whitespace-nowrap text-white pb-1 fsans-600">
+                <p className="whitespace-nowrap text-white pb-1 fpt-600">
                   KSH INFRA, Mumbai
                 </p>
                 <p>
