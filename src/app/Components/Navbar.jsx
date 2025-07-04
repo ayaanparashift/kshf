@@ -165,7 +165,7 @@ export default function Navbar() {
           <Link href="/">
             <img
               src={atTop ? "/nav/kshlogo.svg" : "/nav/bkl.svg"}
-              className="h-full w-[185px]"
+              className="w-[186.56px] h-[65.12px]"
               alt="Logo"
             />
           </Link>
