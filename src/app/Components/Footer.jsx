@@ -987,7 +987,7 @@ const Footer = () => {
 
             <div className="">
               <div className="text-[#cfe6fc90] text-sm font-semibold leading-6 max-w-full ">
-                <p className="whitespace-nowrap text-white pb-5 fsans-600">
+                <p className="whitespace-nowrap text-white pb-1 fsans-600">
                   KSH INFRA, Head Office: Pune
                 </p>
                 <p>
@@ -1001,7 +1001,7 @@ const Footer = () => {
             </div>
             <div className="">
               <div className="text-[#cfe6fc90] text-sm font-semibold leading-6 max-w-full ">
-                <p className="whitespace-nowrap text-white pb-5 fsans-600">
+                <p className="whitespace-nowrap text-white pb-1 fsans-600">
                   KSH INFRA, Mumbai
                 </p>
                 <p>
