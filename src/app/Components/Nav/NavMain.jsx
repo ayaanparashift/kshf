@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 import EnquireNow from "../../Components/EnquireNow";
 import Link from "next/link";
 
-const DURATION = 0.7;
+const DURATION = 1;
 const EASING = [0.7, 0, 0.4, 1];
 
 export default function NavMain({ onClose }) {

@@ -163,15 +163,15 @@ const MapCard = ({ activeIndex, onSelectAirport }) => {
     },
     {
       id: 4,
-      title: "National Highways",
+      title: "National Highway",
       km: 30,
       icon: "/ParkPage/mapicons/road.svg",
     },
 
     {
       id: 5,
-      title: "National Highways",
-      km: 46,
+      title: "State Highway",
+      km: 37,
       icon: "/ParkPage/mapicons/road.svg",
     },
   ];

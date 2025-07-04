@@ -123,11 +123,11 @@ const iframeUrls = [
 
   {
     id: 5,
-    title: "National Highways",
-    km: 46,
+    title: "State Highway",
+    km: 37,
     icon: "/ParkPage/mapicons/clock.svg",
     mapframe:
-      "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d124609.68030452594!2d78.00308669468635!3d12.57878935623037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3bac34eea94a44a3%3A0x3157b247283329e1!2sNH%20Service%20Road%2C%20Tamil%20Nadu!3m2!1d12.526701!2d78.2342895!4m5!1s0x3badd5005bf8ec2d%3A0x6fc352b9c63e655e!2sKSH%20Hosur%20Park%20I%2C%20JX22%2BHGG%2C%20Shoolagiri%2C%20Tamil%20Nadu%20635119!3m2!1d12.601438199999999!2d77.95131339999999!5e0!3m2!1sen!2sin!4v1751191111471!5m2!1sen!2sin",
+      "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d124538.41390017941!2d77.90693723963511!3d12.724808546011346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3badd5005bf8ec2d%3A0x6fc352b9c63e655e!2sKSH%20Hosur%20Park%20I%2C%20JX22%2BHGG%2C%20Shoolagiri%2C%20Tamil%20Nadu%20635119!3m2!1d12.601438199999999!2d77.95131339999999!4m5!1s0x3bae745b211cfc4d%3A0xa84272666ec0a9ec!2sSH%2017C%2C%20Tamil%20Nadu!3m2!1d12.820846!2d77.9185181!5e0!3m2!1sen!2sin!4v1751637125867!5m2!1sen!2sin",
   },
 ];
 
