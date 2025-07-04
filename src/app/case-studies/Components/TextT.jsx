@@ -22,24 +22,32 @@ const TextT = () => {
             </div>
           </div>
           {/*  */}
-          <div className="flex lg:flex-row flex-col-reverse gap-0 bg-[#EEF0F3] p-[20px] lg:p-[50px] min-1366:h-[600px] lg:h-[550px]">
-            <div className="flex flex-[0.8] flex-col-reverse lg:flex-col gap-[20px]">
-              <p className="fsans-700 text-[18px] lg:text-[22px] text-[#092241] uppercase">
+          <div className="flex lg:flex-row flex-col-reverse justify-between gap-0 bg-[#EEF0F3] min-h-fit">
+            <div className="flex w-[70%] flex-col-reverse lg:flex-col gap-[20px]  p-[20px] lg:p-[50px]">
+              {/* <p className="fsans-700 text-[18px] lg:text-[22px] text-[#092241] uppercase">
                 - Harshwardhan nagalipada
-              </p>
-              <p className="min-1366:text-[60px] xl:text-[56px] lg:text-[44px] text-[28px] fpt-400 text-[#424242] leading-[110%]">
+              </p> */}
+              <p className="text-[32px] fpt-400 text-[#424242] leading-[110%]">
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco
                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                 dolor in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur.
               </p>
             </div>
-            <div className="h-full lg:flex-row flex-col w-full lg:flex-[0.2] flex items-end">
+            {/* <div className="min-h-full lg:flex-row flex-col w-full lg:flex-[0.2] flex lg:pb-0 pb-5 lg:items-end">
               <img
-                className="lg:w-full w-[40px]"
+                className="lg:w-[80%] w-[40px]"
                 src="/caseInside/csq.png"
                 alt=""
               />
+            </div> */}
+            <div className="flex-col w-[30%] flex bg-[#6C8DAB] justify-start  p-[20px] lg:p-[50px]">
+              <p className="fsans-700 text-[18px] lg:text-[28px] text-[#fff] uppercase">
+                Harshwardhan nagalipada
+              </p>
+              <p className="text-left text-[#ffffff50] fsans-600 text-[24px]">
+                Designation
+              </p>
             </div>
           </div>
         </div>
