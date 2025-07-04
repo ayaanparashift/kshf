@@ -1,6 +1,6 @@
-"use client";
+// "use client";
 import React from "react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import SlideCard from "./SlideCard";
 
 const CaseStudy = () => {
@@ -29,7 +29,7 @@ const CaseStudy = () => {
 
   return (
     <div className="z-10 relative py-[60px] w-full">
-      <motion.div className="fix12 grid grid-cols-1 md:grid-cols-2 gap-[30px]">
+      <div className="fix12 grid grid-cols-1 md:grid-cols-2 gap-[30px]">
         {CaseStudyContent.map((content, index) => (
           <SlideCard
             key={index}
@@ -39,7 +39,7 @@ const CaseStudy = () => {
             url={content.url}
           />
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 };

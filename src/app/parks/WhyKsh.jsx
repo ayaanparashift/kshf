@@ -559,11 +559,11 @@ const WhyKsh = () => {
             </div>
 
             {/* Tabs */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ ease: [0.7, 0, 0.4, 1], duration: 1.4 }}
-              viewport={{ once: true, amount: 0.3 }}
+            <div
+              // initial={{ opacity: 0 }}
+              // whileInView={{ opacity: 1 }}
+              // transition={{ ease: [0.7, 0, 0.4, 1], duration: 1.4 }}
+              // viewport={{ once: true, amount: 0.3 }}
               className="tabs mt-[-5%] flex flex-nowrap md:min-w-max overflow-x-auto overflow-y-hidden gap-4 pr-4
           xl-768:w-[95%] xl-1024:w-[90%] xl-1280:w-[90%] xl-1440:w-[90%] scrollbar-hide"
             >
@@ -578,7 +578,7 @@ const WhyKsh = () => {
                   {tab.title}
                 </button>
               ))}
-            </motion.div>
+            </div>
 
             {/* Tab Content */}
             <div className="w-full h-fit xl:h-full">
@@ -639,7 +639,7 @@ const WhyKsh = () => {
             </AnimatePresence>
 
             {/* Overlay animation */}
-            <motion.div
+            {/* <motion.div
               className="absolute top-0 left-0 bg-[#092241] w-full h-full z-20"
               initial={{ x: 0 }}
               whileInView={{ x: "100%" }}
@@ -649,7 +649,7 @@ const WhyKsh = () => {
                 delay: 1,
               }}
               viewport={{ amount: 0.5, once: true }}
-            />
+            /> */}
           </div>
         </div>
       </div>

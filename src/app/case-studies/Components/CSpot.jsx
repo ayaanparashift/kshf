@@ -39,8 +39,8 @@
 // export default CSpot;
 
 // investorRelationSpot;
-"use client";
-import { motion } from "framer-motion";
+// "use client";
+// import { motion } from "framer-motion";
 // import CaseSlide from "./CaseSlide";
 import CaseStudy from "./CaseStudy";
 import Link from "next/link";
@@ -49,11 +49,11 @@ const CSpot = () => {
     <div className="relative bg-[url(/fistfold.png)] bg-cover bg-no-repeat z-0 overflow-hidden">
       {/* <div className=""> */}
       <div className="fix12 pt-[140px] ">
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
-          viewport={{ amount: 0.1, once: true }}
+        <p
+          // initial={{ opacity: 0 }}
+          // whileInView={{ opacity: 1 }}
+          // transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
+          // viewport={{ amount: 0.1, once: true }}
           className="text-[#D7D7D7A3] text-base fsans-400"
         >
           <Link
@@ -63,16 +63,16 @@ const CSpot = () => {
             Home
           </Link>{" "}
           &gt; Case Studies
-        </motion.p>
-        <motion.h1
+        </p>
+        <h1
           initial={{ width: 0 }}
-          whileInView={{ width: "fit-content" }}
-          transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
-          viewport={{ amount: 0.1, once: true }}
+          // whileInView={{ width: "fit-content" }}
+          // transition={{ duration: 1, ease: [0.7, 0, 0.4, 1] }}
+          // viewport={{ amount: 0.1, once: true }}
           className="text-[28px] sm:text-[32px] md:text-[60px] max-w-fit whitespace-nowrap overflow-hidden ftp-500 text-white border-b-[6px] border-[#F7E327] "
         >
           Case Studies
-        </motion.h1>
+        </h1>
       </div>
       {/* <motion.img
         initial={{ opacity: 0, translateY: "100px" }}
