@@ -1015,9 +1015,11 @@ const Footer = () => {
           </div>
         </div>
         {/* Footer End */}
-        <div className="pt-[44px] w-[80%] mx-auto pb-[23px] flex flex-col md:flex-row gap-2 text-center items-center justify-center sm:justify-between text-[#6c8dab80] text-sm font-semibold leading-6">
-          <p>© 2025. KSH INFRA. All rights reserved.</p>
-          <p>
+        <div className="pt-[64px] w-[80%] mx-auto pb-[23px] flex flex-col md:flex-row gap-2 text-center items-center justify-center sm:justify-between text-[#6c8dab80] text-sm font-semibold leading-6">
+          <p className="text-[#cfe6fc90]">
+            © 2025. KSH INFRA. All rights reserved.
+          </p>
+          <p className="text-[#cfe6fc90]">
             <Link href="/privacy-policy">Privacy Policy</Link>
           </p>
         </div>
