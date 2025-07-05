@@ -14,7 +14,7 @@
 
 // import Link from "next/link";
 
-// const tabsData = [
+// const tdata = [
 //   {
 //     title: "Growth",
 //     description:
@@ -48,7 +48,7 @@
 //   };
 
 //   const handleNext = () => {
-//     if (activeIndex < tabsData.length - 1) {
+//     if (activeIndex < tdata.length - 1) {
 //       setActiveIndex((prev) => prev + 1);
 //     }
 //   };
@@ -75,7 +75,7 @@
 //               Careers at KSH INFRA
 //             </h1>
 //             {/* <div className="tabs md:justify-center justify-between flex gap-4">
-//               {tabsData.map((tab, index) => (
+//               {tdata.map((tab, index) => (
 //                 <button
 //                   key={tab.title}
 //                   className={`px-3 h-[46px] transition-colors duration-500 border-[#D7D7D7] border-opacity-50 border-0 md:border-[2px] text-white rounded-[10px] ${
@@ -90,7 +90,7 @@
 //               ))}
 //             </div> */}
 //             <div className="tabs md:justify-center justify-between flex gap-4">
-//               {tabsData.map((tab, index) => (
+//               {tdata.map((tab, index) => (
 //                 <button
 //                   key={tab.title}
 //                   className={`px-3 h-[46px] md:font-normal font-bold transition-colors duration-500 border-[#09224150] border-0 md:border rounded-[10px]
@@ -119,10 +119,10 @@
 //                 className="text-white"
 //               >
 //                 <h1 className="text-3xl md:text-6xl font-medium border-b-[8px] border-[#F7E327] w-fit pb-3 pt-5 md:pt-10">
-//                   {tabsData[activeIndex].title}
+//                   {tdata[activeIndex].title}
 //                 </h1>
 //                 <p className="lg:w-[60%] max-w-full md:mx-0 mx-auto pt-6 md:pt-5 md:pb-5 text-base text-[#6C8DAB]">
-//                   {tabsData[activeIndex].description}
+//                   {tdata[activeIndex].description}
 //                 </p>
 //               </div>
 //             </AnimatePresence>
@@ -162,12 +162,12 @@
 //                 <img className="h-10 w-10" src="/landingr.svg" alt="" />
 //               </button>
 //               <div className="text-base text-[#6C8DAB]">
-//                 {activeIndex + 1} / {tabsData.length}
+//                 {activeIndex + 1} / {tdata.length}
 //               </div>
 //               <button
 //                 className="w-10 h-10 flex items-center justify-center disabled:opacity-50"
 //                 onClick={handleNext}
-//                 disabled={activeIndex === tabsData.length - 1}
+//                 disabled={activeIndex === tdata.length - 1}
 //               >
 //                 <img className="h-10 w-10" src="/landingl.svg" alt="" />
 //               </button>
@@ -179,7 +179,7 @@
 //         <div className="middleSection w-[205px] left-[52%] z-10 h-full absolute lg:inline-block hidden">
 //           <div className="w-full h-[217px] overflow-hidden mt-[125%] relative">
 //             <AnimatePresence>
-//               {tabsData.slice(0, activeIndex + 1).map((tab, idx) => (
+//               {tdata.slice(0, activeIndex + 1).map((tab, idx) => (
 //                 <img
 //                   key={`middle-${idx}`}
 //                   src={tab.middleImage}
@@ -203,7 +203,7 @@
 //         <div className="rightCon w-full lg:w-[40%] h-full rigthSectionOfCarrer">
 //           <div className="relative w-full h-full overflow-hidden">
 //             <AnimatePresence>
-//               {tabsData.slice(0, activeIndex + 1).map((tab, idx) => (
+//               {tdata.slice(0, activeIndex + 1).map((tab, idx) => (
 //                 <img
 //                   key={`img-${idx}`}
 //                   src={tab.image}
@@ -232,22 +232,8 @@
 "use client";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-const tabsData = [
-  {
-    title: "KSH Parks",
-    image: "/ParkPage/cpov.png",
-  },
-  {
-    title: "Notable Industries",
-    image: "/Slideimgs/ssf1.png",
-  },
-  {
-    title: "Connectivity",
-    image: "/Slideimgs/Culture.png",
-  },
-];
 
-const PDTab = () => {
+const PDTab = ({ tdata, title, para }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   //   return (
@@ -264,7 +250,7 @@ const PDTab = () => {
   //             KSH Chakan Park IV Overview
   //           </h1>
   //           <div className="flex gap-2 mt-3 md:mt-0 lg:overflow-auto overflow-scroll">
-  //             {tabsData.map((tab, index) => (
+  //             {tdata.map((tab, index) => (
   //               <button
   //                 key={tab.title}
   //                 onClick={() => setActiveIndex(index)}
@@ -295,8 +281,8 @@ const PDTab = () => {
   //           {/* Image on the right changes based on tab */}
   //           <div className="w-full flex justify-end lg:w-[50%]">
   //             <img
-  //               src={tabsData[activeIndex].image}
-  //               alt={tabsData[activeIndex].title}
+  //               src={tdata[activeIndex].image}
+  //               alt={tdata[activeIndex].title}
   //               className="lg:min-w-[521px] h-[352px] shadow-lg"
   //             />
   //           </div>
@@ -310,6 +296,87 @@ const PDTab = () => {
   //     </div>
   //   );
 
+  // return (
+  //   <div
+  //     id="park-overview"
+  //     style={{
+  //       background: "linear-gradient(to bottom, #141D28 70%, #EEF0F3 30%)",
+  //     }}
+  //     className="w-full min-h-[645px] flex items-center"
+  //   >
+  //     <div className="bg-white pl-[max(5%,calc((100vw-1250px)/2))] w-full pr-8 py-10 md:py-10 mx-auto border xl:min-h-[90%] mr-[max(5%,calc((100vw-1250px)/2))]">
+  //       {/* Heading */}
+  //       <div className="flex flex-col md:flex-row md:items-center justify-between border-b border-[#D7D7D7] pb-4 mb-4">
+  //         <h1 className="text-[#092241] spotlightheaddd fsans-600 text-[20px]">
+  //           {title}
+  //         </h1>
+
+  //         {/* DESKTOP TABS */}
+  //         <div className="gap-2 mt-3 md:mt-0 hidden md:flex">
+  //           {tdata.map((tab, index) => (
+  //             <button
+  //               key={tab.title}
+  //               onClick={() => setActiveIndex(index)}
+  //               className={`px-[12px] transition-colors duration-200 whitespace-nowrap text-[16px] fsans-600 py-[10px] rounded-[10px] border border-[#092241] border-opacity-30
+  //             ${
+  //               activeIndex === index
+  //                 ? "bg-[#E30613] border-[#E30613] text-[#fff]"
+  //                 : "text-[#092241] text-opacity-50"
+  //             }`}
+  //             >
+  //               {tab.title}
+  //             </button>
+  //           ))}
+  //         </div>
+
+  //         {/* MOBILE TABS */}
+  //         <div className="flex gap-2 mt-3 md:mt-0 overflow-scroll md:hidden">
+  //           {tdata.map((tab, index) => (
+  //             <button
+  //               key={tab.title}
+  //               onClick={() => setActiveIndex(index)}
+  //               className={`px-[12px] transition-all duration-500 whitespace-nowrap text-[16px] fsans-600 py-[10px]
+  //             ${
+  //               activeIndex === index
+  //                 ? "text-[#E30613]"
+  //                 : "text-[#092241] text-opacity-50"
+  //             }`}
+  //             >
+  //               {tab.title}
+  //             </button>
+  //           ))}
+  //         </div>
+  //       </div>
+
+  //       {/* Content */}
+  //       <div className="flex flex-col-reverse lg:flex-row items-start gap-6 overflow-visible relative">
+  //         {/* Static description text */}
+  //         <div className="w-full lg:w-[50%] text-[#838383] text-[18px] flato-400 leading-relaxed pt-5 lg:pt-20">
+  //           {para}
+  //         </div>
+
+  //         {/* Image on the right changes based on tab */}
+  //         <AnimatePresence mode="wait">
+  //           <motion.div
+  //             key={tdata[activeIndex].title}
+  //             initial={{ opacity: 0 }}
+  //             animate={{ opacity: 1 }}
+  //             transition={{ duration: 0.4, ease: [0.7, 0, 0.4, 1] }}
+  //             viewport={{ amount: 0, once: false }}
+  //             className="w-full flex justify-end lg:w-[50%] overflow-visible"
+  //           >
+  //             <img
+  //               src={tdata[activeIndex].image}
+  //               alt={tdata[activeIndex].title}
+  //               className="lg:min-w-[521px] h-[352px] shadow-lg"
+  //               style={{ zIndex: activeIndex }}
+  //             />
+  //           </motion.div>
+  //         </AnimatePresence>
+  //       </div>
+  //     </div>
+  //   </div>
+  // );
   return (
     <div
       id="park-overview"
@@ -322,21 +389,21 @@ const PDTab = () => {
         {/* Heading */}
         <div className="flex flex-col md:flex-row md:items-center justify-between border-b border-[#D7D7D7] pb-4 mb-4">
           <h1 className="text-[#092241] spotlightheaddd fsans-600 text-[20px]">
-            KSH Chakan Park IV Overview
+            {title}
           </h1>
 
           {/* DESKTOP TABS */}
           <div className="gap-2 mt-3 md:mt-0 hidden md:flex">
-            {tabsData.map((tab, index) => (
+            {tdata.map((tab, index) => (
               <button
                 key={tab.title}
                 onClick={() => setActiveIndex(index)}
                 className={`px-[12px] transition-colors duration-200 whitespace-nowrap text-[16px] fsans-600 py-[10px] rounded-[10px] border border-[#092241] border-opacity-30
-              ${
-                activeIndex === index
-                  ? "bg-[#E30613] border-[#E30613] text-[#fff]"
-                  : "text-[#092241] text-opacity-50"
-              }`}
+                  ${
+                    activeIndex === index
+                      ? "bg-[#E30613] border-[#E30613] text-[#fff]"
+                      : "text-[#092241] text-opacity-50"
+                  }`}
               >
                 {tab.title}
               </button>
@@ -345,16 +412,16 @@ const PDTab = () => {
 
           {/* MOBILE TABS */}
           <div className="flex gap-2 mt-3 md:mt-0 overflow-scroll md:hidden">
-            {tabsData.map((tab, index) => (
+            {tdata.map((tab, index) => (
               <button
                 key={tab.title}
                 onClick={() => setActiveIndex(index)}
                 className={`px-[12px] transition-all duration-500 whitespace-nowrap text-[16px] fsans-600 py-[10px]
-              ${
-                activeIndex === index
-                  ? "text-[#E30613]"
-                  : "text-[#092241] text-opacity-50"
-              }`}
+                  ${
+                    activeIndex === index
+                      ? "text-[#E30613]"
+                      : "text-[#092241] text-opacity-50"
+                  }`}
               >
                 {tab.title}
               </button>
@@ -365,19 +432,15 @@ const PDTab = () => {
         {/* Content */}
         <div className="flex flex-col-reverse lg:flex-row items-start gap-6 overflow-visible relative">
           {/* Static description text */}
-          <div className="w-full lg:w-[50%] text-[#838383] text-[18px] flato-400 leading-relaxed pt-5 lg:pt-20">
-            The industrial park boasts IGBC pre-certified Platinum status,
-            highlighting KSH Infra’s dedication to green industrial development.
-            With exceptional planning and top-notch amenities, this fully
-            customisable, move-in ready industrial facility guarantees
-            uncompromised productivity, efficiency, and safety for your
-            workforce.
-          </div>
+          <div
+            className="w-full lg:w-[50%] text-[#838383] text-[18px] flato-400 leading-relaxed pt-5 lg:pt-20"
+            dangerouslySetInnerHTML={{ __html: para }}
+          ></div>
 
           {/* Image on the right changes based on tab */}
           <AnimatePresence mode="wait">
             <motion.div
-              key={tabsData[activeIndex].title}
+              key={tdata[activeIndex].title}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.4, ease: [0.7, 0, 0.4, 1] }}
@@ -385,8 +448,8 @@ const PDTab = () => {
               className="w-full flex justify-end lg:w-[50%] overflow-visible"
             >
               <img
-                src={tabsData[activeIndex].image}
-                alt={tabsData[activeIndex].title}
+                src={tdata[activeIndex].image}
+                alt={tdata[activeIndex].title}
                 className="lg:min-w-[521px] h-[352px] shadow-lg"
                 style={{ zIndex: activeIndex }}
               />

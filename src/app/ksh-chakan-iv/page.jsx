@@ -17,13 +17,37 @@ export const metadata = {
   description:
     "KSH Chakan IV offers Grade A industrial parks in Chakan with modern infrastructure, built-to-suit warehouses, and strategic connectivity near Pune.",
 };
+const tabsData = [
+  {
+    title: "KSH Parks",
+    image: "/ParkPage/cpov.png",
+  },
+  {
+    title: "Notable Industries",
+    image: "/Slideimgs/ssf1.png",
+  },
+  {
+    title: "Connectivity",
+    image: "/Slideimgs/Culture.png",
+  },
+];
 const page = () => {
   return (
     <div className="bg-[#EEF0F3]">
       <ParkinSpot />
       <TabMenu />
       {/* <ParkOverview /> */}
-      <PDTab />
+
+      <PDTab
+        tdata={tabsData}
+        para="The industrial park boasts IGBC pre-certified Platinum status,
+            highlighting KSH Infra’s dedication to green industrial development.
+            With exceptional planning and top-notch amenities, this fully
+            customisable, move-in ready industrial facility guarantees
+            uncompromised productivity, efficiency, and safety for your
+            workforce."
+        title="About Chakan, Pune"
+      />
       <ParkInfo />
       <MapSection />
       {/* <CharSlide /> */}

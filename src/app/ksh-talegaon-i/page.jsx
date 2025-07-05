@@ -15,7 +15,20 @@ export const metadata = {
   description:
     "KSH Talegaon is a premium industrial and logistics park in Pune, Maharashtra, offering scalable infrastructure, advanced connectivity, and customized Warehouse solutions",
 };
-
+const tabsData = [
+  {
+    title: "KSH Parks",
+    image: "/ParkPage/cpov.png",
+  },
+  {
+    title: "Notable Industries",
+    image: "/Slideimgs/ssf1.png",
+  },
+  {
+    title: "Connectivity",
+    image: "/Slideimgs/Culture.png",
+  },
+];
 const page = () => {
   return (
     <>
@@ -23,7 +36,18 @@ const page = () => {
         <ParkinSpot />
         <TabMenu />
         {/* <ParkOverview /> */}
-        <PDTab />
+        <PDTab
+          tdata={tabsData}
+          para="Talegaon I, located near the national highway connecting Mumbai
+              and Pune, has emerged as a significant warehousing and logistics
+              hub. KSH has established a presence in the center of this
+              development in Talegaon I, Pune.
+              <br /> <br />
+              The Talegaon I hub comprises a number of industries including
+              automobile, pharmaceutical, chemical, engineering, and food
+              processing."
+          title="About Talegaon, Pune"
+        />
         <ParkInfo />
         <MapSection />
         {/* <ParkInfra /> */}
