@@ -13,13 +13,13 @@ const AboutVision = () => {
                 // whileInView={{ y: -20 }}
                 // transition={{ duration: 1.4, ease: [0.7, 0, 0.4, 1] }}
                 // viewport={{ amount: 0.1, once: true }}
-                className="text-transparent z-10 fpt-700 text-6xl xl:text-[140px] font-bold stroke-[#6C8DAB] xl:mb-[-30px] mb-[-7px]"
+                className="text-transparent z-10 fpt-700 text-6xl xl:text-[140px] font-bold stroke-[#6C8DAB] xl:mb-[-30px] mt-[-20px] mb-[-7px]"
                 style={{ WebkitTextStroke: "1px #6C8DAB" }}
               >
                 Purpose
               </h1>
 
-              <div className="relative z-20 overflow-hidden">
+              <div className="relative z-20 overflow-hidden mt-[20px]">
                 <div>
                   <img
                     className="min-w-full"
