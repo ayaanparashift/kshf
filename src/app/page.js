@@ -41,7 +41,6 @@ import EsgF from "./Components/EsgF";
 import SlideSectionF from "./Components/SlideSectionF";
 import BentoSlider from "./Components/BentoSlider";
 import LandingSwiper from "./Components/LandingSwiper";
-import TestAnimation from "./Components/Testanimation";
 // import NavMain from "./Components/Nav/NavMain";
 // import Navlist from "./Components/Navlist";
 
@@ -84,7 +83,6 @@ export default async function Home() {
       <EsgF />
       <SlideSectionF />
       <BentoSlider />
-      {/* <TestAnimation /> */}
 
       {/* <NavMain /> */}
       {/* <Navlist /> */}
