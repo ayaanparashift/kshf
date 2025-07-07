@@ -229,154 +229,273 @@
 
 // export default PDTab;
 
+//   return (
+//     <div
+//       style={{
+//         background: "linear-gradient(to bottom, #141D28 70%, #EEF0F3 30%)",
+//       }}
+//       className="w-full min-h-[645px] flex items-center"
+//     >
+//       <div className="bg-white  pl-[max(5%,calc((100vw-1250px)/2))] w-full pr-8 py-4 md:py-10 mx-auto border xl:min-h-[90%] mr-[max(5%,calc((100vw-1250px)/2))]">
+//         {/* Heading and Tabs */}
+//         <div className="flex flex-col md:flex-row md:items-center justify-between border-b border-[#D7D7D7] pb-4 mb-4">
+//           <h1 className="text-[#092241] spotlightheaddd fsans-600 text-[20px]">
+//             KSH Chakan Park IV Overview
+//           </h1>
+//           <div className="flex gap-2 mt-3 md:mt-0 lg:overflow-auto overflow-scroll">
+//             {tdata.map((tab, index) => (
+//               <button
+//                 key={tab.title}
+//                 onClick={() => setActiveIndex(index)}
+//                 className={`px-[12px] transition-colors duration-200 whitespace-nowrap text-[16px] fsans-600 py-[10px] flex-1 flex items-center justify-center rounded-[10px] border-[#092241] border-opacity-30 border ${
+//                   activeIndex === index
+//                     ? "bg-[#E30613] border-[#E30613] text-[#fff] text-opacity-100"
+//                     : "text-[#092241] text-opacity-50"
+//                 }`}
+//               >
+//                 {tab.title}
+//               </button>
+//             ))}
+//           </div>
+//         </div>
+
+//         {/* Content */}
+//         <div className="flex flex-col-reverse lg:flex-row items-start gap-6">
+//           {/* Static description text */}
+//           <div className="w-full lg:w-[50%] text-[#838383] text-[18px] flato-400 leading-relaxed pt-5 lg:pt-20">
+//             The industrial park boasts IGBC pre-certified Platinum status,
+//             highlighting KSH Infra’s dedication to green industrial development.
+//             With exceptional planning and top-notch amenities, this fully
+//             customisable, move-in ready industrial facility guarantees
+//             uncompromised productivity, efficiency, and safety for your
+//             workforce.
+//           </div>
+
+//           {/* Image on the right changes based on tab */}
+//           <div className="w-full flex justify-end lg:w-[50%]">
+//             <img
+//               src={tdata[activeIndex].image}
+//               alt={tdata[activeIndex].title}
+//               className="lg:min-w-[521px] h-[352px] shadow-lg"
+//             />
+//           </div>
+//         </div>
+//       </div>
+//       {/*  */}
+//       {/*  */}
+//       {/*  */}
+//       {/*  */}
+//       {/*  */}
+//     </div>
+//   );
+
+// return (
+//   <div
+//     id="park-overview"
+//     style={{
+//       background: "linear-gradient(to bottom, #141D28 70%, #EEF0F3 30%)",
+//     }}
+//     className="w-full min-h-[645px] flex items-center"
+//   >
+//     <div className="bg-white pl-[max(5%,calc((100vw-1250px)/2))] w-full pr-8 py-10 md:py-10 mx-auto border xl:min-h-[90%] mr-[max(5%,calc((100vw-1250px)/2))]">
+//       {/* Heading */}
+//       <div className="flex flex-col md:flex-row md:items-center justify-between border-b border-[#D7D7D7] pb-4 mb-4">
+//         <h1 className="text-[#092241] spotlightheaddd fsans-600 text-[20px]">
+//           {title}
+//         </h1>
+
+//         {/* DESKTOP TABS */}
+//         <div className="gap-2 mt-3 md:mt-0 hidden md:flex">
+//           {tdata.map((tab, index) => (
+//             <button
+//               key={tab.title}
+//               onClick={() => setActiveIndex(index)}
+//               className={`px-[12px] transition-colors duration-200 whitespace-nowrap text-[16px] fsans-600 py-[10px] rounded-[10px] border border-[#092241] border-opacity-30
+//             ${
+//               activeIndex === index
+//                 ? "bg-[#E30613] border-[#E30613] text-[#fff]"
+//                 : "text-[#092241] text-opacity-50"
+//             }`}
+//             >
+//               {tab.title}
+//             </button>
+//           ))}
+//         </div>
+
+//         {/* MOBILE TABS */}
+//         <div className="flex gap-2 mt-3 md:mt-0 overflow-scroll md:hidden">
+//           {tdata.map((tab, index) => (
+//             <button
+//               key={tab.title}
+//               onClick={() => setActiveIndex(index)}
+//               className={`px-[12px] transition-all duration-500 whitespace-nowrap text-[16px] fsans-600 py-[10px]
+//             ${
+//               activeIndex === index
+//                 ? "text-[#E30613]"
+//                 : "text-[#092241] text-opacity-50"
+//             }`}
+//             >
+//               {tab.title}
+//             </button>
+//           ))}
+//         </div>
+//       </div>
+
+//       {/* Content */}
+//       <div className="flex flex-col-reverse lg:flex-row items-start gap-6 overflow-visible relative">
+//         {/* Static description text */}
+//         <div className="w-full lg:w-[50%] text-[#838383] text-[18px] flato-400 leading-relaxed pt-5 lg:pt-20">
+//           {para}
+//         </div>
+
+//         {/* Image on the right changes based on tab */}
+//         <AnimatePresence mode="wait">
+//           <motion.div
+//             key={tdata[activeIndex].title}
+//             initial={{ opacity: 0 }}
+//             animate={{ opacity: 1 }}
+//             transition={{ duration: 0.4, ease: [0.7, 0, 0.4, 1] }}
+//             viewport={{ amount: 0, once: false }}
+//             className="w-full flex justify-end lg:w-[50%] overflow-visible"
+//           >
+//             <img
+//               src={tdata[activeIndex].image}
+//               alt={tdata[activeIndex].title}
+//               className="lg:min-w-[521px] h-[352px] shadow-lg"
+//               style={{ zIndex: activeIndex }}
+//             />
+//           </motion.div>
+//         </AnimatePresence>
+//       </div>
+//     </div>
+//   </div>
+// );
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+// "use client";
+// import { useState } from "react";
+// import { AnimatePresence, motion } from "framer-motion";
+
+// const PDTab = ({ tdata, title, para }) => {
+//   const [activeIndex, setActiveIndex] = useState(0);
+//   return (
+//     <div
+//       id="park-overview"
+//       style={{
+//         background: "linear-gradient(to bottom, #141D28 70%, #EEF0F3 30%)",
+//       }}
+//       className="w-full min-h-[645px] flex items-center"
+//     >
+//       <div className="bg-white pl-[max(5%,calc((100vw-1250px)/2))] w-full pr-[5%] lg:pr-8 py-10 md:py-10 mx-auto border xl:min-h-[90%] mr-[max(5%,calc((100vw-1250px)/2))]">
+//         {/* Heading */}
+//         <div className="flex flex-col md:flex-row md:items-center justify-between border-b border-[#D7D7D7] pb-4 mb-4">
+//           <h1 className="text-[#092241] spotlightheaddd fsans-600 text-[20px]">
+//             {title}
+//           </h1>
+
+//           {/* DESKTOP TABS */}
+//           <div className="gap-2 mt-3 md:mt-0 hidden md:flex">
+//             {tdata.map((tab, index) => (
+//               <button
+//                 key={tab.title}
+//                 onClick={() => setActiveIndex(index)}
+//                 className={`px-[12px] transition-colors duration-200 whitespace-nowrap text-[16px] fsans-600 py-[10px] rounded-[10px] border border-[#092241] border-opacity-30
+//                   ${
+//                     activeIndex === index
+//                       ? "bg-[#E30613] border-[#E30613] text-[#fff]"
+//                       : "text-[#092241] text-opacity-50"
+//                   }`}
+//               >
+//                 {tab.title}
+//               </button>
+//             ))}
+//           </div>
+
+//           {/* MOBILE TABS */}
+//           <div className="flex gap-2 mt-3 md:mt-0 overflow-scroll md:hidden">
+//             {tdata.map((tab, index) => (
+//               <button
+//                 key={tab.title}
+//                 onClick={() => setActiveIndex(index)}
+//                 className={`px-[12px] transition-all duration-500 whitespace-nowrap text-[16px] fsans-600 py-[10px]
+//                   ${
+//                     activeIndex === index
+//                       ? "text-[#E30613]"
+//                       : "text-[#092241] text-opacity-50"
+//                   }`}
+//               >
+//                 {tab.title}
+//               </button>
+//             ))}
+//           </div>
+//         </div>
+
+//         {/* Content */}
+//         <div className="flex flex-col-reverse lg:flex-row items-start gap-6 overflow-visible relative">
+//           {/* Static description text */}
+//           <div
+//             className="w-full lg:w-[50%] text-[#838383] text-[18px] flato-400 leading-relaxed pt-5 lg:pt-20"
+//             dangerouslySetInnerHTML={{ __html: para }}
+//           ></div>
+
+//           {/* Image on the right changes based on tab */}
+//           <AnimatePresence mode="wait">
+//             <motion.div
+//               key={tdata[activeIndex].title}
+//               initial={{ opacity: 0 }}
+//               animate={{ opacity: 1 }}
+//               transition={{ duration: 0.4, ease: [0.7, 0, 0.4, 1] }}
+//               viewport={{ amount: 0, once: false }}
+//               className="w-full flex justify-end lg:w-[50%] overflow-visible"
+//             >
+//               <img
+//                 src={tdata[activeIndex].image}
+//                 alt={tdata[activeIndex].title}
+//                 className="xl:min-w-[521px] w-full  max-w-full h-[352px] shadow-lg"
+//                 style={{ zIndex: activeIndex }}
+//               />
+//             </motion.div>
+//           </AnimatePresence>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default PDTab;
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 "use client";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import PDTabPop from "./PDTabPop";
 
 const PDTab = ({ tdata, title, para }) => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [popupImage, setPopupImage] = useState(null);
 
-  //   return (
-  //     <div
-  //       style={{
-  //         background: "linear-gradient(to bottom, #141D28 70%, #EEF0F3 30%)",
-  //       }}
-  //       className="w-full min-h-[645px] flex items-center"
-  //     >
-  //       <div className="bg-white  pl-[max(5%,calc((100vw-1250px)/2))] w-full pr-8 py-4 md:py-10 mx-auto border xl:min-h-[90%] mr-[max(5%,calc((100vw-1250px)/2))]">
-  //         {/* Heading and Tabs */}
-  //         <div className="flex flex-col md:flex-row md:items-center justify-between border-b border-[#D7D7D7] pb-4 mb-4">
-  //           <h1 className="text-[#092241] spotlightheaddd fsans-600 text-[20px]">
-  //             KSH Chakan Park IV Overview
-  //           </h1>
-  //           <div className="flex gap-2 mt-3 md:mt-0 lg:overflow-auto overflow-scroll">
-  //             {tdata.map((tab, index) => (
-  //               <button
-  //                 key={tab.title}
-  //                 onClick={() => setActiveIndex(index)}
-  //                 className={`px-[12px] transition-colors duration-200 whitespace-nowrap text-[16px] fsans-600 py-[10px] flex-1 flex items-center justify-center rounded-[10px] border-[#092241] border-opacity-30 border ${
-  //                   activeIndex === index
-  //                     ? "bg-[#E30613] border-[#E30613] text-[#fff] text-opacity-100"
-  //                     : "text-[#092241] text-opacity-50"
-  //                 }`}
-  //               >
-  //                 {tab.title}
-  //               </button>
-  //             ))}
-  //           </div>
-  //         </div>
-
-  //         {/* Content */}
-  //         <div className="flex flex-col-reverse lg:flex-row items-start gap-6">
-  //           {/* Static description text */}
-  //           <div className="w-full lg:w-[50%] text-[#838383] text-[18px] flato-400 leading-relaxed pt-5 lg:pt-20">
-  //             The industrial park boasts IGBC pre-certified Platinum status,
-  //             highlighting KSH Infra’s dedication to green industrial development.
-  //             With exceptional planning and top-notch amenities, this fully
-  //             customisable, move-in ready industrial facility guarantees
-  //             uncompromised productivity, efficiency, and safety for your
-  //             workforce.
-  //           </div>
-
-  //           {/* Image on the right changes based on tab */}
-  //           <div className="w-full flex justify-end lg:w-[50%]">
-  //             <img
-  //               src={tdata[activeIndex].image}
-  //               alt={tdata[activeIndex].title}
-  //               className="lg:min-w-[521px] h-[352px] shadow-lg"
-  //             />
-  //           </div>
-  //         </div>
-  //       </div>
-  //       {/*  */}
-  //       {/*  */}
-  //       {/*  */}
-  //       {/*  */}
-  //       {/*  */}
-  //     </div>
-  //   );
-
-  // return (
-  //   <div
-  //     id="park-overview"
-  //     style={{
-  //       background: "linear-gradient(to bottom, #141D28 70%, #EEF0F3 30%)",
-  //     }}
-  //     className="w-full min-h-[645px] flex items-center"
-  //   >
-  //     <div className="bg-white pl-[max(5%,calc((100vw-1250px)/2))] w-full pr-8 py-10 md:py-10 mx-auto border xl:min-h-[90%] mr-[max(5%,calc((100vw-1250px)/2))]">
-  //       {/* Heading */}
-  //       <div className="flex flex-col md:flex-row md:items-center justify-between border-b border-[#D7D7D7] pb-4 mb-4">
-  //         <h1 className="text-[#092241] spotlightheaddd fsans-600 text-[20px]">
-  //           {title}
-  //         </h1>
-
-  //         {/* DESKTOP TABS */}
-  //         <div className="gap-2 mt-3 md:mt-0 hidden md:flex">
-  //           {tdata.map((tab, index) => (
-  //             <button
-  //               key={tab.title}
-  //               onClick={() => setActiveIndex(index)}
-  //               className={`px-[12px] transition-colors duration-200 whitespace-nowrap text-[16px] fsans-600 py-[10px] rounded-[10px] border border-[#092241] border-opacity-30
-  //             ${
-  //               activeIndex === index
-  //                 ? "bg-[#E30613] border-[#E30613] text-[#fff]"
-  //                 : "text-[#092241] text-opacity-50"
-  //             }`}
-  //             >
-  //               {tab.title}
-  //             </button>
-  //           ))}
-  //         </div>
-
-  //         {/* MOBILE TABS */}
-  //         <div className="flex gap-2 mt-3 md:mt-0 overflow-scroll md:hidden">
-  //           {tdata.map((tab, index) => (
-  //             <button
-  //               key={tab.title}
-  //               onClick={() => setActiveIndex(index)}
-  //               className={`px-[12px] transition-all duration-500 whitespace-nowrap text-[16px] fsans-600 py-[10px]
-  //             ${
-  //               activeIndex === index
-  //                 ? "text-[#E30613]"
-  //                 : "text-[#092241] text-opacity-50"
-  //             }`}
-  //             >
-  //               {tab.title}
-  //             </button>
-  //           ))}
-  //         </div>
-  //       </div>
-
-  //       {/* Content */}
-  //       <div className="flex flex-col-reverse lg:flex-row items-start gap-6 overflow-visible relative">
-  //         {/* Static description text */}
-  //         <div className="w-full lg:w-[50%] text-[#838383] text-[18px] flato-400 leading-relaxed pt-5 lg:pt-20">
-  //           {para}
-  //         </div>
-
-  //         {/* Image on the right changes based on tab */}
-  //         <AnimatePresence mode="wait">
-  //           <motion.div
-  //             key={tdata[activeIndex].title}
-  //             initial={{ opacity: 0 }}
-  //             animate={{ opacity: 1 }}
-  //             transition={{ duration: 0.4, ease: [0.7, 0, 0.4, 1] }}
-  //             viewport={{ amount: 0, once: false }}
-  //             className="w-full flex justify-end lg:w-[50%] overflow-visible"
-  //           >
-  //             <img
-  //               src={tdata[activeIndex].image}
-  //               alt={tdata[activeIndex].title}
-  //               className="lg:min-w-[521px] h-[352px] shadow-lg"
-  //               style={{ zIndex: activeIndex }}
-  //             />
-  //           </motion.div>
-  //         </AnimatePresence>
-  //       </div>
-  //     </div>
-  //   </div>
-  // );
   return (
     <div
       id="park-overview"
@@ -385,7 +504,7 @@ const PDTab = ({ tdata, title, para }) => {
       }}
       className="w-full min-h-[645px] flex items-center"
     >
-      <div className="bg-white pl-[max(5%,calc((100vw-1250px)/2))] w-full pr-8 py-10 md:py-10 mx-auto border xl:min-h-[90%] mr-[max(5%,calc((100vw-1250px)/2))]">
+      <div className="bg-white pl-[max(5%,calc((100vw-1250px)/2))] w-full pr-[5%] lg:pr-8 py-10 md:py-10 mx-auto border xl:min-h-[90%] mr-[max(5%,calc((100vw-1250px)/2))]">
         {/* Heading */}
         <div className="flex flex-col md:flex-row md:items-center justify-between border-b border-[#D7D7D7] pb-4 mb-4">
           <h1 className="text-[#092241] spotlightheaddd fsans-600 text-[20px]">
@@ -450,13 +569,21 @@ const PDTab = ({ tdata, title, para }) => {
               <img
                 src={tdata[activeIndex].image}
                 alt={tdata[activeIndex].title}
-                className="lg:min-w-[521px] h-[352px] shadow-lg"
+                onClick={() => setPopupImage(tdata[activeIndex].image)}
+                className="xl:min-w-[521px] w-full max-w-full h-[352px] shadow-lg cursor-pointer hover:brightness-50 transition-all duration-300"
                 style={{ zIndex: activeIndex }}
               />
             </motion.div>
           </AnimatePresence>
         </div>
       </div>
+
+      {/* Popup */}
+      <AnimatePresence>
+        {popupImage && (
+          <PDTabPop src={popupImage} onClose={() => setPopupImage(null)} />
+        )}
+      </AnimatePresence>
     </div>
   );
 };
