@@ -177,7 +177,14 @@ const Bento2 = () => {
     fetchData();
   }, []);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) {
+    return (
+      <div className="bg-[#092241] min-h-screen flex items-center justify-center">
+        <div className="text-white text-xl">Loading...</div>
+      </div>
+    );
+  }
+
   if (blogs.length < 6) return <div>Not enough blogs to display.</div>;
 
   return (
@@ -231,10 +238,10 @@ const Bento2 = () => {
       </Link>
 
       {/* Card 3 */}
-      <div className="relative h-[578px] transition-[transform] duration-300 w-full sm:w-[33%] cursor-pointer xl:w-[515px] flex justify-end flex-col-reverse sm:flex-col gap-[30px]">
+      <div className="relative h-[578px] transition-[transform] duration-300 w-full sm:w-[33%] xl:w-[515px] flex justify-end flex-col-reverse sm:flex-col gap-[30px]">
         <Link
           href={`/blogs/${blogs[5].slug}`}
-          className="relative md:hover:translate-y-[-10px] transition-[transform] duration-300 ease-in-out h-[479px] flex flex-col items-start justify-end px-4 xl:px-[50px] pb-[20px] gap-[10px]"
+          className="relative md:hover:translate-y-[-10px] transition-[transform] duration-300 ease-in-out h-[479px] flex flex-col items-start justify-end px-4 xl:px-[50px] pb-[20px] gap-[10px] cursor-pointer"
           style={{
             background: `url(${blogs[5]?.yoast_head_json?.schema?.["@graph"]?.[0]?.thumbnailUrl})`,
             backgroundPosition: "center center",

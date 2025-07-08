@@ -411,7 +411,6 @@ const fetchBlogByPage = async () => {
 
 const BentoSlider = () => {
   const [blogs, setBlogs] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [sliding, setSliding] = useState(false);
 
   // Desktop navigation refs
@@ -430,8 +429,6 @@ const BentoSlider = () => {
         setBlogs(blogData);
       } catch (error) {
         console.error("Error fetching blogs:", error);
-      } finally {
-        setLoading(false);
       }
     };
 
@@ -441,14 +438,6 @@ const BentoSlider = () => {
   useEffect(() => {
     setNavReady(true);
   }, []);
-
-  if (loading) {
-    return (
-      <div className="bg-[#092241] min-h-screen flex items-center justify-center">
-        <div className="text-white text-xl">Loading...</div>
-      </div>
-    );
-  }
 
   return (
     <div className="bg-[#092241] lg:pt-0 pt-20">
