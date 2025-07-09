@@ -28,7 +28,7 @@ const AboutVision = () => {
                   />
                 </div>
                 <div className="bg-white text-base fsans-600 relative">
-                  <p className="md:p-[35px] p-[20px] gradinetText2">
+                  <p className="md:p-[35px] p-[20px] gradinetText2 ">
                     Reimagining and inspiring a green industrial future by
                     focusing efforts on developing sustainable industrial and
                     warehousing infrastructure
@@ -67,7 +67,7 @@ const AboutVision = () => {
                   />
                 </div>
                 <div className="bg-white text-base fsans-600">
-                  <p className="md:p-[35px] p-[20px] gradinetText2 h-[214px]">
+                  <p className="md:p-[35px] p-[20px] gradinetText2 ">
                     Creating highly functional, transformative, carbon-neutral,
                     and sustainable warehousing and industrial park solutions
                     across key markets in India
@@ -105,7 +105,7 @@ const AboutVision = () => {
                 </div>
 
                 <div className="bg-white text-base fsans-600 relative">
-                  <p className="md:p-[35px] h-[214px] p-[20px] gradinetText2">
+                  <p className="md:p-[35px]  p-[20px] gradinetText2">
                     Becoming the preferred industrial real-estate partner to the
                     logistics, eCommerce, and manufacturing sectors and
                     attracting institutional capital from India and beyond by
