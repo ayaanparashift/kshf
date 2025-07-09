@@ -620,7 +620,7 @@ const PDTab = ({ tdata, title, para }) => {
       className="w-full min-h-[645px] flex items-center"
     >
       <div className="bg-white pl-[max(5%,calc((100vw-1250px)/2))] w-full pr-[5%] lg:pr-8 py-10 md:py-10 mx-auto border xl:min-h-[90%] mr-[max(5%,calc((100vw-1250px)/2))]">
-        <div className="w-full flex flex-col lg:flex-row gap-8">
+        <div className="w-full flex flex-col-reverse lg:flex-row gap-4 lg:gap-8">
           {/* LEFT COLUMN: Title + Content */}
           <div className="w-full lg:w-[50%]">
             <div className="flex items-end min-w-full h-[64px]">
@@ -676,22 +676,213 @@ const PDTab = ({ tdata, title, para }) => {
             </div>
 
             {/* Image Display */}
-            <AnimatePresence mode="wait">
+            {/* <AnimatePresence mode="wait">
               <motion.div
                 key={tdata[activeIndex].title}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.4, ease: [0.7, 0, 0.4, 1] }}
-                className="w-full flex justify-end"
+                className="w-full relative flex justify-end"
               >
                 <img
                   src={tdata[activeIndex].image}
                   alt={tdata[activeIndex].title}
-                  onClick={() => setPopupImage(tdata[activeIndex].simage)}
-                  className="xl:min-w-[521px] w-full max-w-full h-[352px] border-2 border-[#D7D7D7] cursor-pointer hover:brightness-50 transition-all duration-300"
+                  className="xl:min-w-[521px] w-full max-w-full h-[352px] border-2 border-[#D7D7D7]"
                   style={{ zIndex: activeIndex }}
                 />
+                <svg
+                  className="absolute bottom-2 cursor-pointer left-2 hover:scale-110 transition-all duration-300"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 28 28"
+                  xmlns="http://www.w3.org/2000/svg"
+                  onClick={() => setPopupImage(tdata[activeIndex].simage)}
+                >
+                  <rect width="28" height="28" fill="#092241" rx="3" ry="3" />
+
+                  <polyline
+                    points="17.5 6.5 21.5 6.5 21.5 10.5"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <line
+                    x1="16.5"
+                    y1="11"
+                    x2="21.5"
+                    y2="6.5"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+
+                  <polyline
+                    points="10.5 21.5 6.5 21.5 6.5 17.5"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <line
+                    x1="11.5"
+                    y1="17"
+                    x2="6.5"
+                    y2="21.5"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+
+                  <polyline
+                    points="6.5 10.5 6.5 6.5 10.5 6.5"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <line
+                    x1="11.5"
+                    y1="11"
+                    x2="6.5"
+                    y2="6.5"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+
+                  <polyline
+                    points="21.5 17.5 21.5 21.5 17.5 21.5"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <line
+                    x1="16.5"
+                    y1="17"
+                    x2="21.5"
+                    y2="21.5"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </motion.div>
+            </AnimatePresence> */}
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={tdata[activeIndex].title + "-img-svg"} // ensure key is unique to current image
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.4, ease: [0.7, 0, 0.4, 1] }}
+                className="w-full lg:h-auto h-[180px] relative flex justify-end"
+              >
+                <img
+                  src={tdata[activeIndex].image}
+                  alt={tdata[activeIndex].title}
+                  className="xl:min-w-[521px] w-full max-w-full h-[352px] border-2 border-[#D7D7D7] lg:flex hidden"
+                  style={{ zIndex: activeIndex }}
+                />
+                <img
+                  src={tdata[activeIndex].simage}
+                  alt={tdata[activeIndex].title}
+                  className="xl:min-w-[521px] w-full max-w-full h-auto mt-5 lg:h-[352px] border-2 border-[#D7D7D7] lg:hidden flex"
+                  style={{ zIndex: activeIndex }}
+                />
+
+                <svg
+                  className="absolute bottom-2 cursor-pointer left-2 hover:scale-110 transition-all duration-300 z-20 lg:flex hidden"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 28 28"
+                  xmlns="http://www.w3.org/2000/svg"
+                  onClick={() => setPopupImage(tdata[activeIndex].simage)}
+                >
+                  <rect width="28" height="28" fill="#092241" rx="3" ry="3" />
+
+                  {/* Top-right */}
+                  <polyline
+                    points="17.5 6.5 21.5 6.5 21.5 10.5"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <line
+                    x1="16.5"
+                    y1="11"
+                    x2="21.5"
+                    y2="6.5"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+
+                  {/* Bottom-left */}
+                  <polyline
+                    points="10.5 21.5 6.5 21.5 6.5 17.5"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <line
+                    x1="11.5"
+                    y1="17"
+                    x2="6.5"
+                    y2="21.5"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+
+                  {/* Top-left */}
+                  <polyline
+                    points="6.5 10.5 6.5 6.5 10.5 6.5"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <line
+                    x1="11.5"
+                    y1="11"
+                    x2="6.5"
+                    y2="6.5"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+
+                  {/* Bottom-right */}
+                  <polyline
+                    points="21.5 17.5 21.5 21.5 17.5 21.5"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <line
+                    x1="16.5"
+                    y1="17"
+                    x2="21.5"
+                    y2="21.5"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
               </motion.div>
             </AnimatePresence>
           </div>

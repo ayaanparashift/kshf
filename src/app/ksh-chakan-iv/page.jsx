@@ -20,15 +20,18 @@ export const metadata = {
 const tabsData = [
   {
     title: "KSH Parks",
-    image: "/ParkPage/cpov.png",
+    image: "/ParkPage/chakan-1/cps.webp",
+    simage: "/ParkPage/chakan-1/cpb.webp",
   },
   {
     title: "Notable Industries",
-    image: "/Slideimgs/ssf1.png",
+    image: "/ParkPage/chakan-1/cis.webp",
+    simage: "/ParkPage/chakan-1/cib.webp",
   },
   {
     title: "Connectivity",
-    image: "/Slideimgs/Culture.png",
+    image: "/ParkPage/chakan-1/ccs.webp",
+    simage: "/ParkPage/chakan-1/ccb.webp",
   },
 ];
 const page = () => {
