@@ -19,16 +19,14 @@ export const metadata = {
 };
 const tabsData = [
   {
-    title: "KSH Parks",
-    image: "/ParkPage/cpov.png",
-  },
-  {
     title: "Notable Industries",
-    image: "/Slideimgs/ssf1.png",
+    image: "/ParkPage/hosur-1/his.webp",
+    simage: "/ParkPage/hosur-1/hib.webp",
   },
   {
     title: "Connectivity",
-    image: "/Slideimgs/Culture.png",
+    image: "/ParkPage/hosur-1/hcs.webp",
+    simage: "/ParkPage/hosur-1/hcb.webp",
   },
 ];
 const page = () => {
@@ -40,16 +38,12 @@ const page = () => {
         {/* <ParkOverview /> */}
         <PDTab
           tdata={tabsData}
-          para="Hosur has become a top choice for manufacturing and industry,
-              sitting right next to Bangalore with excellent transportation
-              links. Major companies like Tata, Titan, Ashok Leyland, TVS
-              Motors, and Schaeffler already call it home, creating a strong and
-              diverse industrial community. With a well-developed industrial
-              base, skilled workforce, and growing support from Bangalore’s
-              progressive industrial policies, Hosur is poised for accelerated
-              expansion. Its connectivity to Bangalore and access to southern
-              ports make it an ideal location for your industrial operations."
           title="About Hosur, Bangalore"
+          para="Located just outside Bangalore, Hosur has rapidly emerged as a preferred destination for manufacturing and industrial growth. With excellent connectivity and access to major transport corridors, it offers a strategic advantage for businesses looking to scale.<br/><br/>
+
+          Hosur is home to industry giants like Tata Electronics, alongside a growing ecosystem of companies across automotive, electronics, and engineering sectors. This established industrial base, combined with a skilled workforce and proximity to Bangalore’s innovation and infrastructure, makes it a compelling choice for future-ready operations.
+
+          "
         />
         {/* <PDTab /> */}
         <ParkInfo />

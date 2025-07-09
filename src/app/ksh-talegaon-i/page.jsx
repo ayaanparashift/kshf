@@ -18,15 +18,18 @@ export const metadata = {
 const tabsData = [
   {
     title: "KSH Parks",
-    image: "/ParkPage/cpov.png",
+    image: "/ParkPage/talegaon-i/tps.webp",
+    simage: "/ParkPage/talegaon-i/tpb.webp",
   },
   {
     title: "Notable Industries",
-    image: "/Slideimgs/ssf1.png",
+    image: "/ParkPage/talegaon-i/tis.webp",
+    simage: "/ParkPage/talegaon-i/tib.webp",
   },
   {
     title: "Connectivity",
-    image: "/Slideimgs/Culture.png",
+    image: "/ParkPage/talegaon-i/tcs.webp",
+    simage: "/ParkPage/talegaon-i/tcb.webp",
   },
 ];
 const page = () => {

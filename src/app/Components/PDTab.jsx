@@ -487,6 +487,121 @@
 //
 //
 
+// "use client";
+// import { useState } from "react";
+// import { AnimatePresence, motion } from "framer-motion";
+// import PDTabPop from "./PDTabPop";
+
+// const PDTab = ({ tdata, title, para }) => {
+//   const [activeIndex, setActiveIndex] = useState(0);
+//   const [popupImage, setPopupImage] = useState(null);
+
+//   return (
+//     <div
+//       id="park-overview"
+//       style={{
+//         background: "linear-gradient(to bottom, #141D28 70%, #EEF0F3 30%)",
+//       }}
+//       className="w-full min-h-[645px] flex items-center"
+//     >
+//       <div className="bg-white pl-[max(5%,calc((100vw-1250px)/2))] w-full pr-[5%] lg:pr-8 py-10 md:py-10 mx-auto border xl:min-h-[90%] mr-[max(5%,calc((100vw-1250px)/2))]">
+//         {/* Heading */}
+//         <div className="flex flex-col md:flex-row md:items-center justify-between border-b border-[#D7D7D7] pb-4 mb-4">
+//           <h1 className="text-[#092241] spotlightheaddd fsans-600 text-[20px]">
+//             {title}
+//           </h1>
+
+//           {/* DESKTOP TABS */}
+//           <div className="gap-2 mt-3 md:mt-0 hidden md:flex">
+//             {tdata.map((tab, index) => (
+//               <button
+//                 key={tab.title}
+//                 onClick={() => setActiveIndex(index)}
+//                 className={`px-[12px] transition-colors duration-200 whitespace-nowrap text-[16px] fsans-600 py-[10px] rounded-[10px] border border-[#092241] border-opacity-30
+//                   ${
+//                     activeIndex === index
+//                       ? "bg-[#E30613] border-[#E30613] text-[#fff]"
+//                       : "text-[#092241] text-opacity-50"
+//                   }`}
+//               >
+//                 {tab.title}
+//               </button>
+//             ))}
+//           </div>
+
+//           {/* MOBILE TABS */}
+//           <div className="flex gap-2 mt-3 md:mt-0 overflow-scroll md:hidden">
+//             {tdata.map((tab, index) => (
+//               <button
+//                 key={tab.title}
+//                 onClick={() => setActiveIndex(index)}
+//                 className={`px-[12px] transition-all duration-500 whitespace-nowrap text-[16px] fsans-600 py-[10px]
+//                   ${
+//                     activeIndex === index
+//                       ? "text-[#E30613]"
+//                       : "text-[#092241] text-opacity-50"
+//                   }`}
+//               >
+//                 {tab.title}
+//               </button>
+//             ))}
+//           </div>
+//         </div>
+
+//         {/* Content */}
+//         <div className="flex flex-col-reverse lg:flex-row items-start gap-6 overflow-visible relative">
+//           {/* Static description text */}
+//           <div
+//             className="w-full lg:w-[50%] text-[#838383] text-[18px] flato-400 leading-relaxed pt-5 lg:pt-20"
+//             dangerouslySetInnerHTML={{ __html: para }}
+//           ></div>
+
+//           {/* Image on the right changes based on tab */}
+//           <AnimatePresence mode="wait">
+//             <motion.div
+//               key={tdata[activeIndex].title}
+//               initial={{ opacity: 0 }}
+//               animate={{ opacity: 1 }}
+//               transition={{ duration: 0.4, ease: [0.7, 0, 0.4, 1] }}
+//               viewport={{ amount: 0, once: false }}
+//               className="w-full flex justify-end lg:w-[50%] overflow-visible"
+//             >
+//               <img
+//                 src={tdata[activeIndex].image}
+//                 alt={tdata[activeIndex].title}
+//                 onClick={() => setPopupImage(tdata[activeIndex].image)}
+//                 className="xl:min-w-[521px] w-full max-w-full h-[352px] shadow-lg cursor-pointer hover:brightness-50 transition-all duration-300"
+//                 style={{ zIndex: activeIndex }}
+//               />
+//             </motion.div>
+//           </AnimatePresence>
+//         </div>
+//       </div>
+
+//       {/* Popup */}
+//       <AnimatePresence>
+//         {popupImage && (
+//           <PDTabPop src={popupImage} onClose={() => setPopupImage(null)} />
+//         )}
+//       </AnimatePresence>
+//     </div>
+//   );
+// };
+
+// export default PDTab;
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 "use client";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -505,80 +620,85 @@ const PDTab = ({ tdata, title, para }) => {
       className="w-full min-h-[645px] flex items-center"
     >
       <div className="bg-white pl-[max(5%,calc((100vw-1250px)/2))] w-full pr-[5%] lg:pr-8 py-10 md:py-10 mx-auto border xl:min-h-[90%] mr-[max(5%,calc((100vw-1250px)/2))]">
-        {/* Heading */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between border-b border-[#D7D7D7] pb-4 mb-4">
-          <h1 className="text-[#092241] spotlightheaddd fsans-600 text-[20px]">
-            {title}
-          </h1>
-
-          {/* DESKTOP TABS */}
-          <div className="gap-2 mt-3 md:mt-0 hidden md:flex">
-            {tdata.map((tab, index) => (
-              <button
-                key={tab.title}
-                onClick={() => setActiveIndex(index)}
-                className={`px-[12px] transition-colors duration-200 whitespace-nowrap text-[16px] fsans-600 py-[10px] rounded-[10px] border border-[#092241] border-opacity-30
-                  ${
-                    activeIndex === index
-                      ? "bg-[#E30613] border-[#E30613] text-[#fff]"
-                      : "text-[#092241] text-opacity-50"
-                  }`}
-              >
-                {tab.title}
-              </button>
-            ))}
+        <div className="w-full flex flex-col lg:flex-row gap-8">
+          {/* LEFT COLUMN: Title + Content */}
+          <div className="w-full lg:w-[50%]">
+            <div className="flex items-end min-w-full h-[64px]">
+              <h1 className="text-[#092241] border-b border-[#D7D7D7] spotlightheaddd fsans-600 text-[20px] mb-4 w-full">
+                {title}
+              </h1>
+            </div>
+            <div
+              className="text-[#838383] text-[18px] flato-400 leading-relaxed"
+              dangerouslySetInnerHTML={{ __html: para }}
+            ></div>
           </div>
 
-          {/* MOBILE TABS */}
-          <div className="flex gap-2 mt-3 md:mt-0 overflow-scroll md:hidden">
-            {tdata.map((tab, index) => (
-              <button
-                key={tab.title}
-                onClick={() => setActiveIndex(index)}
-                className={`px-[12px] transition-all duration-500 whitespace-nowrap text-[16px] fsans-600 py-[10px]
-                  ${
-                    activeIndex === index
-                      ? "text-[#E30613]"
-                      : "text-[#092241] text-opacity-50"
-                  }`}
+          {/* RIGHT COLUMN: Tabs + Image */}
+          <div className="w-full lg:w-[50%]">
+            {/* Tabs */}
+            <div className="flex flex-col md:flex-row md:items-center justify-between">
+              {/* Desktop Tabs */}
+              <div className="justify-between w-full mt-3 md:mt-0 hidden md:flex pb-4 gap-2 h-[64px]">
+                {tdata.map((tab, index) => (
+                  <button
+                    key={tab.title}
+                    onClick={() => setActiveIndex(index)}
+                    className={`px-[12px] w-full transition-colors duration-200 whitespace-nowrap text-[16px] fsans-600 py-[10px] rounded-[10px] border border-[#092241] border-opacity-30
+                      ${
+                        activeIndex === index
+                          ? "bg-[#E30613] border-[#E30613] text-[#fff]"
+                          : "text-[#092241] text-opacity-50"
+                      }`}
+                  >
+                    {tab.title}
+                  </button>
+                ))}
+              </div>
+
+              {/* Mobile Tabs */}
+              <div className="flex gap-2 mt-3 md:mt-0 overflow-scroll md:hidden">
+                {tdata.map((tab, index) => (
+                  <button
+                    key={tab.title}
+                    onClick={() => setActiveIndex(index)}
+                    className={`px-[12px] transition-all duration-500 whitespace-nowrap text-[16px] fsans-600 py-[10px]
+                      ${
+                        activeIndex === index
+                          ? "text-[#E30613]"
+                          : "text-[#092241] text-opacity-50"
+                      }`}
+                  >
+                    {tab.title}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Image Display */}
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={tdata[activeIndex].title}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.4, ease: [0.7, 0, 0.4, 1] }}
+                className="w-full flex justify-end"
               >
-                {tab.title}
-              </button>
-            ))}
+                <img
+                  src={tdata[activeIndex].image}
+                  alt={tdata[activeIndex].title}
+                  onClick={() => setPopupImage(tdata[activeIndex].simage)}
+                  className="xl:min-w-[521px] w-full max-w-full h-[352px] border-2 border-[#D7D7D7] cursor-pointer hover:brightness-50 transition-all duration-300"
+                  style={{ zIndex: activeIndex }}
+                />
+              </motion.div>
+            </AnimatePresence>
           </div>
-        </div>
-
-        {/* Content */}
-        <div className="flex flex-col-reverse lg:flex-row items-start gap-6 overflow-visible relative">
-          {/* Static description text */}
-          <div
-            className="w-full lg:w-[50%] text-[#838383] text-[18px] flato-400 leading-relaxed pt-5 lg:pt-20"
-            dangerouslySetInnerHTML={{ __html: para }}
-          ></div>
-
-          {/* Image on the right changes based on tab */}
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={tdata[activeIndex].title}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.4, ease: [0.7, 0, 0.4, 1] }}
-              viewport={{ amount: 0, once: false }}
-              className="w-full flex justify-end lg:w-[50%] overflow-visible"
-            >
-              <img
-                src={tdata[activeIndex].image}
-                alt={tdata[activeIndex].title}
-                onClick={() => setPopupImage(tdata[activeIndex].image)}
-                className="xl:min-w-[521px] w-full max-w-full h-[352px] shadow-lg cursor-pointer hover:brightness-50 transition-all duration-300"
-                style={{ zIndex: activeIndex }}
-              />
-            </motion.div>
-          </AnimatePresence>
         </div>
       </div>
 
-      {/* Popup */}
+      {/* Image Popup */}
       <AnimatePresence>
         {popupImage && (
           <PDTabPop src={popupImage} onClose={() => setPopupImage(null)} />
