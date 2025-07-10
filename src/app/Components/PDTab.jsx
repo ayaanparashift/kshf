@@ -797,7 +797,7 @@ const PDTab = ({ tdata, title, para }) => {
                   style={{ zIndex: activeIndex }}
                 />
 
-                <svg
+                {/* <svg
                   className="absolute bottom-2 cursor-pointer left-2 hover:scale-110 transition-all duration-300 z-20 lg:flex hidden"
                   width="40"
                   height="40"
@@ -807,7 +807,6 @@ const PDTab = ({ tdata, title, para }) => {
                 >
                   <rect width="28" height="28" fill="#092241" rx="3" ry="3" />
 
-                  {/* Top-right */}
                   <polyline
                     points="17.5 6.5 21.5 6.5 21.5 10.5"
                     stroke="white"
@@ -826,7 +825,6 @@ const PDTab = ({ tdata, title, para }) => {
                     strokeLinejoin="round"
                   />
 
-                  {/* Bottom-left */}
                   <polyline
                     points="10.5 21.5 6.5 21.5 6.5 17.5"
                     stroke="white"
@@ -845,7 +843,6 @@ const PDTab = ({ tdata, title, para }) => {
                     strokeLinejoin="round"
                   />
 
-                  {/* Top-left */}
                   <polyline
                     points="6.5 10.5 6.5 6.5 10.5 6.5"
                     stroke="white"
@@ -864,7 +861,6 @@ const PDTab = ({ tdata, title, para }) => {
                     strokeLinejoin="round"
                   />
 
-                  {/* Bottom-right */}
                   <polyline
                     points="21.5 17.5 21.5 21.5 17.5 21.5"
                     stroke="white"
@@ -881,6 +877,25 @@ const PDTab = ({ tdata, title, para }) => {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                  />
+                </svg> */}
+
+                <svg
+                  className="w-6 h-6 text-white absolute bottom-2 cursor-pointer left-2 hover:scale-110 transition-all duration-300 z-20 lg:flex hidden bg-[#6C8DAB] p-1 rounded"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  onClick={() => setPopupImage(tdata[activeIndex].simage)}
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M8 4H4m0 0v4m0-4 5 5m7-5h4m0 0v4m0-4-5 5M8 20H4m0 0v-4m0 4 5-5m7 5h4m0 0v-4m0 4-5-5"
                   />
                 </svg>
               </motion.div>
