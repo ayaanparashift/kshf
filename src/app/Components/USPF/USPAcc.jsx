@@ -288,7 +288,7 @@ const Accordion = ({ accordionData, acch, accw }) => {
   //   );
   return (
     <div
-      className={`w-full min-1920:max-w-[80%] pl-0 md:pl-[max(5%,calc((100vw-1250px)/2))] md:pr-[max(5%,calc((100vw-1250px)/2))] xl:pl-0 xl:ml-auto flex flex-col gap-[16px] ${
+      className={`w-full min-1920:max-w-[90%] pl-0 md:pl-[max(5%,calc((100vw-1250px)/2))] md:pr-[max(5%,calc((100vw-1250px)/2))] xl:pl-0 xl:ml-auto flex flex-col gap-[16px] ${
         acch > 450 ? "xl:h-[550px]" : "xl:h-[450px]"
       } ${accw > 80 ? "w-full" : "xl:w-[90%]"}`}
     >
@@ -360,7 +360,7 @@ const Accordion = ({ accordionData, acch, accw }) => {
                   }}
                   className="overflow-hidden"
                 >
-                  <div className="text-white text-[14px] md:text-[16px] leading-[150%] fsans-400 pt-2">
+                  <div className="text-white text-[14px] md:text-[16px] min-1920:text-[18px] leading-[150%] fsans-400 pt-2">
                     {item.content}
                   </div>
                 </motion.div>

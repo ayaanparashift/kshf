@@ -84,7 +84,7 @@ const CharAcc = () => {
         </div>
 
         <div className="flex xl:flex-row flex-col-reverse md:p-0 px-5 pt-0 max-h-fit h-fit lg:gap-0 gap-5 relative">
-          <div className="xl:flex hidden items-end lg:top-[10%] xl-1366:top-[5%] justify-center mt-0 xl:absolute relative lg:left-[-100px] xl-1366:left-[-150px] w-full lg:w-[800px] xl-1366:w-[875px] hidden">
+          <div className="xl:flex min-1920:scale-125 items-end lg:top-[10%] xl-1366:top-[5%] justify-center mt-0 xl:absolute relative lg:left-[-100px] xl-1366:left-[-150px] w-full lg:w-[800px] xl-1366:w-[875px] hidden">
             <img
               // initial={{ opacity: 0 }}
               // whileInView={{ opacity: 1 }}

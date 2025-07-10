@@ -22,10 +22,10 @@ const PDTabPop = ({ src, onClose }) => {
       transition={{ duration: 0.4, ease: [0.7, 0, 0.4, 1] }}
       className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-[10000000]"
     >
-      <div className="relative xl:w-[1200px] w-[80vw]">
+      <div className="relative min-1366:w-[1200px] w-[80vw]">
         <button
           onClick={onClose}
-          className="absolute top-0 right-0 text-white text-3xl z-[100000000] w-[60px] h-[60px]"
+          className="absolute -top-[10%] -right-[5%] text-white text-3xl z-[100000000] w-[60px] h-[60px]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

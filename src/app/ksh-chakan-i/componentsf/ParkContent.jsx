@@ -136,7 +136,7 @@ const ParkContent = ({
   //   </div>
   // );
   return (
-    <div className="flex flex-col md:flex-row justify-between w-full gap-[0px] min-h-[535px]">
+    <div className="flex flex-col md:flex-row justify-between w-full gap-[0px] min-1366:min-h-[535px] min-h-[487px]">
       {/* Video Section */}
       <AnimatePresence mode="wait">
         <motion.div

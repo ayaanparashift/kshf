@@ -1065,3 +1065,25 @@ canvas {
   font-weight: bold;
   font-size: 0.875rem;
 }
+.linkaf {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #bfbfbf;
+    transition: background-color 0.7s ease;
+  }
+
+  &:hover::after {
+    background-color: #f7e327;
+  }
+
+  &.active::after {
+    background-color: #f7e327;
+  }
+}

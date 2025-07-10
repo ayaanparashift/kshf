@@ -228,7 +228,7 @@ const Parkinfracard = ({ onSelectVideo, selectedVideo, videos, activeTab }) => {
               }}
               transition={{ duration: 0.8, ease: [0.7, 0, 0.4, 1] }}
               onClick={() => onSelectVideo(videoItem.video)}
-              className={`cursor-pointer [&:not(:last-child)]:border-b-[1px] overflow-hidden pb-[20px] transition-colors duration-300 ${
+              className={`cursor-pointer [&:not(:last-child)]:border-b-[1px] overflow-hidden [&:not(:last-child)]:pb-[20px] transition-colors duration-300 ${
                 isActive
                   ? "border-b-[#092241]"
                   : " border-b-[#6C8DAB] hover:border-b-[#092241]"
