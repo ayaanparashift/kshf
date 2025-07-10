@@ -620,16 +620,16 @@ const PDTab = ({ tdata, title, para }) => {
       className="w-full min-h-[645px] flex items-center"
     >
       <div className="bg-white pl-[max(5%,calc((100vw-1250px)/2))] w-full pr-[5%] lg:pr-8 py-10 md:py-10 mx-auto border xl:min-h-[90%] mr-[max(5%,calc((100vw-1250px)/2))]">
-        <div className="w-full flex flex-col-reverse lg:flex-row gap-4 lg:gap-8">
+        <div className="w-full flex flex-col-reverse lg:flex-row gap-4 lg:gap-20">
           {/* LEFT COLUMN: Title + Content */}
           <div className="w-full lg:w-[50%]">
             <div className="flex items-end min-w-full h-[64px]">
-              <h1 className="text-[#092241] border-b border-[#D7D7D7] spotlightheaddd fsans-600 text-[20px] mb-4 w-full">
+              <h1 className="text-[#092241] border-b border-[#D7D7D7] spotlightheaddd fsans-600 text-[20px] w-full">
                 {title}
               </h1>
             </div>
             <div
-              className="text-[#838383] text-[18px] flato-400 leading-relaxed"
+              className="text-[#838383] text-[18px] flato-400 leading-relaxed pt-4"
               dangerouslySetInnerHTML={{ __html: para }}
             ></div>
           </div>

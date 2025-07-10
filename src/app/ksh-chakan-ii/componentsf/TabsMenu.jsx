@@ -4,7 +4,7 @@
 
 // const TabMenu = () => {
 //   const tabs = [
-//     { title: "Park Overview", link: "#park-overview" },
+//     { title: "Overview", link: "#park-overview" },
 //     { title: "Park Highlights", link: "#park-highlight" },
 //     { title: "Location & Connectivity", link: "#location-connectivity" },
 //     { title: "Park Infrastructure", link: "#park-infrastructure" },
@@ -50,7 +50,7 @@ import Link from "next/link";
 
 const TabMenu = () => {
   const tabs = [
-    { title: "Park Overview", link: "#park-overview" },
+    { title: "Overview", link: "#park-overview" },
     { title: "Park Highlights", link: "#park-highlight" },
     { title: "Location & Connectivity", link: "#location-connectivity" },
     {
