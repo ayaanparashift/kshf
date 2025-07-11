@@ -881,7 +881,7 @@ const PDTab = ({ tdata, title, para }) => {
                 </svg> */}
 
                 <svg
-                  className="w-6 h-6 text-white absolute bottom-2 cursor-pointer left-2 hover:scale-110 transition-all duration-300 z-20 lg:flex hidden bg-[#6C8DAB] p-1 rounded"
+                  className="w-10 h-10 text-white absolute bottom-2 cursor-pointer left-2 hover:scale-110 transition-all duration-300 z-20 lg:flex hidden bg-[#6C8DAB] p-1 rounded"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
