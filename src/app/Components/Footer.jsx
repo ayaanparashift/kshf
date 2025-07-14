@@ -677,6 +677,7 @@ const Footer = () => {
                 </Link>
 
                 <Link
+                  target="__blank"
                   href="https://www.youtube.com/channel/UCae7QNTK0AUOf7kxBF53hag"
                   className="group"
                 >
@@ -762,6 +763,7 @@ const Footer = () => {
                 </Link>
 
                 <Link
+                  target="__blank"
                   href="https://twitter.com/KshInfra/status/1687774451692343296"
                   className="group"
                 >
