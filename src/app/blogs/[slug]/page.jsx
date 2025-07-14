@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { Suspense } from "react";
 import RelatedBlogs from "./Components/RelatedBlogs";
+import Link from "next/link";
 
 async function fetchBlogData(slug) {
   const res = await fetch(
@@ -63,13 +64,15 @@ export default async function BlogPage({ params }) {
       <div className="bg-[#092241]">
         <div className="fix12 pb-20 pt-32">
           <div className="pb-16">
-            <p
-              className="text-[#D7D7D7A3] text-base fsans-400 pb-7"
-              dangerouslySetInnerHTML={{
-                __html:
-                  "<a href='/' class='hover:text-white transition-colors duration-300'>Home</a> &gt; Blog",
-              }}
-            />
+            <p className="text-[#D7D7D7A3] text-base fsans-400 pb-7">
+              <Link
+                className="hover:text-white transition-colors duration-300"
+                href="/"
+              >
+                Home
+              </Link>
+              &nbsp;&gt; Blog
+            </p>
             <div className="space-y-7">
               <p
                 className="w-fit py-1 px-3 fsans-600 text-base bg-[#F7E327]"
