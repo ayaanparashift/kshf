@@ -65,7 +65,9 @@ export default async function BlogPage({ params }) {
           <div className="pb-16">
             <p
               className="text-[#D7D7D7A3] text-base fsans-400 pb-7"
-              dangerouslySetInnerHTML={{ __html: "Home &gt; Blog" }}
+              dangerouslySetInnerHTML={{
+                __html: "<a href='/'>Home</a> &gt; Blog",
+              }}
             />
             <div className="space-y-7">
               <p
