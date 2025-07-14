@@ -43,7 +43,7 @@ const page = () => {
           bwidth={1140}
           tdata={tabsData}
           para="Strategically located along the Mumbai–Pune National Highway, Talegaon is fast emerging as a key warehousing and logistics hub in Western India. KSH has established a strong presence at the heart of this industrial corridor, tapping into a thriving ecosystem of sectors including automotive, pharmaceuticals, chemicals, engineering, and food processing."
-          title="About Talegaon, Pune"
+          title="Talegaon: A Strategic Hub for Modern Industry"
         />
         <ParkInfo />
         <MapSection />
