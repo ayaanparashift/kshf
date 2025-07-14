@@ -36,15 +36,11 @@ const page = () => {
         <ParkinSpot />
         <TabMenu />
         {/* <ParkOverview /> */}
-        <PDTab
-          bwidth={838}
+          <PDTab
+          bwidth={1140}
           tdata={tabsData}
-          title="About Hosur, Bangalore"
-          para="Located just outside Bangalore, Hosur has rapidly emerged as a preferred destination for manufacturing and industrial growth. With excellent connectivity and access to major transport corridors, it offers a strategic advantage for businesses looking to scale.<br/><br/>
-
-          Hosur is home to industry giants like Tata Electronics, alongside a growing ecosystem of companies across automotive, electronics, and engineering sectors. This established industrial base, combined with a skilled workforce and proximity to Bangalore’s innovation and infrastructure, makes it a compelling choice for future-ready operations.
-
-          "
+          para="Hosur, located on the outskirts of Bangalore, is fast becoming a leading destination for manufacturing and industrial expansion. Its strategic location, seamless connectivity, and access to a skilled workforce have attracted major players like Tata Electronics and a thriving network of companies in automotive, electronics, and engineering. With Bangalore’s innovation ecosystem next door and robust infrastructure on the rise, Hosur offers the perfect blend of scale, speed, and future-readiness for modern industrial growth."
+          title="Hosur: The Next Industrial Powerhouse"
         />
         {/* <PDTab /> */}
         <ParkInfo />

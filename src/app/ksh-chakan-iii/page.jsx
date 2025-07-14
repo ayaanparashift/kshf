@@ -42,16 +42,11 @@ const page = () => {
         <TabMenu />
         {/* <ParkOverview /> */}
 
-        <PDTab
+         <PDTab
           bwidth={1140}
           tdata={tabsData}
-          para="The industrial park boasts IGBC pre-certified Platinum status,
-            highlighting KSH Infra’s dedication to green industrial development.
-            With exceptional planning and top-notch amenities, this fully
-            customisable, move-in ready industrial facility guarantees
-            uncompromised productivity, efficiency, and safety for your
-            workforce."
-          title="About Chakan, Pune"
+          para="Chakan, located near Pune, is one of India’s fastest-growing integrated industrial zones, strategically developed by MIDC as a key manufacturing and logistics corridor. Home to global automotive giants like Volkswagen, Bajaj Auto, and Mercedes Benz, it offers ready infrastructure, robust connectivity, and a growing talent pool. With metro connectivity and rapid social infrastructure underway, Chakan is set to become a benchmark for modern industrial development. KSH INFRA’s parks in Chakan further reinforce its position as a central hub driving India’s industrial growth."
+          title="Chakan: A Thriving Industrial Hub in Pune"
         />
         <ParkInfo />
         <MapSection />
