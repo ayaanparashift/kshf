@@ -66,7 +66,8 @@ export default async function BlogPage({ params }) {
             <p
               className="text-[#D7D7D7A3] text-base fsans-400 pb-7"
               dangerouslySetInnerHTML={{
-                __html: "<a href='/'>Home</a> &gt; Blog",
+                __html:
+                  "<a href='/' class='hover:text-white transition-colors duration-300'>Home</a> &gt; Blog",
               }}
             />
             <div className="space-y-7">

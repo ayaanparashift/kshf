@@ -382,7 +382,7 @@ const TabBlogs = ({ blogs }) => {
     { title: "All", id: null },
     { title: "News", id: 18 }, // Replace with actual category ID from WordPress
     { title: "Blogs", id: 17 }, // Replace with actual category ID from WordPress
-    { title: "Press Release", id: 8 }, // Replace with actual category ID from WordPress
+    //{ title: "Press Release", id: 8 }, // Replace with actual category ID from WordPress
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
