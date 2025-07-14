@@ -144,7 +144,7 @@ const MapSlider = ({ onSelect }) => {
 
   return (
     <div className="flex sm:hidden overflow-hidden w-full">
-      <div className="w-full py-6">
+      <div className="w-full lg:py-6">
         <Swiper
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           modules={[Navigation, FreeMode]}

@@ -166,7 +166,7 @@ const col2 = [{ href: "/ksh-hosur-i", text: "KSH Hosur I" }];
 
 const TabSec = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-center items-start w-full pt-[30px] min-1440:pt-[45px] gap-0 text-white">
+    <div className="flex flex-col lg:flex-row justify-center items-start w-full min-1366:pt-[30px] min-1440:pt-[45px] gap-0 text-white">
       {/* Left Image */}
       <div className="flex-shrink-0 flex flex-col gap-[30px] min-1440:gap-[50px]">
         <img

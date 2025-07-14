@@ -24,7 +24,7 @@ const NavTab = () => {
         // background: "linear-gradient(-45deg, #092241 90%, #1757a7 10%)",
         background: "linear-gradient(126deg, #1757A7 -139.71%, #092241 34.21%)",
       }}
-      className="w-[60%] h-full min-h-full flex flex-col items-start justify-start py-10 pl-[max(5%,calc((100vw-1250px)/2))] pr-[66px]"
+      className="w-[60%] h-full min-h-full flex flex-col items-start justify-start py-10 pl-[max(5%,calc((100vw-1250px)/2))] 2xl:pr-[66px] pr-[30px]"
     >
       <h1 className="text-white w-fit flex items-start text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
         Parks

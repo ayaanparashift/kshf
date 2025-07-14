@@ -20,13 +20,13 @@ export const metadata = {
 const tabsData = [
   {
     title: "Notable Industries",
-    image: "/ParkPage/hosur-1/his.webp",
-    simage: "/ParkPage/hosur-1/hib.webp",
+    image: "/ParkPage/hosur-1/hisf.webp",
+    simage: "/ParkPage/hosur-1/hibf.webp",
   },
   {
     title: "Connectivity",
-    image: "/ParkPage/hosur-1/hcs.webp",
-    simage: "/ParkPage/hosur-1/hcb.webp",
+    image: "/ParkPage/hosur-1/hcsf.webp",
+    simage: "/ParkPage/hosur-1/hcbf.webp",
   },
 ];
 const page = () => {
@@ -37,6 +37,7 @@ const page = () => {
         <TabMenu />
         {/* <ParkOverview /> */}
         <PDTab
+          bwidth={838}
           tdata={tabsData}
           title="About Hosur, Bangalore"
           para="Located just outside Bangalore, Hosur has rapidly emerged as a preferred destination for manufacturing and industrial growth. With excellent connectivity and access to major transport corridors, it offers a strategic advantage for businesses looking to scale.<br/><br/>

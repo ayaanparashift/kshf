@@ -40,6 +40,7 @@ const page = () => {
         <TabMenu />
         {/* <ParkOverview /> */}
         <PDTab
+          bwidth={1140}
           tdata={tabsData}
           para="Talegaon I, located near the national highway connecting Mumbai
               and Pune, has emerged as a significant warehousing and logistics

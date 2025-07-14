@@ -43,6 +43,7 @@ const page = () => {
         {/* <ParkOverview /> */}
 
         <PDTab
+          bwidth={1140}
           tdata={tabsData}
           para="The industrial park boasts IGBC pre-certified Platinum status,
             highlighting KSH Infra’s dedication to green industrial development.

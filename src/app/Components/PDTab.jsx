@@ -607,7 +607,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import PDTabPop from "./PDTabPop";
 
-const PDTab = ({ tdata, title, para }) => {
+const PDTab = ({ tdata, title, para, bwidth }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [popupImage, setPopupImage] = useState(null);
 
@@ -907,7 +907,11 @@ const PDTab = ({ tdata, title, para }) => {
       {/* Image Popup */}
       <AnimatePresence>
         {popupImage && (
-          <PDTabPop src={popupImage} onClose={() => setPopupImage(null)} />
+          <PDTabPop
+            bwidth={bwidth}
+            src={popupImage}
+            onClose={() => setPopupImage(null)}
+          />
         )}
       </AnimatePresence>
     </div>
